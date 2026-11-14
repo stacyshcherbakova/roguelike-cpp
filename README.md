@@ -63,6 +63,7 @@ msbuild Game.sln /t:XYZRoguelike /p:Configuration=Release /p:Platform=x64
 | `feature/boss` | #2 | босс с рывком, дверь ждёт смерти босса |
 | `feature/inventory-hud` | #3 | инвентарь, зелья, HUD, экран победы |
 | `docs/diploma` | #4 | README, дизайн-документ, скриншоты |
+| `fix/wall-push-through` | #5 | физика не даёт вытолкнуть тело сквозь стену, враги не появляются друг в друге, экран победы убирается при перезапуске |
 
 Теги на `main`: `hw10`, `hw11`, `diploma`.
 
