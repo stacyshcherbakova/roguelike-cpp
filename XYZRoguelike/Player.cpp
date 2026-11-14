@@ -1,10 +1,11 @@
 #include "Player.h"
 #include "GameSettings.h"
-#include "PlayerCombatComponent.h"
+#include "PlayerControllerComponent.h"
 #include <AttackComponent.h>
 #include <AudioComponent.h>
 #include <CameraComponent.h>
 #include <InputComponent.h>
+#include <InventoryComponent.h>
 #include <Logger.h>
 #include <MovementComponent.h>
 #include <RenderSystem.h>
@@ -53,10 +54,12 @@ namespace XYZRoguelike
 		attack->SetRange(Settings::PLAYER_ATTACK_RANGE);
 		attack->SetCooldown(Settings::PLAYER_ATTACK_COOLDOWN);
 
+		gameObject->AddComponent<InventoryComponent>();
+
 		auto hitSound = gameObject->AddComponent<AudioComponent>();
 		hitSound->SetSound(ResourceSystem::Instance()->GetSound(Settings::HIT_SOUND));
 
-		gameObject->AddComponent<PlayerCombatComponent>();
+		gameObject->AddComponent<PlayerControllerComponent>();
 
 		LOG_INFO("Player created at " << position.x << ", " << position.y
 			<< " with " << Settings::PLAYER_HEALTH << " health and " << Settings::PLAYER_ARMOR << " armour");
@@ -65,5 +68,10 @@ namespace XYZRoguelike
 	HealthComponent* Player::GetHealth() const
 	{
 		return gameObject->GetComponent<HealthComponent>();
+	}
+
+	InventoryComponent* Player::GetInventory() const
+	{
+		return gameObject->GetComponent<InventoryComponent>();
 	}
 }

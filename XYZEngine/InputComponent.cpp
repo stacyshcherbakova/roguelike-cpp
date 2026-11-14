@@ -31,6 +31,10 @@ namespace XYZEngine
 		const bool attackDown = sf::Keyboard::isKeyPressed(sf::Keyboard::Space);
 		attackPressed = attackDown && !attackHeld;
 		attackHeld = attackDown;
+
+		const bool useDown = sf::Keyboard::isKeyPressed(sf::Keyboard::E);
+		usePressed = useDown && !useHeld;
+		useHeld = useDown;
 	}
 	void InputComponent::Render()
 	{
@@ -49,5 +53,10 @@ namespace XYZEngine
 	bool InputComponent::IsAttackPressed() const
 	{
 		return attackPressed;
+	}
+
+	bool InputComponent::IsUsePressed() const
+	{
+		return usePressed;
 	}
 }

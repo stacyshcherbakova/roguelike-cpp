@@ -229,6 +229,37 @@ namespace XYZEngine
 		return musicPair->second;
 	}
 
+	bool ResourceSystem::LoadFont(const std::string& name, std::string sourcePath)
+	{
+		if (fonts.find(name) != fonts.end())
+		{
+			LOG_WARNING("Font '" << name << "' is already loaded, skipping " << sourcePath);
+			return true;
+		}
+
+		sf::Font* newFont = new sf::Font();
+		if (!newFont->loadFromFile(sourcePath))
+		{
+			LOG_ERROR("Failed to load font '" << name << "' from " << sourcePath);
+			delete newFont;
+			return false;
+		}
+
+		fonts.emplace(name, newFont);
+		LOG_INFO("Font '" << name << "' loaded from " << sourcePath);
+		return true;
+	}
+	const sf::Font* ResourceSystem::GetFont(const std::string& name) const
+	{
+		auto fontPair = fonts.find(name);
+		if (fontPair == fonts.end())
+		{
+			LOG_ERROR("Font '" << name << "' was never loaded");
+			return nullptr;
+		}
+		return fontPair->second;
+	}
+
 	const sf::Texture* ResourceSystem::GetFallbackTexture() const
 	{
 		if (fallbackTexture == nullptr)
@@ -247,8 +278,18 @@ namespace XYZEngine
 		DeleteAllTextures();
 		DeleteAllTextureMaps();
 		DeleteAllSounds();
+		DeleteAllFonts();
 		musicPaths.clear();
 		LOG_INFO("All resources released");
+	}
+
+	void ResourceSystem::DeleteAllFonts()
+	{
+		for (auto& fontPair : fonts)
+		{
+			delete fontPair.second;
+		}
+		fonts.clear();
 	}
 
 	void ResourceSystem::DeleteAllTextures()

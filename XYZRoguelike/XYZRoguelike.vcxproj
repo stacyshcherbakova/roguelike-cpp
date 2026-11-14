@@ -162,7 +162,6 @@
     <ClCompile Include="Arena.cpp" />
     <ClCompile Include="Boss.cpp" />
     <ClCompile Include="ChargeComponent.cpp" />
-    <ClCompile Include="DebugKeysComponent.cpp" />
     <ClCompile Include="Door.cpp" />
     <ClCompile Include="GameLevel.cpp" />
     <ClCompile Include="RoguelikeGame.cpp" />
@@ -170,15 +169,16 @@
     <ClCompile Include="Floor.cpp" />
     <ClCompile Include="Music.cpp" />
     <ClCompile Include="Wall.cpp" />
+    <ClCompile Include="Hud.cpp" />
     <ClCompile Include="Player.cpp" />
-    <ClCompile Include="PlayerCombatComponent.cpp" />
+    <ClCompile Include="PlayerControllerComponent.cpp" />
+    <ClCompile Include="Potion.cpp" />
     <ClCompile Include="GameMain.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Arena.h" />
     <ClInclude Include="Boss.h" />
     <ClInclude Include="ChargeComponent.h" />
-    <ClInclude Include="DebugKeysComponent.h" />
     <ClInclude Include="Door.h" />
     <ClInclude Include="GameLevel.h" />
     <ClInclude Include="LevelDefinition.h" />
@@ -189,8 +189,10 @@
     <ClInclude Include="Wall.h" />
     <ClInclude Include="GameSettings.h" />
     <ClInclude Include="Music.h" />
+    <ClInclude Include="Hud.h" />
     <ClInclude Include="Player.h" />
-    <ClInclude Include="PlayerCombatComponent.h" />
+    <ClInclude Include="PlayerControllerComponent.h" />
+    <ClInclude Include="Potion.h" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\XYZEngine\XYZEngine.vcxproj">
