@@ -1,5 +1,6 @@
 #pragma once
 
+#include <functional>
 #include "Entity.h"
 #include "Vector.h"
 
@@ -9,6 +10,6 @@ namespace XYZRoguelike
 	class Enemy : public Entity
 	{
 	public:
-		Enemy(const XYZEngine::Vector2Df& position, XYZEngine::GameObject* player);
+		Enemy(const XYZEngine::Vector2Df& position, XYZEngine::GameObject* player, std::function<void()> onDeath = nullptr);
 	};
 }

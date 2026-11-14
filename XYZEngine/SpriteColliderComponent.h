@@ -20,6 +20,7 @@ namespace XYZEngine
 		static void SetDrawBounds(bool draw);
 
 	private:
+		SpriteRendererComponent* renderer = nullptr;
 		const sf::Sprite* sprite = nullptr;
 		static bool drawBounds;
 	};

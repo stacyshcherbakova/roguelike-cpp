@@ -15,8 +15,10 @@ namespace XYZRoguelike
 		const std::string RESOURCES_PATH = "Resources/";
 #ifdef NDEBUG
 		const bool DRAW_COLLIDERS = false;
+		const bool DEBUG_KEYS = false;
 #else
 		const bool DRAW_COLLIDERS = true;
+		const bool DEBUG_KEYS = true;
 #endif
 
 		// Player
@@ -49,10 +51,9 @@ namespace XYZRoguelike
 		const int TILE_SIZE = 128;
 		const std::string FLOOR_TEXTURE_MAP = "level_floors";
 		const std::string WALL_TEXTURE_MAP = "level_walls";
-		const int FLOOR_TILE = 0;
-		const int WALL_TILE = 14;
-		const int ARENA_WIDTH = 14;
-		const int ARENA_HEIGHT = 10;
+		const std::string DOOR_OBJECT_NAME = "Door";
+		const std::string DOOR_CLOSED_TEXTURE = "door_closed";
+		const std::string DOOR_OPEN_TEXTURE = "door_open";
 
 		// Audio
 		const std::string MUSIC_NAME = "theme";

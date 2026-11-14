@@ -28,13 +28,22 @@ namespace XYZEngine
 	{
 		if (sprite != nullptr)
 		{
-			sprite->setPosition(Convert<sf::Vector2f, Vector2Df>(transform->GetWorldPosition()));
-			sprite->setRotation(transform->GetWorldRotation());
-
-			auto transformScale = Convert<sf::Vector2f, Vector2Df>(transform->GetWorldScale());
-			sprite->setScale({ scale.x * transformScale.x, scale.y * transformScale.y });
+			SyncWithTransform();
 			RenderSystem::Instance()->Render(*sprite);
 		}
+	}
+
+	void SpriteRendererComponent::SyncWithTransform()
+	{
+		if (sprite == nullptr)
+		{
+			return;
+		}
+		sprite->setPosition(Convert<sf::Vector2f, Vector2Df>(transform->GetWorldPosition()));
+		sprite->setRotation(transform->GetWorldRotation());
+
+		auto transformScale = Convert<sf::Vector2f, Vector2Df>(transform->GetWorldScale());
+		sprite->setScale({ scale.x * transformScale.x, scale.y * transformScale.y });
 	}
 
 	const sf::Sprite* SpriteRendererComponent::GetSprite() const

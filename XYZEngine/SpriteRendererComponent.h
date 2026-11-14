@@ -20,6 +20,9 @@ namespace XYZEngine
 		void SetTexture(const sf::Texture& newTexture);
 		void SetPixelSize(int newWidth, int newHeight);
 
+		// Moves the sprite to where the transform is right now; colliders call it before reading the bounds
+		void SyncWithTransform();
+
 		void FlipX(bool flip);
 		void FlipY(bool flip);
 	private:
