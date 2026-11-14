@@ -1,21 +1,21 @@
 #pragma once
 
-#include <iostream>
-#include <array>
+#include <memory>
 #include "Scene.h"
 #include "Player.h"
-
-using namespace XYZEngine;
+#include "Music.h"
 
 namespace XYZRoguelike
 {
-	class DeveloperLevel : public Scene
+	class DeveloperLevel : public XYZEngine::Scene
 	{
 	public:
 		void Start() override;
 		void Restart() override;
 		void Stop() override;
+
 	private:
-		std::shared_ptr<Player> player;
+		std::unique_ptr<Player> player;
+		std::unique_ptr<Music> music;
 	};
 }

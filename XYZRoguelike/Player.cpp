@@ -1,32 +1,43 @@
 #include "Player.h"
+#include "GameSettings.h"
+#include <CameraComponent.h>
+#include <InputComponent.h>
+#include <MovementComponent.h>
+#include <RenderSystem.h>
 #include <ResourceSystem.h>
+#include <RigidbodyComponent.h>
 #include <SpriteColliderComponent.h>
+#include <SpriteMovementAnimationComponent.h>
+#include <SpriteRendererComponent.h>
+
+using namespace XYZEngine;
 
 namespace XYZRoguelike
 {
-	Player::Player()
+	Player::Player(const Vector2Df& position)
 	{
-		gameObject = XYZEngine::GameWorld::Instance()->CreateGameObject("Player");
-		auto playerRenderer = gameObject->AddComponent<XYZEngine::SpriteRendererComponent>();
+		gameObject = GameWorld::Instance()->CreateGameObject("Player");
+		gameObject->GetComponent<TransformComponent>()->SetWorldPosition(position);
 
-		playerRenderer->SetTexture(*XYZEngine::ResourceSystem::Instance()->GetTextureShared("ball"));
-		playerRenderer->SetPixelSize(32, 32);
+		auto renderer = gameObject->AddComponent<SpriteRendererComponent>();
+		renderer->SetTexture(*ResourceSystem::Instance()->GetTextureMapElementShared(Settings::PLAYER_TEXTURE_MAP, 0));
+		renderer->SetPixelSize(Settings::PLAYER_SIZE.x, Settings::PLAYER_SIZE.y);
 
-		auto playerCamera = gameObject->AddComponent<XYZEngine::CameraComponent>();
-		playerCamera->SetWindow(&XYZEngine::RenderSystem::Instance()->GetMainWindow());
-		playerCamera->SetBaseResolution(1280, 720);
+		auto camera = gameObject->AddComponent<CameraComponent>();
+		camera->SetWindow(&RenderSystem::Instance()->GetMainWindow());
+		camera->SetBaseResolution(Settings::SCREEN_WIDTH, Settings::SCREEN_HEIGHT);
 
-		auto playerInput = gameObject->AddComponent<XYZEngine::InputComponent>();
+		gameObject->AddComponent<InputComponent>();
 
-		auto transform = gameObject->GetComponent<XYZEngine::TransformComponent>();
+		auto movement = gameObject->AddComponent<MovementComponent>();
+		movement->SetSpeed(Settings::PLAYER_SPEED);
 
-		auto body = gameObject->AddComponent<XYZEngine::RigidbodyComponent>();
+		auto rigidbody = gameObject->AddComponent<RigidbodyComponent>();
+		rigidbody->SetKinematic(false);
 
-		auto collider = gameObject->AddComponent<XYZEngine::SpriteColliderComponent>();
-	}
+		gameObject->AddComponent<SpriteColliderComponent>();
 
-	XYZEngine::GameObject* Player::GetGameObject()
-	{
-		return gameObject;
+		auto animation = gameObject->AddComponent<SpriteMovementAnimationComponent>();
+		animation->Initialize(Settings::PLAYER_TEXTURE_MAP, Settings::PLAYER_ANIMATION_FPS);
 	}
 }

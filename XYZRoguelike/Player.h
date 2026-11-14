@@ -1,20 +1,13 @@
 #pragma once
 
-#include "CameraComponent.h"
-#include "GameWorld.h"
-#include "SpriteRendererComponent.h"
-#include "RenderSystem.h"
-#include "InputComponent.h"
-#include "GameObject.h"
+#include "Entity.h"
+#include "Vector.h"
 
 namespace XYZRoguelike
 {
-	class Player
+	class Player : public Entity
 	{
 	public:
-		Player();
-		XYZEngine::GameObject* GetGameObject();
-	private:
-		XYZEngine::GameObject* gameObject;
+		Player(const XYZEngine::Vector2Df& position);
 	};
 }
