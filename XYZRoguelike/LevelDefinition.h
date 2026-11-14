@@ -13,5 +13,7 @@ namespace XYZRoguelike
 		int enemyCount = 3;
 		int floorTile = 0;
 		int wallTile = 14;
+		// Boss health relative to the base value; 0 means the level has no boss
+		float bossHealthScale = 1.f;
 	};
 }

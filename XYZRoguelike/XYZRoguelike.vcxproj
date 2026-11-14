@@ -160,6 +160,8 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Arena.cpp" />
+    <ClCompile Include="Boss.cpp" />
+    <ClCompile Include="ChargeComponent.cpp" />
     <ClCompile Include="DebugKeysComponent.cpp" />
     <ClCompile Include="Door.cpp" />
     <ClCompile Include="GameLevel.cpp" />
@@ -174,6 +176,8 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Arena.h" />
+    <ClInclude Include="Boss.h" />
+    <ClInclude Include="ChargeComponent.h" />
     <ClInclude Include="DebugKeysComponent.h" />
     <ClInclude Include="Door.h" />
     <ClInclude Include="GameLevel.h" />
