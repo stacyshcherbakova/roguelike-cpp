@@ -18,6 +18,8 @@ namespace XYZEngine
 
 		// True only on the frame the attack key went down
 		bool IsAttackPressed() const;
+		// True only on the frame the use-item key went down
+		bool IsUsePressed() const;
 
 	private:
 		float horizontalAxis = 0.f;
@@ -25,5 +27,7 @@ namespace XYZEngine
 
 		bool attackHeld = false;
 		bool attackPressed = false;
+		bool useHeld = false;
+		bool usePressed = false;
 	};
 }

@@ -1,970 +1,639 @@
-12:45:32.416 [INFO] === XYZRoguelike started ===
-12:45:32.603 [INFO] Main window set: 1280x720
-12:45:32.607 [INFO] Texture map 'player' loaded from Resources/TextureMaps/Player.png (9 elements)
-12:45:32.629 [INFO] Texture map 'level_floors' loaded from Resources/TextureMaps/Floor.png (49 elements)
-12:45:32.662 [INFO] Texture map 'level_walls' loaded from Resources/TextureMaps/Wall.png (48 elements)
-12:45:32.663 [INFO] Texture 'enemy' loaded from Resources/Textures/Enemy.png
-12:45:32.663 [INFO] Texture 'boss' loaded from Resources/Textures/Boss.png
-12:45:32.663 [INFO] Texture 'door_closed' loaded from Resources/Textures/DoorClosed.png
-12:45:32.664 [INFO] Texture 'door_open' loaded from Resources/Textures/DoorOpen.png
-12:45:32.664 [INFO] Music 'theme' registered at Resources/Music/theme.wav
-12:45:32.694 [INFO] Sound 'hit' loaded from Resources/Sounds/AppleEat.wav
-12:45:32.695 [INFO] Sound 'death' loaded from Resources/Sounds/Death.wav
-12:45:32.696 [ERROR] Failed to load texture 'decor' from Resources/Textures/Decor.png
-12:45:32.696 [INFO] Starting level 'Cellar' (12x9, 3 enemies)
-12:45:32.696 [INFO] Building an arena of 12x9 tiles with 1 openings
-12:45:32.696 [DEBUG] Game object created: 'Floor' (1 in the world)
-12:45:32.696 [DEBUG] Game object created: 'Floor' (2 in the world)
-12:45:32.696 [DEBUG] Game object created: 'Floor' (3 in the world)
-12:45:32.696 [DEBUG] Game object created: 'Floor' (4 in the world)
-12:45:32.696 [DEBUG] Game object created: 'Floor' (5 in the world)
-12:45:32.696 [DEBUG] Game object created: 'Floor' (6 in the world)
-12:45:32.696 [DEBUG] Game object created: 'Floor' (7 in the world)
-12:45:32.696 [DEBUG] Game object created: 'Floor' (8 in the world)
-12:45:32.696 [DEBUG] Game object created: 'Floor' (9 in the world)
-12:45:32.696 [DEBUG] Game object created: 'Floor' (10 in the world)
-12:45:32.696 [DEBUG] Game object created: 'Floor' (11 in the world)
-12:45:32.696 [DEBUG] Game object created: 'Floor' (12 in the world)
-12:45:32.696 [DEBUG] Game object created: 'Floor' (13 in the world)
-12:45:32.697 [DEBUG] Game object created: 'Floor' (14 in the world)
-12:45:32.697 [DEBUG] Game object created: 'Floor' (15 in the world)
-12:45:32.697 [DEBUG] Game object created: 'Floor' (16 in the world)
-12:45:32.697 [DEBUG] Game object created: 'Floor' (17 in the world)
-12:45:32.697 [DEBUG] Game object created: 'Floor' (18 in the world)
-12:45:32.697 [DEBUG] Game object created: 'Floor' (19 in the world)
-12:45:32.697 [DEBUG] Game object created: 'Floor' (20 in the world)
-12:45:32.697 [DEBUG] Game object created: 'Floor' (21 in the world)
-12:45:32.697 [DEBUG] Game object created: 'Floor' (22 in the world)
-12:45:32.697 [DEBUG] Game object created: 'Floor' (23 in the world)
-12:45:32.697 [DEBUG] Game object created: 'Floor' (24 in the world)
-12:45:32.697 [DEBUG] Game object created: 'Floor' (25 in the world)
-12:45:32.697 [DEBUG] Game object created: 'Floor' (26 in the world)
-12:45:32.697 [DEBUG] Game object created: 'Floor' (27 in the world)
-12:45:32.697 [DEBUG] Game object created: 'Floor' (28 in the world)
-12:45:32.697 [DEBUG] Game object created: 'Floor' (29 in the world)
-12:45:32.697 [DEBUG] Game object created: 'Floor' (30 in the world)
-12:45:32.697 [DEBUG] Game object created: 'Floor' (31 in the world)
-12:45:32.697 [DEBUG] Game object created: 'Floor' (32 in the world)
-12:45:32.697 [DEBUG] Game object created: 'Floor' (33 in the world)
-12:45:32.698 [DEBUG] Game object created: 'Floor' (34 in the world)
-12:45:32.698 [DEBUG] Game object created: 'Floor' (35 in the world)
-12:45:32.698 [DEBUG] Game object created: 'Floor' (36 in the world)
-12:45:32.698 [DEBUG] Game object created: 'Floor' (37 in the world)
-12:45:32.698 [DEBUG] Game object created: 'Floor' (38 in the world)
-12:45:32.698 [DEBUG] Game object created: 'Floor' (39 in the world)
-12:45:32.698 [DEBUG] Game object created: 'Floor' (40 in the world)
-12:45:32.698 [DEBUG] Game object created: 'Floor' (41 in the world)
-12:45:32.698 [DEBUG] Game object created: 'Floor' (42 in the world)
-12:45:32.698 [DEBUG] Game object created: 'Floor' (43 in the world)
-12:45:32.698 [DEBUG] Game object created: 'Floor' (44 in the world)
-12:45:32.698 [DEBUG] Game object created: 'Floor' (45 in the world)
-12:45:32.698 [DEBUG] Game object created: 'Floor' (46 in the world)
-12:45:32.698 [DEBUG] Game object created: 'Floor' (47 in the world)
-12:45:32.698 [DEBUG] Game object created: 'Floor' (48 in the world)
-12:45:32.698 [DEBUG] Game object created: 'Floor' (49 in the world)
-12:45:32.699 [DEBUG] Game object created: 'Floor' (50 in the world)
-12:45:32.699 [DEBUG] Game object created: 'Floor' (51 in the world)
-12:45:32.699 [DEBUG] Game object created: 'Floor' (52 in the world)
-12:45:32.699 [DEBUG] Game object created: 'Floor' (53 in the world)
-12:45:32.699 [DEBUG] Game object created: 'Floor' (54 in the world)
-12:45:32.699 [DEBUG] Game object created: 'Floor' (55 in the world)
-12:45:32.699 [DEBUG] Game object created: 'Floor' (56 in the world)
-12:45:32.699 [DEBUG] Game object created: 'Floor' (57 in the world)
-12:45:32.699 [DEBUG] Game object created: 'Floor' (58 in the world)
-12:45:32.699 [DEBUG] Game object created: 'Floor' (59 in the world)
-12:45:32.699 [DEBUG] Game object created: 'Floor' (60 in the world)
-12:45:32.699 [DEBUG] Game object created: 'Floor' (61 in the world)
-12:45:32.699 [DEBUG] Game object created: 'Floor' (62 in the world)
-12:45:32.699 [DEBUG] Game object created: 'Floor' (63 in the world)
-12:45:32.699 [DEBUG] Game object created: 'Floor' (64 in the world)
-12:45:32.699 [DEBUG] Game object created: 'Floor' (65 in the world)
-12:45:32.699 [DEBUG] Game object created: 'Floor' (66 in the world)
-12:45:32.699 [DEBUG] Game object created: 'Floor' (67 in the world)
-12:45:32.700 [DEBUG] Game object created: 'Floor' (68 in the world)
-12:45:32.700 [DEBUG] Game object created: 'Floor' (69 in the world)
-12:45:32.700 [DEBUG] Game object created: 'Floor' (70 in the world)
-12:45:32.700 [DEBUG] Game object created: 'Floor' (71 in the world)
-12:45:32.700 [DEBUG] Game object created: 'Floor' (72 in the world)
-12:45:32.700 [DEBUG] Game object created: 'Floor' (73 in the world)
-12:45:32.700 [DEBUG] Game object created: 'Floor' (74 in the world)
-12:45:32.700 [DEBUG] Game object created: 'Floor' (75 in the world)
-12:45:32.700 [DEBUG] Game object created: 'Floor' (76 in the world)
-12:45:32.700 [DEBUG] Game object created: 'Floor' (77 in the world)
-12:45:32.700 [DEBUG] Game object created: 'Floor' (78 in the world)
-12:45:32.700 [DEBUG] Game object created: 'Floor' (79 in the world)
-12:45:32.700 [DEBUG] Game object created: 'Floor' (80 in the world)
-12:45:32.700 [DEBUG] Game object created: 'Floor' (81 in the world)
-12:45:32.700 [DEBUG] Game object created: 'Floor' (82 in the world)
-12:45:32.700 [DEBUG] Game object created: 'Floor' (83 in the world)
-12:45:32.701 [DEBUG] Game object created: 'Floor' (84 in the world)
-12:45:32.701 [DEBUG] Game object created: 'Floor' (85 in the world)
-12:45:32.701 [DEBUG] Game object created: 'Floor' (86 in the world)
-12:45:32.701 [DEBUG] Game object created: 'Floor' (87 in the world)
-12:45:32.701 [DEBUG] Game object created: 'Floor' (88 in the world)
-12:45:32.701 [DEBUG] Game object created: 'Floor' (89 in the world)
-12:45:32.701 [DEBUG] Game object created: 'Floor' (90 in the world)
-12:45:32.701 [DEBUG] Game object created: 'Floor' (91 in the world)
-12:45:32.701 [DEBUG] Game object created: 'Floor' (92 in the world)
-12:45:32.701 [DEBUG] Game object created: 'Floor' (93 in the world)
-12:45:32.701 [DEBUG] Game object created: 'Floor' (94 in the world)
-12:45:32.701 [DEBUG] Game object created: 'Floor' (95 in the world)
-12:45:32.701 [DEBUG] Game object created: 'Floor' (96 in the world)
-12:45:32.701 [DEBUG] Game object created: 'Floor' (97 in the world)
-12:45:32.701 [DEBUG] Game object created: 'Floor' (98 in the world)
-12:45:32.701 [DEBUG] Game object created: 'Floor' (99 in the world)
-12:45:32.701 [DEBUG] Game object created: 'Floor' (100 in the world)
-12:45:32.702 [DEBUG] Game object created: 'Floor' (101 in the world)
-12:45:32.702 [DEBUG] Game object created: 'Floor' (102 in the world)
-12:45:32.702 [DEBUG] Game object created: 'Floor' (103 in the world)
-12:45:32.702 [DEBUG] Game object created: 'Floor' (104 in the world)
-12:45:32.702 [DEBUG] Game object created: 'Floor' (105 in the world)
-12:45:32.702 [DEBUG] Game object created: 'Floor' (106 in the world)
-12:45:32.702 [DEBUG] Game object created: 'Floor' (107 in the world)
-12:45:32.702 [DEBUG] Game object created: 'Floor' (108 in the world)
-12:45:32.702 [DEBUG] Game object created: 'Wall' (109 in the world)
-12:45:32.702 [DEBUG] Collider subscribed: 'Wall'
-12:45:32.702 [DEBUG] Game object created: 'Wall' (110 in the world)
-12:45:32.702 [DEBUG] Collider subscribed: 'Wall'
-12:45:32.702 [DEBUG] Game object created: 'Wall' (111 in the world)
-12:45:32.702 [DEBUG] Collider subscribed: 'Wall'
-12:45:32.702 [DEBUG] Game object created: 'Wall' (112 in the world)
-12:45:32.702 [DEBUG] Collider subscribed: 'Wall'
-12:45:32.702 [DEBUG] Game object created: 'Wall' (113 in the world)
-12:45:32.702 [DEBUG] Collider subscribed: 'Wall'
-12:45:32.702 [DEBUG] Game object created: 'Wall' (114 in the world)
-12:45:32.703 [DEBUG] Collider subscribed: 'Wall'
-12:45:32.703 [DEBUG] Game object created: 'Wall' (115 in the world)
-12:45:32.703 [DEBUG] Collider subscribed: 'Wall'
-12:45:32.703 [DEBUG] Game object created: 'Wall' (116 in the world)
-12:45:32.703 [DEBUG] Collider subscribed: 'Wall'
-12:45:32.703 [DEBUG] Game object created: 'Wall' (117 in the world)
-12:45:32.703 [DEBUG] Collider subscribed: 'Wall'
-12:45:32.703 [DEBUG] Game object created: 'Wall' (118 in the world)
-12:45:32.703 [DEBUG] Collider subscribed: 'Wall'
-12:45:32.703 [DEBUG] Game object created: 'Wall' (119 in the world)
-12:45:32.703 [DEBUG] Collider subscribed: 'Wall'
-12:45:32.703 [DEBUG] Game object created: 'Wall' (120 in the world)
-12:45:32.703 [DEBUG] Collider subscribed: 'Wall'
-12:45:32.703 [DEBUG] Game object created: 'Wall' (121 in the world)
-12:45:32.703 [DEBUG] Collider subscribed: 'Wall'
-12:45:32.703 [DEBUG] Game object created: 'Wall' (122 in the world)
-12:45:32.703 [DEBUG] Collider subscribed: 'Wall'
-12:45:32.703 [DEBUG] Game object created: 'Wall' (123 in the world)
-12:45:32.703 [DEBUG] Collider subscribed: 'Wall'
-12:45:32.703 [DEBUG] Game object created: 'Wall' (124 in the world)
-12:45:32.704 [DEBUG] Collider subscribed: 'Wall'
-12:45:32.704 [DEBUG] Game object created: 'Wall' (125 in the world)
-12:45:32.704 [DEBUG] Collider subscribed: 'Wall'
-12:45:32.704 [DEBUG] Game object created: 'Wall' (126 in the world)
-12:45:32.704 [DEBUG] Collider subscribed: 'Wall'
-12:45:32.704 [DEBUG] Game object created: 'Wall' (127 in the world)
-12:45:32.704 [DEBUG] Collider subscribed: 'Wall'
-12:45:32.704 [DEBUG] Game object created: 'Wall' (128 in the world)
-12:45:32.704 [DEBUG] Collider subscribed: 'Wall'
-12:45:32.704 [DEBUG] Game object created: 'Wall' (129 in the world)
-12:45:32.704 [DEBUG] Collider subscribed: 'Wall'
-12:45:32.704 [DEBUG] Game object created: 'Wall' (130 in the world)
-12:45:32.704 [DEBUG] Collider subscribed: 'Wall'
-12:45:32.704 [DEBUG] Game object created: 'Wall' (131 in the world)
-12:45:32.704 [DEBUG] Collider subscribed: 'Wall'
-12:45:32.704 [DEBUG] Game object created: 'Wall' (132 in the world)
-12:45:32.704 [DEBUG] Collider subscribed: 'Wall'
-12:45:32.704 [DEBUG] Game object created: 'Wall' (133 in the world)
-12:45:32.704 [DEBUG] Collider subscribed: 'Wall'
-12:45:32.704 [DEBUG] Game object created: 'Wall' (134 in the world)
-12:45:32.704 [DEBUG] Collider subscribed: 'Wall'
-12:45:32.705 [DEBUG] Game object created: 'Wall' (135 in the world)
-12:45:32.705 [DEBUG] Collider subscribed: 'Wall'
-12:45:32.705 [DEBUG] Game object created: 'Wall' (136 in the world)
-12:45:32.705 [DEBUG] Collider subscribed: 'Wall'
-12:45:32.705 [DEBUG] Game object created: 'Wall' (137 in the world)
-12:45:32.705 [DEBUG] Collider subscribed: 'Wall'
-12:45:32.705 [DEBUG] Game object created: 'Wall' (138 in the world)
-12:45:32.705 [DEBUG] Collider subscribed: 'Wall'
-12:45:32.705 [DEBUG] Game object created: 'Wall' (139 in the world)
-12:45:32.705 [DEBUG] Collider subscribed: 'Wall'
-12:45:32.705 [DEBUG] Game object created: 'Wall' (140 in the world)
-12:45:32.705 [DEBUG] Collider subscribed: 'Wall'
-12:45:32.705 [DEBUG] Game object created: 'Wall' (141 in the world)
-12:45:32.705 [DEBUG] Collider subscribed: 'Wall'
-12:45:32.705 [DEBUG] Game object created: 'Wall' (142 in the world)
-12:45:32.706 [DEBUG] Collider subscribed: 'Wall'
-12:45:32.706 [DEBUG] Game object created: 'Wall' (143 in the world)
-12:45:32.706 [DEBUG] Collider subscribed: 'Wall'
-12:45:32.706 [DEBUG] Game object created: 'Wall' (144 in the world)
-12:45:32.706 [DEBUG] Collider subscribed: 'Wall'
-12:45:32.706 [DEBUG] Game object created: 'Wall' (145 in the world)
-12:45:32.706 [DEBUG] Collider subscribed: 'Wall'
-12:45:32.706 [DEBUG] Game object created: 'Wall' (146 in the world)
-12:45:32.706 [DEBUG] Collider subscribed: 'Wall'
-12:45:32.706 [DEBUG] Game object created: 'Wall' (147 in the world)
-12:45:32.706 [DEBUG] Collider subscribed: 'Wall'
-12:45:32.706 [DEBUG] Game object created: 'Wall' (148 in the world)
-12:45:32.706 [DEBUG] Collider subscribed: 'Wall'
-12:45:32.706 [DEBUG] Game object created: 'Wall' (149 in the world)
-12:45:32.706 [DEBUG] Collider subscribed: 'Wall'
-12:45:32.706 [DEBUG] Game object created: 'Wall' (150 in the world)
-12:45:32.707 [DEBUG] Collider subscribed: 'Wall'
-12:45:32.707 [DEBUG] Game object created: 'Wall' (151 in the world)
-12:45:32.707 [DEBUG] Collider subscribed: 'Wall'
-12:45:32.707 [DEBUG] Game object created: 'Wall' (152 in the world)
-12:45:32.707 [DEBUG] Collider subscribed: 'Wall'
-12:45:32.707 [DEBUG] Game object created: 'Wall' (153 in the world)
-12:45:32.707 [DEBUG] Collider subscribed: 'Wall'
-12:45:32.707 [DEBUG] Game object created: 'Door' (154 in the world)
-12:45:32.707 [DEBUG] Collider subscribed: 'Door'
-12:45:32.707 [DEBUG] Game object created: 'Player' (155 in the world)
-12:45:32.707 [DEBUG] Collider subscribed: 'Player'
-12:45:32.707 [INFO] Player created at 128, 512 with 100 health and 5 armour
-12:45:32.707 [DEBUG] Game object created: 'Enemy' (156 in the world)
-12:45:32.707 [DEBUG] Collider subscribed: 'Enemy'
-12:45:32.708 [INFO] Enemy created at 1280, 128
-12:45:32.708 [DEBUG] Game object created: 'Enemy' (157 in the world)
-12:45:32.708 [DEBUG] Collider subscribed: 'Enemy'
-12:45:32.708 [INFO] Enemy created at 1408, 896
-12:45:32.708 [DEBUG] Game object created: 'Enemy' (158 in the world)
-12:45:32.708 [DEBUG] Collider subscribed: 'Enemy'
-12:45:32.708 [INFO] Enemy created at 640, 1024
-12:45:32.708 [DEBUG] Game object created: 'Boss' (159 in the world)
-12:45:32.708 [DEBUG] Collider subscribed: 'Boss'
-12:45:32.708 [INFO] Boss created at 1280, 512 with 120 health
-12:45:32.708 [DEBUG] Game object created: 'Music: theme' (160 in the world)
-12:45:32.708 [INFO] Level 1 of 3 is running
-12:45:32.708 [INFO] Engine created, random seed 1794660332
-12:45:32.709 [INFO] Main loop started
-12:45:35.232 [INFO] 'Boss' charges at 'Player' from 649 px
-12:45:35.578 [INFO] 'Boss' attacks 'Player' for 22
-12:45:35.582 [INFO] 'Player' takes 17 damage from Boss (22 minus 5 armour), health 83/100
-12:45:35.610 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:35.611 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:35.629 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:35.632 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:35.650 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:35.653 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:35.669 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:35.669 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:35.690 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:35.690 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:35.710 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:35.710 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:35.730 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:35.733 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:35.809 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:35.811 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:35.829 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:35.833 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:35.850 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:35.850 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:35.869 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:35.870 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:35.889 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:35.892 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:35.909 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:35.913 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:35.929 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:35.932 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:35.949 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:35.950 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:35.970 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:35.975 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:35.989 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:35.991 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:36.009 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:36.011 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:36.029 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:36.030 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:36.050 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:36.054 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:36.089 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:36.091 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:36.109 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:36.111 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:36.129 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:36.132 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:36.150 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:36.154 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:36.170 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:36.172 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:36.189 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:36.194 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:36.210 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:36.211 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:36.230 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:36.232 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:36.250 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:36.253 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:36.270 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:36.270 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:36.289 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:36.289 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:36.309 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:36.311 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:36.330 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:36.330 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:36.350 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:36.350 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:36.370 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:36.371 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:36.390 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:36.391 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:36.409 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:36.410 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:36.430 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:36.431 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:36.450 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:36.453 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:36.469 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:36.472 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:36.489 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:36.492 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:36.510 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:36.513 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:36.530 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:36.533 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:36.550 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:36.554 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:36.569 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:36.570 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:36.590 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:36.594 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:36.610 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:36.611 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:36.629 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:36.630 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:36.650 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:36.653 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:36.669 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:36.670 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:36.689 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:36.690 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:36.710 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:36.711 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:36.730 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:36.730 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:36.749 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:36.749 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:36.770 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:36.772 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:36.790 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:36.792 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:36.809 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:36.811 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:36.829 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:36.834 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:36.849 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:36.850 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:36.869 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:36.872 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:36.889 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:36.892 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:36.909 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:36.913 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:36.930 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:36.932 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:36.949 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:36.951 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:36.970 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:36.972 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:36.979 [INFO] 'Boss' attacks 'Player' for 22
-12:45:36.983 [INFO] 'Player' takes 17 damage from Boss (22 minus 5 armour), health 66/100
-12:45:36.989 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:36.991 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:37.010 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:37.011 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:37.030 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:37.033 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:37.049 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:37.050 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:37.070 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:37.071 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:37.089 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:37.093 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:37.109 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:37.111 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:37.129 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:37.131 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:37.150 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:37.154 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:37.169 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:37.172 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:37.189 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:37.189 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:37.210 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:37.210 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:37.229 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:37.233 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:37.250 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:37.256 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:37.270 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:37.271 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:37.290 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:37.290 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:37.329 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:37.332 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:37.349 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:37.350 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:37.370 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:37.373 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:37.390 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:37.393 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:37.409 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:37.409 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:37.430 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:37.433 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:37.450 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:37.455 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:37.470 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:37.473 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:37.489 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:37.490 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:37.510 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:37.511 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:37.529 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:37.532 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:37.550 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:37.552 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:37.570 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:37.571 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:37.589 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:37.589 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:37.609 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:37.611 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:37.629 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:37.630 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:37.650 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:37.654 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:37.669 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:37.672 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:37.690 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:37.690 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:37.710 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:37.711 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:37.729 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:37.733 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:37.750 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:37.751 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:37.769 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:37.770 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:37.789 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:37.790 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:37.810 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:37.810 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:37.829 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:37.833 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:37.850 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:37.852 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:37.870 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:37.870 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:37.889 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:37.894 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:37.909 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:37.911 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:37.929 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:37.932 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:37.949 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:37.951 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:37.970 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:37.972 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:38.010 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:38.011 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:38.049 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:38.050 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:38.069 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:38.072 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:38.089 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:38.093 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:38.109 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:38.113 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:38.129 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:38.130 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:38.150 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:38.155 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:38.169 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:38.172 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:38.189 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:38.193 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:38.209 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:38.211 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:38.229 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:38.232 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:38.249 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:38.254 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:38.270 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:38.271 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:38.290 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:38.293 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:38.309 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:38.311 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:38.330 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:38.331 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:38.350 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:38.350 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:38.369 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:38.371 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:38.380 [INFO] 'Boss' attacks 'Player' for 22
-12:45:38.381 [INFO] 'Player' takes 17 damage from Boss (22 minus 5 armour), health 49/100
-12:45:38.390 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:38.393 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:38.410 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:38.412 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:38.430 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:38.431 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:38.450 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:38.450 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:38.469 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:38.471 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:38.489 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:38.490 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:38.509 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:38.509 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:38.529 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:38.533 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:38.549 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:38.550 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:38.570 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:38.571 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:38.590 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:38.595 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:38.609 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:38.611 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:38.630 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:38.633 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:38.650 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:38.653 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:38.670 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:38.675 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:38.689 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:38.691 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:38.710 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:38.715 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:38.730 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:38.730 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:38.750 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:38.754 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:38.769 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:38.771 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:38.790 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:38.792 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:38.810 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:38.811 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:38.829 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:38.832 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:38.849 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:38.850 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:38.869 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:38.869 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:38.889 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:38.893 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:38.909 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:38.911 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:38.929 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:38.930 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:38.950 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:38.953 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:38.970 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:38.972 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:38.990 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:38.990 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:39.010 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:39.011 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:39.030 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:39.033 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:39.049 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:39.050 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:39.070 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:39.072 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:39.090 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:39.093 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:39.109 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:39.111 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:39.130 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:39.130 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:39.149 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:39.150 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:39.169 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:39.169 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:39.189 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:39.189 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:39.209 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:39.213 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:39.229 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:39.232 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:39.249 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:39.250 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:39.269 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:39.270 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:39.290 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:39.292 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:39.309 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:39.311 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:39.330 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:39.332 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:39.350 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:39.351 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:39.369 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:39.372 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:39.390 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:39.393 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:39.409 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:39.411 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:39.429 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:39.430 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:39.450 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:39.450 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:39.470 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:39.470 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:39.490 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:39.490 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:39.509 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:39.509 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:39.529 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:39.529 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:39.549 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:39.549 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:39.570 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:39.570 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:39.589 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:39.594 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:39.609 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:39.611 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:39.629 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:39.630 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:39.650 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:39.651 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:39.670 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:39.672 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:39.690 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:39.693 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:39.710 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:39.710 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:39.729 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:39.732 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:39.739 [INFO] 'Boss' charges at 'Player' from 112 px
-12:45:39.750 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:39.750 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:39.770 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:39.772 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:39.782 [INFO] 'Boss' attacks 'Player' for 22
-12:45:39.783 [INFO] 'Player' takes 17 damage from Boss (22 minus 5 armour), health 32/100
-12:45:39.789 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:39.790 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:39.810 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:39.811 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:39.829 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:39.832 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:39.849 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:39.850 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:39.869 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:39.872 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:39.889 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:39.889 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:39.910 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:39.914 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:39.929 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:39.930 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:39.949 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:39.950 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:39.970 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:39.972 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:39.990 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:39.992 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:40.010 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:40.013 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:40.030 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:40.033 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:40.050 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:40.051 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:40.069 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:40.069 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:40.089 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:40.090 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:40.109 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:40.110 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:40.129 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:40.130 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:40.150 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:40.150 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:40.170 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:40.173 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:40.190 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:40.193 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:40.210 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:40.210 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:40.229 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:40.233 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:40.250 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:40.250 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:40.329 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:40.333 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:40.350 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:40.350 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:40.370 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:40.372 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:40.389 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:40.391 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:40.410 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:40.412 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:40.430 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:40.431 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:40.449 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:40.450 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:40.470 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:40.472 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:40.490 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:40.491 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:40.509 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:40.511 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:40.530 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:40.532 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:40.549 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:40.552 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:40.569 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:40.572 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:40.589 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:40.591 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:40.609 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:40.611 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:40.629 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:40.631 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:40.650 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:40.650 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:40.669 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:40.672 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:40.689 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:40.691 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:40.709 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:40.711 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:40.730 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:40.733 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:40.749 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:40.752 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:40.770 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:40.771 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:40.790 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:40.793 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:40.810 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:40.811 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:40.830 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:40.832 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:40.850 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:40.850 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:40.870 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:40.872 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:40.889 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:40.893 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:40.910 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:40.912 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:40.930 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:40.931 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:40.950 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:40.954 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:40.970 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:40.971 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:40.989 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:40.989 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:41.010 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:41.010 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:41.029 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:41.032 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:41.049 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:41.050 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:41.069 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:41.071 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:41.090 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:41.093 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:41.129 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:41.133 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:41.150 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:41.150 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:41.169 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:41.171 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:41.183 [INFO] 'Boss' attacks 'Player' for 22
-12:45:41.183 [INFO] 'Player' takes 17 damage from Boss (22 minus 5 armour), health 15/100
-12:45:41.184 [WARNING] 'Player' is almost dead: 15/100
-12:45:41.189 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:41.189 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:41.209 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:41.211 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:41.229 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:41.230 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:41.250 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:41.253 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:41.269 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:41.270 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:41.290 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:41.292 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:41.330 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:41.333 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:41.350 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:41.354 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:41.369 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:41.372 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:41.390 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:41.391 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:41.410 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:41.411 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:41.429 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:41.430 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:41.449 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:41.452 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:41.469 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:41.472 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:41.489 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:41.493 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:41.509 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:41.512 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:41.530 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:41.530 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:41.549 [DEBUG] Collision: 'Player' pushed out of 'Wall'
-12:45:41.570 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:41.571 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:41.589 [DEBUG] Collision: 'Player' pushed out of 'Wall'
-12:45:41.610 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:41.610 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:41.629 [DEBUG] Collision: 'Player' pushed out of 'Wall'
-12:45:41.650 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:41.651 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:41.670 [DEBUG] Collision: 'Player' pushed out of 'Wall'
-12:45:41.689 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:41.689 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:41.710 [DEBUG] Collision: 'Player' pushed out of 'Wall'
-12:45:41.730 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:41.732 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:41.750 [DEBUG] Collision: 'Player' pushed out of 'Wall'
-12:45:41.770 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:41.776 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:41.789 [DEBUG] Collision: 'Player' pushed out of 'Wall'
-12:45:41.809 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:41.814 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:41.829 [DEBUG] Collision: 'Player' pushed out of 'Wall'
-12:45:41.849 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:41.850 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:41.870 [DEBUG] Collision: 'Player' pushed out of 'Wall'
-12:45:41.889 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:41.891 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:41.909 [DEBUG] Collision: 'Player' pushed out of 'Wall'
-12:45:41.930 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:41.930 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:41.950 [DEBUG] Collision: 'Player' pushed out of 'Wall'
-12:45:41.970 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:41.970 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:41.989 [DEBUG] Collision: 'Player' pushed out of 'Wall'
-12:45:42.010 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:42.013 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:42.030 [DEBUG] Collision: 'Player' pushed out of 'Wall'
-12:45:42.049 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:42.049 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:42.070 [DEBUG] Collision: 'Player' pushed out of 'Wall'
-12:45:42.090 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:42.094 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:42.109 [DEBUG] Collision: 'Player' pushed out of 'Wall'
-12:45:42.129 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:42.132 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:42.149 [DEBUG] Collision: 'Player' pushed out of 'Wall'
-12:45:42.170 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:42.172 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:42.189 [DEBUG] Collision: 'Player' pushed out of 'Wall'
-12:45:42.209 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:42.211 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:42.229 [DEBUG] Collision: 'Player' pushed out of 'Wall'
-12:45:42.250 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:42.250 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:42.270 [DEBUG] Collision: 'Player' pushed out of 'Wall'
-12:45:42.289 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:42.292 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:42.309 [DEBUG] Collision: 'Player' pushed out of 'Wall'
-12:45:42.329 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:42.332 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:42.350 [DEBUG] Collision: 'Player' pushed out of 'Wall'
-12:45:42.369 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:42.372 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:42.389 [DEBUG] Collision: 'Player' pushed out of 'Wall'
-12:45:42.410 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:42.410 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:42.429 [DEBUG] Collision: 'Player' pushed out of 'Wall'
-12:45:42.450 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:42.450 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:42.469 [DEBUG] Collision: 'Player' pushed out of 'Wall'
-12:45:42.489 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:42.492 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:42.510 [DEBUG] Collision: 'Player' pushed out of 'Wall'
-12:45:42.530 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:42.533 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:42.550 [DEBUG] Collision: 'Player' pushed out of 'Wall'
-12:45:42.569 [DEBUG] Collision: 'Player' pushed out of 'Boss'
-12:45:42.572 [DEBUG] Collision: 'Boss' pushed out of 'Player'
-12:45:42.584 [INFO] 'Boss' attacks 'Player' for 22
-12:45:42.588 [INFO] 'Player' takes 17 damage from Boss (22 minus 5 armour), health 0/100
-12:45:42.589 [INFO] 'Player' died
-12:45:42.591 [WARNING] The player is dead
-12:45:42.591 [WARNING] Level 'Cellar' restarts because the player died
-12:45:42.593 [INFO] Restarting level 'Cellar'
-12:45:42.593 [INFO] Clearing the world: 160 game objects
-12:45:42.593 [DEBUG] Game object destroyed: 'Music: theme'
-12:45:42.603 [DEBUG] Game object destroyed: 'Boss'
-12:45:42.607 [DEBUG] Game object destroyed: 'Enemy'
-12:45:42.607 [DEBUG] Game object destroyed: 'Enemy'
-12:45:42.607 [DEBUG] Game object destroyed: 'Enemy'
-12:45:42.611 [DEBUG] Game object destroyed: 'Player'
-12:45:42.615 [DEBUG] Game object destroyed: 'Door'
-12:45:42.619 [DEBUG] Game object destroyed: 'Wall'
-12:45:42.622 [DEBUG] Game object destroyed: 'Wall'
-12:45:42.623 [DEBUG] Game object destroyed: 'Wall'
-12:45:42.627 [DEBUG] Game object destroyed: 'Wall'
-12:45:42.627 [DEBUG] Game object destroyed: 'Wall'
-12:45:42.631 [DEBUG] Game object destroyed: 'Wall'
-12:45:42.633 [DEBUG] Game object destroyed: 'Wall'
-12:45:42.634 [DEBUG] Game object destroyed: 'Wall'
-12:45:42.637 [DEBUG] Game object destroyed: 'Wall'
-12:45:42.639 [DEBUG] Game object destroyed: 'Wall'
-12:45:42.640 [DEBUG] Game object destroyed: 'Wall'
-12:45:42.640 [DEBUG] Game object destroyed: 'Wall'
-12:45:42.640 [DEBUG] Game object destroyed: 'Wall'
-12:45:42.642 [DEBUG] Game object destroyed: 'Wall'
-12:45:42.644 [DEBUG] Game object destroyed: 'Wall'
-12:45:42.648 [DEBUG] Game object destroyed: 'Wall'
-12:45:42.650 [DEBUG] Game object destroyed: 'Wall'
-12:45:42.653 [DEBUG] Game object destroyed: 'Wall'
-12:45:42.655 [DEBUG] Game object destroyed: 'Wall'
-12:45:42.657 [DEBUG] Game object destroyed: 'Wall'
-12:45:42.661 [DEBUG] Game object destroyed: 'Wall'
-12:45:42.665 [DEBUG] Game object destroyed: 'Wall'
-12:45:42.666 [DEBUG] Game object destroyed: 'Wall'
-12:45:42.668 [DEBUG] Game object destroyed: 'Wall'
-12:45:42.671 [DEBUG] Game object destroyed: 'Wall'
-12:45:42.671 [DEBUG] Game object destroyed: 'Wall'
-12:45:42.672 [DEBUG] Game object destroyed: 'Wall'
-12:45:42.675 [DEBUG] Game object destroyed: 'Wall'
-12:45:42.677 [DEBUG] Game object destroyed: 'Wall'
-12:45:42.678 [DEBUG] Game object destroyed: 'Wall'
-12:45:42.683 [DEBUG] Game object destroyed: 'Wall'
-12:45:42.683 [DEBUG] Game object destroyed: 'Wall'
-12:45:42.683 [DEBUG] Game object destroyed: 'Wall'
-12:45:42.686 [DEBUG] Game object destroyed: 'Wall'
-12:45:42.687 [DEBUG] Game object destroyed: 'Wall'
-12:45:42.688 [DEBUG] Game object destroyed: 'Wall'
-12:45:42.690 [DEBUG] Game object destroyed: 'Wall'
-12:45:42.694 [DEBUG] Game object destroyed: 'Wall'
-12:45:42.694 [DEBUG] Game object destroyed: 'Wall'
-12:45:42.694 [DEBUG] Game object destroyed: 'Wall'
-12:45:42.700 [DEBUG] Game object destroyed: 'Wall'
-12:45:42.702 [DEBUG] Game object destroyed: 'Wall'
-12:45:42.702 [DEBUG] Game object destroyed: 'Wall'
-12:45:42.702 [DEBUG] Game object destroyed: 'Wall'
-12:45:42.704 [DEBUG] Game object destroyed: 'Wall'
-12:45:42.704 [DEBUG] Game object destroyed: 'Floor'
-12:45:42.711 [DEBUG] Game object destroyed: 'Floor'
-12:45:42.711 [DEBUG] Game object destroyed: 'Floor'
-12:45:42.716 [DEBUG] Game object destroyed: 'Floor'
-12:45:42.721 [DEBUG] Game object destroyed: 'Floor'
-12:45:42.722 [DEBUG] Game object destroyed: 'Floor'
-12:45:42.722 [DEBUG] Game object destroyed: 'Floor'
-12:45:42.724 [DEBUG] Game object destroyed: 'Floor'
-12:45:42.727 [DEBUG] Game object destroyed: 'Floor'
-12:45:42.730 [DEBUG] Game object destroyed: 'Floor'
-12:45:42.730 [DEBUG] Game object destroyed: 'Floor'
-12:45:42.733 [DEBUG] Game object destroyed: 'Floor'
-12:45:42.733 [DEBUG] Game object destroyed: 'Floor'
-12:45:42.737 [DEBUG] Game object destroyed: 'Floor'
-12:45:42.738 [DEBUG] Game object destroyed: 'Floor'
-12:45:42.739 [DEBUG] Game object destroyed: 'Floor'
+12:50:50.517 [INFO] === XYZRoguelike started ===
+12:50:50.695 [INFO] Main window set: 1280x720
+12:50:50.700 [INFO] Texture map 'player' loaded from Resources/TextureMaps/Player.png (9 elements)
+12:50:50.722 [INFO] Texture map 'level_floors' loaded from Resources/TextureMaps/Floor.png (49 elements)
+12:50:50.755 [INFO] Texture map 'level_walls' loaded from Resources/TextureMaps/Wall.png (48 elements)
+12:50:50.755 [INFO] Texture 'enemy' loaded from Resources/Textures/Enemy.png
+12:50:50.756 [INFO] Texture 'boss' loaded from Resources/Textures/Boss.png
+12:50:50.756 [INFO] Texture 'potion' loaded from Resources/Textures/Potion.png
+12:50:50.756 [INFO] Font 'main' loaded from Resources/Fonts/Roboto-Regular.ttf
+12:50:50.756 [INFO] Texture 'door_closed' loaded from Resources/Textures/DoorClosed.png
+12:50:50.757 [INFO] Texture 'door_open' loaded from Resources/Textures/DoorOpen.png
+12:50:50.757 [INFO] Music 'theme' registered at Resources/Music/theme.wav
+12:50:50.784 [INFO] Sound 'hit' loaded from Resources/Sounds/AppleEat.wav
+12:50:50.785 [INFO] Sound 'death' loaded from Resources/Sounds/Death.wav
+12:50:50.785 [ERROR] Failed to load texture 'decor' from Resources/Textures/Decor.png
+12:50:50.785 [INFO] Starting level 'Cellar' (12x9, 3 enemies)
+12:50:50.785 [INFO] Building an arena of 12x9 tiles with 1 openings
+12:50:50.785 [DEBUG] Game object created: 'Floor' (1 in the world)
+12:50:50.785 [DEBUG] Game object created: 'Floor' (2 in the world)
+12:50:50.785 [DEBUG] Game object created: 'Floor' (3 in the world)
+12:50:50.785 [DEBUG] Game object created: 'Floor' (4 in the world)
+12:50:50.785 [DEBUG] Game object created: 'Floor' (5 in the world)
+12:50:50.785 [DEBUG] Game object created: 'Floor' (6 in the world)
+12:50:50.785 [DEBUG] Game object created: 'Floor' (7 in the world)
+12:50:50.785 [DEBUG] Game object created: 'Floor' (8 in the world)
+12:50:50.785 [DEBUG] Game object created: 'Floor' (9 in the world)
+12:50:50.786 [DEBUG] Game object created: 'Floor' (10 in the world)
+12:50:50.786 [DEBUG] Game object created: 'Floor' (11 in the world)
+12:50:50.786 [DEBUG] Game object created: 'Floor' (12 in the world)
+12:50:50.786 [DEBUG] Game object created: 'Floor' (13 in the world)
+12:50:50.786 [DEBUG] Game object created: 'Floor' (14 in the world)
+12:50:50.786 [DEBUG] Game object created: 'Floor' (15 in the world)
+12:50:50.786 [DEBUG] Game object created: 'Floor' (16 in the world)
+12:50:50.786 [DEBUG] Game object created: 'Floor' (17 in the world)
+12:50:50.786 [DEBUG] Game object created: 'Floor' (18 in the world)
+12:50:50.786 [DEBUG] Game object created: 'Floor' (19 in the world)
+12:50:50.786 [DEBUG] Game object created: 'Floor' (20 in the world)
+12:50:50.786 [DEBUG] Game object created: 'Floor' (21 in the world)
+12:50:50.786 [DEBUG] Game object created: 'Floor' (22 in the world)
+12:50:50.786 [DEBUG] Game object created: 'Floor' (23 in the world)
+12:50:50.786 [DEBUG] Game object created: 'Floor' (24 in the world)
+12:50:50.786 [DEBUG] Game object created: 'Floor' (25 in the world)
+12:50:50.786 [DEBUG] Game object created: 'Floor' (26 in the world)
+12:50:50.787 [DEBUG] Game object created: 'Floor' (27 in the world)
+12:50:50.787 [DEBUG] Game object created: 'Floor' (28 in the world)
+12:50:50.787 [DEBUG] Game object created: 'Floor' (29 in the world)
+12:50:50.787 [DEBUG] Game object created: 'Floor' (30 in the world)
+12:50:50.787 [DEBUG] Game object created: 'Floor' (31 in the world)
+12:50:50.787 [DEBUG] Game object created: 'Floor' (32 in the world)
+12:50:50.787 [DEBUG] Game object created: 'Floor' (33 in the world)
+12:50:50.787 [DEBUG] Game object created: 'Floor' (34 in the world)
+12:50:50.787 [DEBUG] Game object created: 'Floor' (35 in the world)
+12:50:50.787 [DEBUG] Game object created: 'Floor' (36 in the world)
+12:50:50.787 [DEBUG] Game object created: 'Floor' (37 in the world)
+12:50:50.787 [DEBUG] Game object created: 'Floor' (38 in the world)
+12:50:50.787 [DEBUG] Game object created: 'Floor' (39 in the world)
+12:50:50.787 [DEBUG] Game object created: 'Floor' (40 in the world)
+12:50:50.788 [DEBUG] Game object created: 'Floor' (41 in the world)
+12:50:50.788 [DEBUG] Game object created: 'Floor' (42 in the world)
+12:50:50.788 [DEBUG] Game object created: 'Floor' (43 in the world)
+12:50:50.788 [DEBUG] Game object created: 'Floor' (44 in the world)
+12:50:50.788 [DEBUG] Game object created: 'Floor' (45 in the world)
+12:50:50.788 [DEBUG] Game object created: 'Floor' (46 in the world)
+12:50:50.788 [DEBUG] Game object created: 'Floor' (47 in the world)
+12:50:50.788 [DEBUG] Game object created: 'Floor' (48 in the world)
+12:50:50.788 [DEBUG] Game object created: 'Floor' (49 in the world)
+12:50:50.788 [DEBUG] Game object created: 'Floor' (50 in the world)
+12:50:50.788 [DEBUG] Game object created: 'Floor' (51 in the world)
+12:50:50.788 [DEBUG] Game object created: 'Floor' (52 in the world)
+12:50:50.788 [DEBUG] Game object created: 'Floor' (53 in the world)
+12:50:50.788 [DEBUG] Game object created: 'Floor' (54 in the world)
+12:50:50.788 [DEBUG] Game object created: 'Floor' (55 in the world)
+12:50:50.788 [DEBUG] Game object created: 'Floor' (56 in the world)
+12:50:50.789 [DEBUG] Game object created: 'Floor' (57 in the world)
+12:50:50.789 [DEBUG] Game object created: 'Floor' (58 in the world)
+12:50:50.789 [DEBUG] Game object created: 'Floor' (59 in the world)
+12:50:50.789 [DEBUG] Game object created: 'Floor' (60 in the world)
+12:50:50.789 [DEBUG] Game object created: 'Floor' (61 in the world)
+12:50:50.789 [DEBUG] Game object created: 'Floor' (62 in the world)
+12:50:50.789 [DEBUG] Game object created: 'Floor' (63 in the world)
+12:50:50.789 [DEBUG] Game object created: 'Floor' (64 in the world)
+12:50:50.789 [DEBUG] Game object created: 'Floor' (65 in the world)
+12:50:50.789 [DEBUG] Game object created: 'Floor' (66 in the world)
+12:50:50.789 [DEBUG] Game object created: 'Floor' (67 in the world)
+12:50:50.789 [DEBUG] Game object created: 'Floor' (68 in the world)
+12:50:50.789 [DEBUG] Game object created: 'Floor' (69 in the world)
+12:50:50.789 [DEBUG] Game object created: 'Floor' (70 in the world)
+12:50:50.789 [DEBUG] Game object created: 'Floor' (71 in the world)
+12:50:50.790 [DEBUG] Game object created: 'Floor' (72 in the world)
+12:50:50.790 [DEBUG] Game object created: 'Floor' (73 in the world)
+12:50:50.790 [DEBUG] Game object created: 'Floor' (74 in the world)
+12:50:50.790 [DEBUG] Game object created: 'Floor' (75 in the world)
+12:50:50.790 [DEBUG] Game object created: 'Floor' (76 in the world)
+12:50:50.790 [DEBUG] Game object created: 'Floor' (77 in the world)
+12:50:50.790 [DEBUG] Game object created: 'Floor' (78 in the world)
+12:50:50.790 [DEBUG] Game object created: 'Floor' (79 in the world)
+12:50:50.790 [DEBUG] Game object created: 'Floor' (80 in the world)
+12:50:50.790 [DEBUG] Game object created: 'Floor' (81 in the world)
+12:50:50.790 [DEBUG] Game object created: 'Floor' (82 in the world)
+12:50:50.790 [DEBUG] Game object created: 'Floor' (83 in the world)
+12:50:50.790 [DEBUG] Game object created: 'Floor' (84 in the world)
+12:50:50.790 [DEBUG] Game object created: 'Floor' (85 in the world)
+12:50:50.791 [DEBUG] Game object created: 'Floor' (86 in the world)
+12:50:50.791 [DEBUG] Game object created: 'Floor' (87 in the world)
+12:50:50.791 [DEBUG] Game object created: 'Floor' (88 in the world)
+12:50:50.791 [DEBUG] Game object created: 'Floor' (89 in the world)
+12:50:50.791 [DEBUG] Game object created: 'Floor' (90 in the world)
+12:50:50.791 [DEBUG] Game object created: 'Floor' (91 in the world)
+12:50:50.791 [DEBUG] Game object created: 'Floor' (92 in the world)
+12:50:50.791 [DEBUG] Game object created: 'Floor' (93 in the world)
+12:50:50.791 [DEBUG] Game object created: 'Floor' (94 in the world)
+12:50:50.791 [DEBUG] Game object created: 'Floor' (95 in the world)
+12:50:50.791 [DEBUG] Game object created: 'Floor' (96 in the world)
+12:50:50.791 [DEBUG] Game object created: 'Floor' (97 in the world)
+12:50:50.791 [DEBUG] Game object created: 'Floor' (98 in the world)
+12:50:50.791 [DEBUG] Game object created: 'Floor' (99 in the world)
+12:50:50.791 [DEBUG] Game object created: 'Floor' (100 in the world)
+12:50:50.792 [DEBUG] Game object created: 'Floor' (101 in the world)
+12:50:50.792 [DEBUG] Game object created: 'Floor' (102 in the world)
+12:50:50.792 [DEBUG] Game object created: 'Floor' (103 in the world)
+12:50:50.792 [DEBUG] Game object created: 'Floor' (104 in the world)
+12:50:50.792 [DEBUG] Game object created: 'Floor' (105 in the world)
+12:50:50.792 [DEBUG] Game object created: 'Floor' (106 in the world)
+12:50:50.792 [DEBUG] Game object created: 'Floor' (107 in the world)
+12:50:50.792 [DEBUG] Game object created: 'Floor' (108 in the world)
+12:50:50.792 [DEBUG] Game object created: 'Wall' (109 in the world)
+12:50:50.792 [DEBUG] Collider subscribed: 'Wall'
+12:50:50.792 [DEBUG] Game object created: 'Wall' (110 in the world)
+12:50:50.792 [DEBUG] Collider subscribed: 'Wall'
+12:50:50.792 [DEBUG] Game object created: 'Wall' (111 in the world)
+12:50:50.792 [DEBUG] Collider subscribed: 'Wall'
+12:50:50.792 [DEBUG] Game object created: 'Wall' (112 in the world)
+12:50:50.792 [DEBUG] Collider subscribed: 'Wall'
+12:50:50.792 [DEBUG] Game object created: 'Wall' (113 in the world)
+12:50:50.793 [DEBUG] Collider subscribed: 'Wall'
+12:50:50.793 [DEBUG] Game object created: 'Wall' (114 in the world)
+12:50:50.793 [DEBUG] Collider subscribed: 'Wall'
+12:50:50.793 [DEBUG] Game object created: 'Wall' (115 in the world)
+12:50:50.793 [DEBUG] Collider subscribed: 'Wall'
+12:50:50.793 [DEBUG] Game object created: 'Wall' (116 in the world)
+12:50:50.793 [DEBUG] Collider subscribed: 'Wall'
+12:50:50.793 [DEBUG] Game object created: 'Wall' (117 in the world)
+12:50:50.793 [DEBUG] Collider subscribed: 'Wall'
+12:50:50.793 [DEBUG] Game object created: 'Wall' (118 in the world)
+12:50:50.793 [DEBUG] Collider subscribed: 'Wall'
+12:50:50.793 [DEBUG] Game object created: 'Wall' (119 in the world)
+12:50:50.793 [DEBUG] Collider subscribed: 'Wall'
+12:50:50.793 [DEBUG] Game object created: 'Wall' (120 in the world)
+12:50:50.793 [DEBUG] Collider subscribed: 'Wall'
+12:50:50.793 [DEBUG] Game object created: 'Wall' (121 in the world)
+12:50:50.793 [DEBUG] Collider subscribed: 'Wall'
+12:50:50.793 [DEBUG] Game object created: 'Wall' (122 in the world)
+12:50:50.793 [DEBUG] Collider subscribed: 'Wall'
+12:50:50.794 [DEBUG] Game object created: 'Wall' (123 in the world)
+12:50:50.794 [DEBUG] Collider subscribed: 'Wall'
+12:50:50.794 [DEBUG] Game object created: 'Wall' (124 in the world)
+12:50:50.794 [DEBUG] Collider subscribed: 'Wall'
+12:50:50.794 [DEBUG] Game object created: 'Wall' (125 in the world)
+12:50:50.794 [DEBUG] Collider subscribed: 'Wall'
+12:50:50.794 [DEBUG] Game object created: 'Wall' (126 in the world)
+12:50:50.794 [DEBUG] Collider subscribed: 'Wall'
+12:50:50.794 [DEBUG] Game object created: 'Wall' (127 in the world)
+12:50:50.794 [DEBUG] Collider subscribed: 'Wall'
+12:50:50.794 [DEBUG] Game object created: 'Wall' (128 in the world)
+12:50:50.794 [DEBUG] Collider subscribed: 'Wall'
+12:50:50.794 [DEBUG] Game object created: 'Wall' (129 in the world)
+12:50:50.794 [DEBUG] Collider subscribed: 'Wall'
+12:50:50.794 [DEBUG] Game object created: 'Wall' (130 in the world)
+12:50:50.794 [DEBUG] Collider subscribed: 'Wall'
+12:50:50.794 [DEBUG] Game object created: 'Wall' (131 in the world)
+12:50:50.794 [DEBUG] Collider subscribed: 'Wall'
+12:50:50.794 [DEBUG] Game object created: 'Wall' (132 in the world)
+12:50:50.795 [DEBUG] Collider subscribed: 'Wall'
+12:50:50.795 [DEBUG] Game object created: 'Wall' (133 in the world)
+12:50:50.795 [DEBUG] Collider subscribed: 'Wall'
+12:50:50.795 [DEBUG] Game object created: 'Wall' (134 in the world)
+12:50:50.795 [DEBUG] Collider subscribed: 'Wall'
+12:50:50.795 [DEBUG] Game object created: 'Wall' (135 in the world)
+12:50:50.795 [DEBUG] Collider subscribed: 'Wall'
+12:50:50.795 [DEBUG] Game object created: 'Wall' (136 in the world)
+12:50:50.795 [DEBUG] Collider subscribed: 'Wall'
+12:50:50.795 [DEBUG] Game object created: 'Wall' (137 in the world)
+12:50:50.795 [DEBUG] Collider subscribed: 'Wall'
+12:50:50.795 [DEBUG] Game object created: 'Wall' (138 in the world)
+12:50:50.795 [DEBUG] Collider subscribed: 'Wall'
+12:50:50.795 [DEBUG] Game object created: 'Wall' (139 in the world)
+12:50:50.795 [DEBUG] Collider subscribed: 'Wall'
+12:50:50.795 [DEBUG] Game object created: 'Wall' (140 in the world)
+12:50:50.796 [DEBUG] Collider subscribed: 'Wall'
+12:50:50.796 [DEBUG] Game object created: 'Wall' (141 in the world)
+12:50:50.796 [DEBUG] Collider subscribed: 'Wall'
+12:50:50.796 [DEBUG] Game object created: 'Wall' (142 in the world)
+12:50:50.796 [DEBUG] Collider subscribed: 'Wall'
+12:50:50.796 [DEBUG] Game object created: 'Wall' (143 in the world)
+12:50:50.796 [DEBUG] Collider subscribed: 'Wall'
+12:50:50.796 [DEBUG] Game object created: 'Wall' (144 in the world)
+12:50:50.796 [DEBUG] Collider subscribed: 'Wall'
+12:50:50.796 [DEBUG] Game object created: 'Wall' (145 in the world)
+12:50:50.796 [DEBUG] Collider subscribed: 'Wall'
+12:50:50.796 [DEBUG] Game object created: 'Wall' (146 in the world)
+12:50:50.796 [DEBUG] Collider subscribed: 'Wall'
+12:50:50.796 [DEBUG] Game object created: 'Wall' (147 in the world)
+12:50:50.796 [DEBUG] Collider subscribed: 'Wall'
+12:50:50.796 [DEBUG] Game object created: 'Wall' (148 in the world)
+12:50:50.796 [DEBUG] Collider subscribed: 'Wall'
+12:50:50.797 [DEBUG] Game object created: 'Wall' (149 in the world)
+12:50:50.797 [DEBUG] Collider subscribed: 'Wall'
+12:50:50.797 [DEBUG] Game object created: 'Wall' (150 in the world)
+12:50:50.797 [DEBUG] Collider subscribed: 'Wall'
+12:50:50.797 [DEBUG] Game object created: 'Wall' (151 in the world)
+12:50:50.797 [DEBUG] Collider subscribed: 'Wall'
+12:50:50.797 [DEBUG] Game object created: 'Wall' (152 in the world)
+12:50:50.797 [DEBUG] Collider subscribed: 'Wall'
+12:50:50.797 [DEBUG] Game object created: 'Wall' (153 in the world)
+12:50:50.797 [DEBUG] Collider subscribed: 'Wall'
+12:50:50.797 [DEBUG] Game object created: 'Door' (154 in the world)
+12:50:50.797 [DEBUG] Collider subscribed: 'Door'
+12:50:50.797 [DEBUG] Game object created: 'Potion' (155 in the world)
+12:50:50.797 [DEBUG] Collider subscribed: 'Potion'
+12:50:50.797 [DEBUG] Game object created: 'Potion' (156 in the world)
+12:50:50.797 [DEBUG] Collider subscribed: 'Potion'
+12:50:50.798 [DEBUG] Game object created: 'Player' (157 in the world)
+12:50:50.798 [DEBUG] Collider subscribed: 'Player'
+12:50:50.798 [INFO] Player created at 128, 512 with 100 health and 5 armour
+12:50:50.798 [DEBUG] Game object created: 'Enemy' (158 in the world)
+12:50:50.798 [DEBUG] Collider subscribed: 'Enemy'
+12:50:50.798 [INFO] Enemy created at 640, 1024
+12:50:50.798 [DEBUG] Game object created: 'Enemy' (159 in the world)
+12:50:50.798 [DEBUG] Collider subscribed: 'Enemy'
+12:50:50.798 [INFO] Enemy created at 1408, 128
+12:50:50.798 [DEBUG] Game object created: 'Enemy' (160 in the world)
+12:50:50.798 [DEBUG] Collider subscribed: 'Enemy'
+12:50:50.798 [INFO] Enemy created at 1152, 256
+12:50:50.798 [DEBUG] Game object created: 'Boss' (161 in the world)
+12:50:50.798 [DEBUG] Collider subscribed: 'Boss'
+12:50:50.798 [INFO] Boss created at 1280, 512 with 120 health
+12:50:50.799 [DEBUG] Game object created: 'Music: theme' (162 in the world)
+12:50:50.799 [DEBUG] Game object created: 'Hud' (163 in the world)
+12:50:50.799 [INFO] Level 1 of 3 is running
+12:50:50.799 [INFO] Engine created, random seed 1794660650
+12:50:50.799 [INFO] Main loop started
+12:50:53.867 [INFO] 'Boss' charges at 'Player' from 649 px
+12:50:54.269 [INFO] 'Boss' attacks 'Player' for 22
+12:50:54.270 [INFO] 'Player' takes 17 damage from Boss (22 minus 5 armour), health 83/100
+12:50:54.301 [DEBUG] Collision: 'Player' pushed out of 'Boss'
+12:50:54.301 [DEBUG] Collision: 'Boss' pushed out of 'Player'
+12:50:54.319 [DEBUG] Collision: 'Player' pushed out of 'Boss'
+12:50:54.319 [DEBUG] Collision: 'Boss' pushed out of 'Player'
+12:50:54.341 [DEBUG] Collision: 'Player' pushed out of 'Boss'
+12:50:54.341 [DEBUG] Collision: 'Boss' pushed out of 'Player'
+12:50:54.359 [DEBUG] Collision: 'Player' pushed out of 'Boss'
+12:50:54.360 [DEBUG] Collision: 'Boss' pushed out of 'Player'
+12:50:54.400 [DEBUG] Collision: 'Player' pushed out of 'Boss'
+12:50:54.400 [DEBUG] Collision: 'Boss' pushed out of 'Player'
+12:50:54.420 [DEBUG] Collision: 'Player' pushed out of 'Boss'
+12:50:54.420 [DEBUG] Collision: 'Boss' pushed out of 'Player'
+12:50:54.440 [DEBUG] Collision: 'Player' pushed out of 'Boss'
+12:50:54.440 [DEBUG] Collision: 'Boss' pushed out of 'Player'
+12:50:54.459 [DEBUG] Collision: 'Player' pushed out of 'Boss'
+12:50:54.460 [DEBUG] Collision: 'Boss' pushed out of 'Player'
+12:50:54.481 [DEBUG] Collision: 'Player' pushed out of 'Boss'
+12:50:54.481 [DEBUG] Collision: 'Boss' pushed out of 'Player'
+12:50:54.500 [DEBUG] Collision: 'Player' pushed out of 'Boss'
+12:50:54.501 [DEBUG] Collision: 'Boss' pushed out of 'Player'
+12:50:54.520 [DEBUG] Collision: 'Player' pushed out of 'Boss'
+12:50:54.520 [DEBUG] Collision: 'Boss' pushed out of 'Player'
+12:50:54.540 [DEBUG] Collision: 'Player' pushed out of 'Boss'
+12:50:54.540 [DEBUG] Collision: 'Boss' pushed out of 'Player'
+12:50:54.561 [DEBUG] Collision: 'Player' pushed out of 'Boss'
+12:50:54.561 [DEBUG] Collision: 'Boss' pushed out of 'Player'
+12:50:54.600 [DEBUG] Collision: 'Player' pushed out of 'Boss'
+12:50:54.600 [DEBUG] Collision: 'Boss' pushed out of 'Player'
+12:50:54.619 [DEBUG] Collision: 'Player' pushed out of 'Boss'
+12:50:54.619 [DEBUG] Collision: 'Boss' pushed out of 'Player'
+12:50:54.631 [INFO] 'Player' attacks 'Boss' for 20
+12:50:54.631 [INFO] 'Boss' takes 14 damage from Player (20 minus 6 armour), health 106/120
+12:50:54.640 [DEBUG] Collision: 'Player' pushed out of 'Boss'
+12:50:54.640 [DEBUG] Collision: 'Boss' pushed out of 'Player'
+12:50:54.661 [DEBUG] Collision: 'Player' pushed out of 'Boss'
+12:50:54.661 [DEBUG] Collision: 'Boss' pushed out of 'Player'
+12:50:54.680 [DEBUG] Collision: 'Player' pushed out of 'Boss'
+12:50:54.680 [DEBUG] Collision: 'Boss' pushed out of 'Player'
+12:50:54.699 [DEBUG] Collision: 'Player' pushed out of 'Boss'
+12:50:54.700 [DEBUG] Collision: 'Boss' pushed out of 'Player'
+12:50:54.721 [DEBUG] Collision: 'Player' pushed out of 'Boss'
+12:50:54.721 [DEBUG] Collision: 'Boss' pushed out of 'Player'
+12:50:54.741 [DEBUG] Collision: 'Player' pushed out of 'Boss'
+12:50:54.741 [DEBUG] Collision: 'Boss' pushed out of 'Player'
+12:50:54.760 [DEBUG] Collision: 'Player' pushed out of 'Boss'
+12:50:54.760 [DEBUG] Collision: 'Boss' pushed out of 'Player'
+12:50:54.780 [DEBUG] Collision: 'Player' pushed out of 'Boss'
+12:50:54.780 [DEBUG] Collision: 'Boss' pushed out of 'Player'
+12:50:54.800 [DEBUG] Collision: 'Player' pushed out of 'Boss'
+12:50:54.800 [DEBUG] Collision: 'Boss' pushed out of 'Player'
+12:50:54.819 [DEBUG] Collision: 'Player' pushed out of 'Boss'
+12:50:54.820 [DEBUG] Collision: 'Boss' pushed out of 'Player'
+12:50:54.840 [DEBUG] Collision: 'Player' pushed out of 'Boss'
+12:50:54.841 [DEBUG] Collision: 'Boss' pushed out of 'Player'
+12:50:54.880 [DEBUG] Collision: 'Player' pushed out of 'Boss'
+12:50:54.880 [DEBUG] Collision: 'Boss' pushed out of 'Player'
+12:50:54.900 [DEBUG] Collision: 'Player' pushed out of 'Boss'
+12:50:54.900 [DEBUG] Collision: 'Boss' pushed out of 'Player'
+12:50:54.919 [DEBUG] Collision: 'Player' pushed out of 'Boss'
+12:50:54.920 [DEBUG] Collision: 'Boss' pushed out of 'Player'
+12:50:54.941 [DEBUG] Collision: 'Player' pushed out of 'Boss'
+12:50:54.941 [DEBUG] Collision: 'Boss' pushed out of 'Player'
+12:50:54.960 [DEBUG] Collision: 'Player' pushed out of 'Boss'
+12:50:54.960 [DEBUG] Collision: 'Boss' pushed out of 'Player'
+12:50:54.980 [DEBUG] Collision: 'Player' pushed out of 'Boss'
+12:50:54.980 [DEBUG] Collision: 'Boss' pushed out of 'Player'
+12:50:55.001 [DEBUG] Collision: 'Player' pushed out of 'Boss'
+12:50:55.001 [DEBUG] Collision: 'Boss' pushed out of 'Player'
+12:50:55.020 [DEBUG] Collision: 'Player' pushed out of 'Boss'
+12:50:55.020 [DEBUG] Collision: 'Boss' pushed out of 'Player'
+12:50:55.040 [DEBUG] Collision: 'Player' pushed out of 'Boss'
+12:50:55.040 [DEBUG] Collision: 'Boss' pushed out of 'Player'
+12:50:55.061 [DEBUG] Collision: 'Player' pushed out of 'Boss'
+12:50:55.061 [DEBUG] Collision: 'Boss' pushed out of 'Player'
+12:50:55.081 [DEBUG] Collision: 'Player' pushed out of 'Boss'
+12:50:55.081 [DEBUG] Collision: 'Boss' pushed out of 'Player'
+12:50:55.100 [DEBUG] Collision: 'Player' pushed out of 'Boss'
+12:50:55.100 [DEBUG] Collision: 'Boss' pushed out of 'Player'
+12:50:55.120 [DEBUG] Collision: 'Player' pushed out of 'Boss'
+12:50:55.120 [DEBUG] Collision: 'Boss' pushed out of 'Player'
+12:50:55.141 [DEBUG] Collision: 'Player' pushed out of 'Boss'
+12:50:55.141 [DEBUG] Collision: 'Boss' pushed out of 'Player'
+12:50:55.160 [DEBUG] Collision: 'Player' pushed out of 'Boss'
+12:50:55.160 [DEBUG] Collision: 'Boss' pushed out of 'Player'
+12:50:55.180 [DEBUG] Collision: 'Player' pushed out of 'Boss'
+12:50:55.180 [DEBUG] Collision: 'Boss' pushed out of 'Player'
+12:50:55.201 [DEBUG] Collision: 'Player' pushed out of 'Boss'
+12:50:55.201 [DEBUG] Collision: 'Boss' pushed out of 'Player'
+12:50:55.220 [DEBUG] Collision: 'Player' pushed out of 'Boss'
+12:50:55.220 [DEBUG] Collision: 'Boss' pushed out of 'Player'
+12:50:55.240 [DEBUG] Collision: 'Player' pushed out of 'Boss'
+12:50:55.240 [DEBUG] Collision: 'Boss' pushed out of 'Player'
+12:50:55.260 [DEBUG] Collision: 'Player' pushed out of 'Boss'
+12:50:55.260 [DEBUG] Collision: 'Boss' pushed out of 'Player'
+12:50:55.280 [DEBUG] Collision: 'Player' pushed out of 'Boss'
+12:50:55.281 [DEBUG] Collision: 'Boss' pushed out of 'Player'
+12:50:55.301 [DEBUG] Collision: 'Player' pushed out of 'Boss'
+12:50:55.301 [DEBUG] Collision: 'Boss' pushed out of 'Player'
+12:50:55.320 [DEBUG] Collision: 'Player' pushed out of 'Boss'
+12:50:55.320 [DEBUG] Collision: 'Boss' pushed out of 'Player'
+12:50:55.332 [INFO] 'Player' attacks 'Boss' for 20
+12:50:55.333 [INFO] 'Boss' takes 14 damage from Player (20 minus 6 armour), health 92/120
+12:50:55.340 [DEBUG] Collision: 'Player' pushed out of 'Boss'
+12:50:55.340 [DEBUG] Collision: 'Boss' pushed out of 'Player'
+12:50:55.361 [DEBUG] Collision: 'Player' pushed out of 'Boss'
+12:50:55.361 [DEBUG] Collision: 'Boss' pushed out of 'Player'
+12:50:55.380 [DEBUG] Collision: 'Player' pushed out of 'Boss'
+12:50:55.380 [DEBUG] Collision: 'Boss' pushed out of 'Player'
+12:50:55.400 [DEBUG] Collision: 'Player' pushed out of 'Boss'
+12:50:55.400 [DEBUG] Collision: 'Boss' pushed out of 'Player'
+12:50:55.421 [DEBUG] Collision: 'Player' pushed out of 'Boss'
+12:50:55.421 [DEBUG] Collision: 'Boss' pushed out of 'Player'
+12:50:55.440 [DEBUG] Collision: 'Player' pushed out of 'Boss'
+12:50:55.440 [DEBUG] Collision: 'Boss' pushed out of 'Player'
+12:50:55.461 [DEBUG] Collision: 'Player' pushed out of 'Boss'
+12:50:55.461 [DEBUG] Collision: 'Boss' pushed out of 'Player'
+12:50:55.480 [DEBUG] Collision: 'Player' pushed out of 'Boss'
+12:50:55.480 [DEBUG] Collision: 'Boss' pushed out of 'Player'
+12:50:55.500 [DEBUG] Collision: 'Player' pushed out of 'Boss'
+12:50:55.500 [DEBUG] Collision: 'Boss' pushed out of 'Player'
+12:50:55.519 [DEBUG] Collision: 'Player' pushed out of 'Boss'
+12:50:55.520 [DEBUG] Collision: 'Boss' pushed out of 'Player'
+12:50:55.541 [DEBUG] Collision: 'Player' pushed out of 'Boss'
+12:50:55.541 [DEBUG] Collision: 'Boss' pushed out of 'Player'
+12:50:55.560 [DEBUG] Collision: 'Player' pushed out of 'Boss'
+12:50:55.560 [DEBUG] Collision: 'Boss' pushed out of 'Player'
+12:50:55.580 [DEBUG] Collision: 'Player' pushed out of 'Boss'
+12:50:55.580 [DEBUG] Collision: 'Boss' pushed out of 'Player'
+12:50:55.601 [DEBUG] Collision: 'Player' pushed out of 'Boss'
+12:50:55.601 [DEBUG] Collision: 'Boss' pushed out of 'Player'
+12:50:55.620 [DEBUG] Collision: 'Player' pushed out of 'Boss'
+12:50:55.620 [DEBUG] Collision: 'Boss' pushed out of 'Player'
+12:50:55.641 [DEBUG] Collision: 'Player' pushed out of 'Boss'
+12:50:55.641 [DEBUG] Collision: 'Boss' pushed out of 'Player'
+12:50:55.661 [DEBUG] Collision: 'Player' pushed out of 'Boss'
+12:50:55.661 [DEBUG] Collision: 'Boss' pushed out of 'Player'
+12:50:55.670 [INFO] 'Boss' attacks 'Player' for 22
+12:50:55.670 [INFO] 'Player' takes 17 damage from Boss (22 minus 5 armour), health 66/100
+12:50:55.681 [DEBUG] Collision: 'Player' pushed out of 'Boss'
+12:50:55.681 [DEBUG] Collision: 'Boss' pushed out of 'Player'
+12:50:55.700 [DEBUG] Collision: 'Player' pushed out of 'Boss'
+12:50:55.701 [DEBUG] Collision: 'Boss' pushed out of 'Player'
+12:50:55.720 [DEBUG] Collision: 'Player' pushed out of 'Boss'
+12:50:55.720 [DEBUG] Collision: 'Boss' pushed out of 'Player'
+12:50:55.740 [DEBUG] Collision: 'Player' pushed out of 'Boss'
+12:50:55.740 [DEBUG] Collision: 'Boss' pushed out of 'Player'
+12:50:55.761 [DEBUG] Collision: 'Player' pushed out of 'Boss'
+12:50:55.761 [DEBUG] Collision: 'Boss' pushed out of 'Player'
+12:50:55.780 [DEBUG] Collision: 'Player' pushed out of 'Boss'
+12:50:55.780 [DEBUG] Collision: 'Boss' pushed out of 'Player'
+12:50:55.800 [DEBUG] Collision: 'Player' pushed out of 'Boss'
+12:50:55.800 [DEBUG] Collision: 'Boss' pushed out of 'Player'
+12:50:55.819 [DEBUG] Collision: 'Player' pushed out of 'Boss'
+12:50:55.820 [DEBUG] Collision: 'Boss' pushed out of 'Player'
+12:50:55.840 [DEBUG] Collision: 'Player' pushed out of 'Boss'
+12:50:55.841 [DEBUG] Collision: 'Boss' pushed out of 'Player'
+12:50:55.860 [DEBUG] Collision: 'Player' pushed out of 'Boss'
+12:50:55.860 [DEBUG] Collision: 'Boss' pushed out of 'Player'
+12:50:55.879 [DEBUG] Collision: 'Player' pushed out of 'Boss'
+12:50:55.880 [DEBUG] Collision: 'Boss' pushed out of 'Player'
+12:50:55.901 [DEBUG] Collision: 'Player' pushed out of 'Boss'
+12:50:55.901 [DEBUG] Collision: 'Boss' pushed out of 'Player'
+12:50:55.920 [DEBUG] Collision: 'Player' pushed out of 'Boss'
+12:50:55.920 [DEBUG] Collision: 'Boss' pushed out of 'Player'
+12:50:55.940 [DEBUG] Collision: 'Player' pushed out of 'Boss'
+12:50:55.940 [DEBUG] Collision: 'Boss' pushed out of 'Player'
+12:50:55.960 [DEBUG] Collision: 'Player' pushed out of 'Boss'
+12:50:55.960 [DEBUG] Collision: 'Boss' pushed out of 'Player'
+12:50:55.980 [DEBUG] Collision: 'Player' pushed out of 'Boss'
+12:50:55.980 [DEBUG] Collision: 'Boss' pushed out of 'Player'
+12:50:56.001 [DEBUG] Collision: 'Player' pushed out of 'Boss'
+12:50:56.001 [DEBUG] Collision: 'Boss' pushed out of 'Player'
+12:50:56.040 [INFO] 'Player' attacks 'Boss' for 20
+12:50:56.040 [INFO] 'Boss' takes 14 damage from Player (20 minus 6 armour), health 78/120
+12:50:56.040 [DEBUG] Collision: 'Player' pushed out of 'Boss'
+12:50:56.040 [DEBUG] Collision: 'Boss' pushed out of 'Player'
+12:50:56.060 [DEBUG] Collision: 'Player' pushed out of 'Boss'
+12:50:56.060 [DEBUG] Collision: 'Boss' pushed out of 'Player'
+12:50:56.081 [DEBUG] Collision: 'Player' pushed out of 'Boss'
+12:50:56.081 [DEBUG] Collision: 'Boss' pushed out of 'Player'
+12:50:56.121 [DEBUG] Collision: 'Player' pushed out of 'Boss'
+12:50:56.121 [DEBUG] Collision: 'Boss' pushed out of 'Player'
+12:50:56.141 [DEBUG] Collision: 'Player' pushed out of 'Boss'
+12:50:56.141 [DEBUG] Collision: 'Boss' pushed out of 'Player'
+12:50:56.161 [DEBUG] Collision: 'Player' pushed out of 'Boss'
+12:50:56.161 [DEBUG] Collision: 'Boss' pushed out of 'Player'
+12:50:56.180 [DEBUG] Collision: 'Player' pushed out of 'Boss'
+12:50:56.181 [DEBUG] Collision: 'Boss' pushed out of 'Player'
+12:50:56.200 [DEBUG] Collision: 'Player' pushed out of 'Boss'
+12:50:56.200 [DEBUG] Collision: 'Boss' pushed out of 'Player'
+12:50:56.220 [DEBUG] Collision: 'Player' pushed out of 'Boss'
+12:50:56.220 [DEBUG] Collision: 'Boss' pushed out of 'Player'
+12:50:56.240 [DEBUG] Collision: 'Player' pushed out of 'Boss'
+12:50:56.240 [DEBUG] Collision: 'Boss' pushed out of 'Player'
+12:50:56.260 [DEBUG] Collision: 'Player' pushed out of 'Boss'
+12:50:56.260 [DEBUG] Collision: 'Boss' pushed out of 'Player'
+12:50:56.281 [DEBUG] Collision: 'Player' pushed out of 'Boss'
+12:50:56.281 [DEBUG] Collision: 'Boss' pushed out of 'Player'
+12:50:56.320 [DEBUG] Collision: 'Player' pushed out of 'Boss'
+12:50:56.320 [DEBUG] Collision: 'Boss' pushed out of 'Player'
+12:50:56.340 [DEBUG] Collision: 'Player' pushed out of 'Boss'
+12:50:56.340 [DEBUG] Collision: 'Boss' pushed out of 'Player'
+12:50:56.360 [DEBUG] Collision: 'Player' pushed out of 'Boss'
+12:50:56.360 [DEBUG] Collision: 'Boss' pushed out of 'Player'
+12:50:56.381 [DEBUG] Collision: 'Player' pushed out of 'Boss'
+12:50:56.381 [DEBUG] Collision: 'Boss' pushed out of 'Player'
+12:50:56.400 [DEBUG] Collision: 'Player' pushed out of 'Boss'
+12:50:56.400 [DEBUG] Collision: 'Boss' pushed out of 'Player'
+12:50:56.420 [DEBUG] Collision: 'Player' pushed out of 'Boss'
+12:50:56.420 [DEBUG] Collision: 'Boss' pushed out of 'Player'
+12:50:56.440 [DEBUG] Collision: 'Player' pushed out of 'Boss'
+12:50:56.440 [DEBUG] Collision: 'Boss' pushed out of 'Player'
+12:50:56.461 [DEBUG] Collision: 'Player' pushed out of 'Boss'
+12:50:56.461 [DEBUG] Collision: 'Boss' pushed out of 'Player'
+12:50:56.480 [DEBUG] Collision: 'Player' pushed out of 'Boss'
+12:50:56.480 [DEBUG] Collision: 'Boss' pushed out of 'Player'
+12:50:56.500 [DEBUG] Collision: 'Player' pushed out of 'Boss'
+12:50:56.500 [DEBUG] Collision: 'Boss' pushed out of 'Player'
+12:50:56.520 [DEBUG] Collision: 'Player' pushed out of 'Boss'
+12:50:56.520 [DEBUG] Collision: 'Boss' pushed out of 'Player'
+12:50:56.539 [DEBUG] Collision: 'Player' pushed out of 'Boss'
+12:50:56.539 [DEBUG] Collision: 'Boss' pushed out of 'Player'
+12:50:56.560 [DEBUG] Collision: 'Player' pushed out of 'Boss'
+12:50:56.560 [DEBUG] Collision: 'Boss' pushed out of 'Player'
+12:50:56.580 [DEBUG] Collision: 'Player' pushed out of 'Boss'
+12:50:56.580 [DEBUG] Collision: 'Boss' pushed out of 'Player'
+12:50:56.601 [DEBUG] Collision: 'Player' pushed out of 'Boss'
+12:50:56.601 [DEBUG] Collision: 'Boss' pushed out of 'Player'
+12:50:56.620 [DEBUG] Collision: 'Player' pushed out of 'Boss'
+12:50:56.620 [DEBUG] Collision: 'Boss' pushed out of 'Player'
+12:50:56.640 [DEBUG] Collision: 'Player' pushed out of 'Boss'
+12:50:56.640 [DEBUG] Collision: 'Boss' pushed out of 'Player'
+12:50:56.660 [DEBUG] Collision: 'Player' pushed out of 'Boss'
+12:50:56.660 [DEBUG] Collision: 'Boss' pushed out of 'Player'
+12:50:56.681 [DEBUG] Collision: 'Player' pushed out of 'Boss'
+12:50:56.681 [DEBUG] Collision: 'Boss' pushed out of 'Player'
+12:50:56.700 [DEBUG] Collision: 'Player' pushed out of 'Boss'
+12:50:56.701 [DEBUG] Collision: 'Boss' pushed out of 'Player'
+12:50:56.720 [DEBUG] Collision: 'Player' pushed out of 'Boss'
+12:50:56.720 [DEBUG] Collision: 'Boss' pushed out of 'Player'
+12:50:56.741 [DEBUG] Collision: 'Player' pushed out of 'Boss'
+12:50:56.741 [DEBUG] Collision: 'Boss' pushed out of 'Player'
+12:50:56.747 [DEBUG] 'Player' has no 'potion' to use
+12:50:56.761 [DEBUG] Collision: 'Player' pushed out of 'Boss'
+12:50:56.761 [DEBUG] Collision: 'Boss' pushed out of 'Player'
+12:50:56.780 [DEBUG] Collision: 'Player' pushed out of 'Boss'
+12:50:56.780 [DEBUG] Collision: 'Boss' pushed out of 'Player'
+12:50:56.801 [DEBUG] Collision: 'Player' pushed out of 'Boss'
+12:50:56.801 [DEBUG] Collision: 'Boss' pushed out of 'Player'
+12:50:56.820 [DEBUG] Collision: 'Player' pushed out of 'Boss'
+12:50:56.821 [DEBUG] Collision: 'Boss' pushed out of 'Player'
+12:50:56.840 [DEBUG] Collision: 'Player' pushed out of 'Boss'
+12:50:56.840 [DEBUG] Collision: 'Boss' pushed out of 'Player'
+12:50:56.860 [DEBUG] Collision: 'Player' pushed out of 'Boss'
+12:50:56.860 [DEBUG] Collision: 'Boss' pushed out of 'Player'
+12:50:56.881 [DEBUG] Collision: 'Player' pushed out of 'Boss'
+12:50:56.881 [DEBUG] Collision: 'Boss' pushed out of 'Player'
+12:50:56.920 [DEBUG] Collision: 'Player' pushed out of 'Boss'
+12:50:56.920 [DEBUG] Collision: 'Boss' pushed out of 'Player'
+12:50:56.941 [DEBUG] Collision: 'Player' pushed out of 'Boss'
+12:50:56.941 [DEBUG] Collision: 'Boss' pushed out of 'Player'
+12:50:56.960 [DEBUG] Collision: 'Player' pushed out of 'Boss'
+12:50:56.960 [DEBUG] Collision: 'Boss' pushed out of 'Player'
+12:50:56.980 [DEBUG] Collision: 'Player' pushed out of 'Boss'
+12:50:56.980 [DEBUG] Collision: 'Boss' pushed out of 'Player'
+12:50:56.999 [DEBUG] Collision: 'Player' pushed out of 'Boss'
+12:50:56.999 [DEBUG] Collision: 'Boss' pushed out of 'Player'
+12:50:57.019 [DEBUG] Collision: 'Player' pushed out of 'Boss'
+12:50:57.020 [DEBUG] Collision: 'Boss' pushed out of 'Player'
+12:50:57.040 [DEBUG] Collision: 'Player' pushed out of 'Boss'
+12:50:57.041 [DEBUG] Collision: 'Boss' pushed out of 'Player'
+12:50:57.060 [DEBUG] Collision: 'Player' pushed out of 'Boss'
+12:50:57.060 [DEBUG] Collision: 'Boss' pushed out of 'Player'
+12:50:57.071 [INFO] 'Boss' attacks 'Player' for 22
+12:50:57.071 [INFO] 'Player' takes 17 damage from Boss (22 minus 5 armour), health 49/100
+12:50:57.081 [DEBUG] Collision: 'Player' pushed out of 'Boss'
+12:50:57.081 [DEBUG] Collision: 'Boss' pushed out of 'Player'
+12:50:57.100 [DEBUG] Collision: 'Player' pushed out of 'Boss'
+12:50:57.100 [DEBUG] Collision: 'Boss' pushed out of 'Player'
+12:50:57.120 [DEBUG] Collision: 'Player' pushed out of 'Boss'
+12:50:57.120 [DEBUG] Collision: 'Boss' pushed out of 'Player'
+12:50:57.140 [DEBUG] Collision: 'Player' pushed out of 'Boss'
+12:50:57.140 [DEBUG] Collision: 'Boss' pushed out of 'Player'
+12:50:57.159 [DEBUG] Collision: 'Player' pushed out of 'Boss'
+12:50:57.159 [DEBUG] Collision: 'Boss' pushed out of 'Player'
+12:50:57.181 [DEBUG] Collision: 'Player' pushed out of 'Boss'
+12:50:57.181 [DEBUG] Collision: 'Boss' pushed out of 'Player'
+12:50:57.200 [DEBUG] Collision: 'Player' pushed out of 'Boss'
+12:50:57.201 [DEBUG] Collision: 'Boss' pushed out of 'Player'
+12:50:57.220 [DEBUG] Collision: 'Player' pushed out of 'Boss'
+12:50:57.220 [DEBUG] Collision: 'Boss' pushed out of 'Player'
+12:50:57.239 [DEBUG] Collision: 'Player' pushed out of 'Boss'
+12:50:57.239 [DEBUG] Collision: 'Boss' pushed out of 'Player'
+12:50:57.260 [DEBUG] Collision: 'Player' pushed out of 'Boss'
+12:50:57.261 [DEBUG] Collision: 'Boss' pushed out of 'Player'
+12:50:57.280 [DEBUG] Collision: 'Player' pushed out of 'Boss'
+12:50:57.280 [DEBUG] Collision: 'Boss' pushed out of 'Player'
+12:50:57.299 [DEBUG] Collision: 'Player' pushed out of 'Boss'
+12:50:57.299 [DEBUG] Collision: 'Boss' pushed out of 'Player'
+12:50:57.321 [DEBUG] Collision: 'Player' pushed out of 'Boss'
+12:50:57.321 [DEBUG] Collision: 'Boss' pushed out of 'Player'
+12:50:57.340 [DEBUG] Collision: 'Player' pushed out of 'Boss'
+12:50:57.341 [DEBUG] Collision: 'Boss' pushed out of 'Player'
+12:50:57.360 [DEBUG] Collision: 'Player' pushed out of 'Boss'
+12:50:57.360 [DEBUG] Collision: 'Boss' pushed out of 'Player'
+12:50:57.380 [DEBUG] Collision: 'Player' pushed out of 'Boss'
+12:50:57.380 [DEBUG] Collision: 'Boss' pushed out of 'Player'
+12:50:57.400 [DEBUG] Collision: 'Player' pushed out of 'Boss'
+12:50:57.400 [DEBUG] Collision: 'Boss' pushed out of 'Player'
+12:50:57.420 [DEBUG] Collision: 'Player' pushed out of 'Boss'
+12:50:57.420 [DEBUG] Collision: 'Boss' pushed out of 'Player'
+12:50:57.439 [DEBUG] Collision: 'Player' pushed out of 'Boss'
+12:50:57.440 [DEBUG] Collision: 'Boss' pushed out of 'Player'
+12:50:57.461 [DEBUG] Collision: 'Player' pushed out of 'Boss'
+12:50:57.461 [DEBUG] Collision: 'Boss' pushed out of 'Player'
+12:50:57.481 [DEBUG] Collision: 'Player' pushed out of 'Boss'
+12:50:57.481 [DEBUG] Collision: 'Boss' pushed out of 'Player'
+12:50:57.500 [DEBUG] Collision: 'Player' pushed out of 'Boss'
+12:50:57.500 [DEBUG] Collision: 'Boss' pushed out of 'Player'
+12:50:57.520 [DEBUG] Collision: 'Player' pushed out of 'Boss'
+12:50:57.520 [DEBUG] Collision: 'Boss' pushed out of 'Player'
+12:50:57.541 [DEBUG] Collision: 'Player' pushed out of 'Boss'
+12:50:57.541 [DEBUG] Collision: 'Boss' pushed out of 'Player'
+12:50:57.559 [DEBUG] Collision: 'Player' pushed out of 'Boss'
+12:50:57.560 [DEBUG] Collision: 'Boss' pushed out of 'Player'
+12:50:57.581 [DEBUG] Collision: 'Player' pushed out of 'Boss'
+12:50:57.581 [DEBUG] Collision: 'Boss' pushed out of 'Player'
+12:50:57.600 [DEBUG] Collision: 'Player' pushed out of 'Boss'
+12:50:57.600 [DEBUG] Collision: 'Boss' pushed out of 'Player'
+12:50:57.620 [DEBUG] Collision: 'Player' pushed out of 'Boss'
+12:50:57.620 [DEBUG] Collision: 'Boss' pushed out of 'Player'
+12:50:57.640 [DEBUG] Collision: 'Player' pushed out of 'Boss'
+12:50:57.640 [DEBUG] Collision: 'Boss' pushed out of 'Player'
+12:50:57.659 [DEBUG] Collision: 'Player' pushed out of 'Boss'
+12:50:57.659 [DEBUG] Collision: 'Boss' pushed out of 'Player'
+12:50:57.681 [DEBUG] Collision: 'Player' pushed out of 'Boss'
+12:50:57.681 [DEBUG] Collision: 'Boss' pushed out of 'Player'
+12:50:57.700 [DEBUG] Collision: 'Player' pushed out of 'Boss'
+12:50:57.700 [DEBUG] Collision: 'Boss' pushed out of 'Player'
+12:50:57.720 [DEBUG] Collision: 'Player' pushed out of 'Boss'
+12:50:57.720 [DEBUG] Collision: 'Boss' pushed out of 'Player'
+12:50:57.740 [DEBUG] Collision: 'Player' pushed out of 'Boss'
+12:50:57.740 [DEBUG] Collision: 'Boss' pushed out of 'Player'
+12:50:57.761 [DEBUG] Collision: 'Player' pushed out of 'Boss'
+12:50:57.761 [DEBUG] Collision: 'Boss' pushed out of 'Player'
+12:50:57.780 [DEBUG] Collision: 'Player' pushed out of 'Boss'
+12:50:57.780 [DEBUG] Collision: 'Boss' pushed out of 'Player'
+12:50:57.800 [DEBUG] Collision: 'Player' pushed out of 'Boss'
+12:50:57.800 [DEBUG] Collision: 'Boss' pushed out of 'Player'
+12:50:57.820 [DEBUG] Collision: 'Player' pushed out of 'Boss'
+12:50:57.820 [DEBUG] Collision: 'Boss' pushed out of 'Player'
+12:50:57.841 [DEBUG] Collision: 'Player' pushed out of 'Boss'
+12:50:57.841 [DEBUG] Collision: 'Boss' pushed out of 'Player'
+12:50:57.860 [DEBUG] Collision: 'Player' pushed out of 'Boss'
+12:50:57.860 [DEBUG] Collision: 'Boss' pushed out of 'Player'
+12:50:57.879 [DEBUG] Collision: 'Player' pushed out of 'Boss'
+12:50:57.880 [DEBUG] Collision: 'Boss' pushed out of 'Player'
+12:50:57.901 [DEBUG] Collision: 'Player' pushed out of 'Boss'
+12:50:57.901 [DEBUG] Collision: 'Boss' pushed out of 'Player'
+12:50:57.920 [DEBUG] Collision: 'Player' pushed out of 'Boss'
+12:50:57.920 [DEBUG] Collision: 'Boss' pushed out of 'Player'
+12:50:57.939 [DEBUG] Collision: 'Player' pushed out of 'Boss'
+12:50:57.939 [DEBUG] Collision: 'Boss' pushed out of 'Player'
+12:50:57.961 [DEBUG] Collision: 'Player' pushed out of 'Boss'
+12:50:57.961 [DEBUG] Collision: 'Boss' pushed out of 'Player'
+12:50:57.980 [DEBUG] Collision: 'Player' pushed out of 'Boss'
+12:50:57.980 [DEBUG] Collision: 'Boss' pushed out of 'Player'
+12:50:57.999 [DEBUG] Collision: 'Player' pushed out of 'Boss'
+12:50:57.999 [DEBUG] Collision: 'Boss' pushed out of 'Player'
+12:50:58.019 [DEBUG] Collision: 'Player' pushed out of 'Boss'
+12:50:58.020 [DEBUG] Collision: 'Boss' pushed out of 'Player'
+12:50:58.041 [DEBUG] Collision: 'Player' pushed out of 'Boss'
+12:50:58.041 [DEBUG] Collision: 'Boss' pushed out of 'Player'
+12:50:58.060 [DEBUG] Collision: 'Player' pushed out of 'Boss'
+12:50:58.061 [DEBUG] Collision: 'Boss' pushed out of 'Player'
+12:50:58.081 [DEBUG] Collision: 'Player' pushed out of 'Boss'
+12:50:58.081 [DEBUG] Collision: 'Boss' pushed out of 'Player'
+12:50:58.101 [DEBUG] Collision: 'Player' pushed out of 'Boss'
+12:50:58.101 [DEBUG] Collision: 'Boss' pushed out of 'Player'
+12:50:58.120 [DEBUG] Collision: 'Player' pushed out of 'Boss'
+12:50:58.120 [DEBUG] Collision: 'Boss' pushed out of 'Player'
+12:50:58.140 [DEBUG] Collision: 'Player' pushed out of 'Boss'
+12:50:58.140 [DEBUG] Collision: 'Boss' pushed out of 'Player'
+12:50:58.160 [DEBUG] Collision: 'Player' pushed out of 'Boss'
+12:50:58.160 [DEBUG] Collision: 'Boss' pushed out of 'Player'
+12:50:58.181 [DEBUG] Collision: 'Player' pushed out of 'Boss'
+12:50:58.181 [DEBUG] Collision: 'Boss' pushed out of 'Player'
+12:50:58.200 [DEBUG] Collision: 'Player' pushed out of 'Boss'
+12:50:58.200 [DEBUG] Collision: 'Boss' pushed out of 'Player'
+12:50:58.219 [DEBUG] Collision: 'Player' pushed out of 'Boss'
+12:50:58.220 [DEBUG] Collision: 'Boss' pushed out of 'Player'
+12:50:58.241 [DEBUG] Collision: 'Player' pushed out of 'Boss'
+12:50:58.241 [DEBUG] Collision: 'Boss' pushed out of 'Player'
+12:50:58.260 [DEBUG] Collision: 'Player' pushed out of 'Boss'
+12:50:58.261 [DEBUG] Collision: 'Boss' pushed out of 'Player'

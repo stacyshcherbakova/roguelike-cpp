@@ -35,6 +35,9 @@ namespace XYZEngine
 		void RegisterMusic(const std::string& name, std::string sourcePath);
 		std::string GetMusicPath(const std::string& name) const;
 
+		bool LoadFont(const std::string& name, std::string sourcePath);
+		const sf::Font* GetFont(const std::string& name) const;
+
 		// Magenta texture returned instead of anything that failed to load
 		const sf::Texture* GetFallbackTexture() const;
 
@@ -45,6 +48,7 @@ namespace XYZEngine
 		std::map<std::string, std::vector<sf::Texture*>> textureMaps;
 		std::map<std::string, sf::SoundBuffer*> sounds;
 		std::map<std::string, std::string> musicPaths;
+		std::map<std::string, sf::Font*> fonts;
 		mutable sf::Texture* fallbackTexture = nullptr;
 
 		ResourceSystem() {}
@@ -56,5 +60,6 @@ namespace XYZEngine
 		void DeleteAllTextures();
 		void DeleteAllTextureMaps();
 		void DeleteAllSounds();
+		void DeleteAllFonts();
 	};
 }

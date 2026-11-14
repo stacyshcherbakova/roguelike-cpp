@@ -23,6 +23,8 @@ namespace
 		resources->LoadTextureMap(Settings::WALL_TEXTURE_MAP, root + "TextureMaps/Wall.png", { 16, 16 }, 48, false);
 		resources->LoadTexture(Settings::ENEMY_TEXTURE, root + "Textures/Enemy.png", false);
 		resources->LoadTexture(Settings::BOSS_TEXTURE, root + "Textures/Boss.png", false);
+		resources->LoadTexture(Settings::POTION_TEXTURE, root + "Textures/Potion.png", false);
+		resources->LoadFont(Settings::FONT_NAME, root + "Fonts/Roboto-Regular.ttf");
 		resources->LoadTexture(Settings::DOOR_CLOSED_TEXTURE, root + "Textures/DoorClosed.png", false);
 		resources->LoadTexture(Settings::DOOR_OPEN_TEXTURE, root + "Textures/DoorOpen.png", false);
 

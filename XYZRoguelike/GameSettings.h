@@ -72,6 +72,21 @@ namespace XYZRoguelike
 		const std::string DOOR_CLOSED_TEXTURE = "door_closed";
 		const std::string DOOR_OPEN_TEXTURE = "door_open";
 
+		// Items
+		const std::string POTION_OBJECT_NAME = "Potion";
+		const std::string POTION_TEXTURE = "potion";
+		const std::string POTION_ITEM = "potion";
+		const XYZEngine::Vector2Di POTION_SIZE = { 56, 56 };
+		const float POTION_HEAL = 40.f;
+
+		// HUD
+		const std::string HUD_OBJECT_NAME = "Hud";
+		const std::string FONT_NAME = "main";
+		const unsigned int HUD_TEXT_SIZE = 24;
+		const unsigned int HUD_HINT_SIZE = 18;
+		const float HUD_MARGIN = 16.f;
+		const std::string HUD_HINT = "WASD move   Space attack   E drink potion   Kill everything to open the door";
+
 		// Audio
 		const std::string MUSIC_NAME = "theme";
 		const float MUSIC_VOLUME = 40.f;

@@ -1,6 +1,6 @@
 #include "GameLevel.h"
-#include "DebugKeysComponent.h"
 #include "GameSettings.h"
+#include <KeyActionComponent.h>
 #include <Logger.h>
 #include <randomizer.h>
 
@@ -8,10 +8,12 @@ using namespace XYZEngine;
 
 namespace XYZRoguelike
 {
-	GameLevel::GameLevel(const LevelDefinition& definition, std::function<void()> onCompleted, std::function<void()> onPlayerDied)
+	GameLevel::GameLevel(const LevelDefinition& definition, std::function<void()> onCompleted, std::function<void()> onPlayerDied,
+		std::function<std::string()> hudStatus)
 		: definition(definition)
 		, onCompleted(std::move(onCompleted))
 		, onPlayerDied(std::move(onPlayerDied))
+		, hudStatus(std::move(hudStatus))
 	{
 	}
 
@@ -31,6 +33,8 @@ namespace XYZRoguelike
 			}
 		});
 
+		SpawnPotions();
+
 		player = std::make_unique<Player>(arena->TileToWorld(1, definition.height / 2));
 		player->GetHealth()->SetOnDeath([this]() {
 			LOG_WARNING("The player is dead");
@@ -42,8 +46,11 @@ namespace XYZRoguelike
 
 		if (Settings::DEBUG_KEYS)
 		{
-			auto debugKeys = player->GetGameObject()->AddComponent<DebugKeysComponent>();
-			debugKeys->SetOnOpenDoor([this]() { door->SetOpen(true); });
+			auto debugKey = player->GetGameObject()->AddComponent<KeyActionComponent>();
+			debugKey->Bind(sf::Keyboard::F2, [this]() {
+				LOG_WARNING("Debug key: the door is forced open");
+				door->SetOpen(true);
+			});
 		}
 
 		SpawnEnemies();
@@ -51,34 +58,18 @@ namespace XYZRoguelike
 		OpenDoorIfClear();
 
 		music = std::make_unique<Music>(Settings::MUSIC_NAME, Settings::MUSIC_VOLUME);
+
+		// The HUD is created last so it is drawn above everything else
+		hud = std::make_unique<Hud>(hudStatus, Settings::HUD_HINT);
 	}
 
-	void GameLevel::SpawnBoss()
+	void GameLevel::SpawnPotions()
 	{
-		bossAlive = false;
-		if (definition.bossHealthScale <= 0.f)
+		for (int i = 0; i < definition.potionCount; i++)
 		{
-			return;
-		}
-
-		// The boss guards the door from two tiles inside the room
-		const Vector2Di bossTile = { definition.width - 2, definition.height / 2 };
-		boss = std::make_unique<Boss>(arena->TileToWorld(bossTile), player->GetGameObject(), definition.bossHealthScale, [this]() { OnBossDied(); });
-		bossAlive = true;
-	}
-
-	void GameLevel::OnBossDied()
-	{
-		bossAlive = false;
-		LOG_INFO("The boss of '" << definition.name << "' is defeated");
-		OpenDoorIfClear();
-	}
-
-	void GameLevel::OpenDoorIfClear()
-	{
-		if (door && !door->IsOpen() && aliveEnemies <= 0 && !bossAlive)
-		{
-			door->SetOpen(true);
+			const int x = random<int>(1, definition.width - 2);
+			const int y = random<int>(0, definition.height - 1);
+			potions.push_back(std::make_unique<Potion>(arena->TileToWorld(x, y)));
 		}
 	}
 
@@ -96,11 +87,40 @@ namespace XYZRoguelike
 		}
 	}
 
+	void GameLevel::SpawnBoss()
+	{
+		bossAlive = false;
+		if (definition.bossHealthScale <= 0.f)
+		{
+			return;
+		}
+
+		// The boss guards the door from two tiles inside the room
+		const Vector2Di bossTile = { definition.width - 2, definition.height / 2 };
+		boss = std::make_unique<Boss>(arena->TileToWorld(bossTile), player->GetGameObject(), definition.bossHealthScale, [this]() { OnBossDied(); });
+		bossAlive = true;
+	}
+
 	void GameLevel::OnEnemyDied()
 	{
 		aliveEnemies--;
 		LOG_INFO("Enemies left on '" << definition.name << "': " << aliveEnemies);
 		OpenDoorIfClear();
+	}
+
+	void GameLevel::OnBossDied()
+	{
+		bossAlive = false;
+		LOG_INFO("The boss of '" << definition.name << "' is defeated");
+		OpenDoorIfClear();
+	}
+
+	void GameLevel::OpenDoorIfClear()
+	{
+		if (door && !door->IsOpen() && aliveEnemies <= 0 && !bossAlive)
+		{
+			door->SetOpen(true);
+		}
 	}
 
 	void GameLevel::Restart()
@@ -112,7 +132,9 @@ namespace XYZRoguelike
 
 	void GameLevel::Stop()
 	{
+		hud.reset();
 		music.reset();
+		potions.clear();
 		boss.reset();
 		enemies.clear();
 		door.reset();
