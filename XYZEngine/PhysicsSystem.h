@@ -27,6 +27,9 @@ namespace XYZEngine
 
 		// One pass over the pairs "moving body - static body" or "moving body - moving body"
 		void ResolvePairs(bool againstStatic);
+		// Pushes a moving body out of the static ones, the deepest overlap first
+		void PushOutOfStatics(int i);
+		Vector2Df GetPushOffset(int i, int j, const sf::FloatRect& intersection) const;
 		void MoveCollider(ColliderComponent* collider, const Vector2Df& offset);
 
 		std::vector<ColliderComponent*> colliders;

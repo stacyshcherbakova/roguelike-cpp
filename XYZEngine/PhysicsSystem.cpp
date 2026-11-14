@@ -56,6 +56,12 @@ namespace XYZEngine
 				continue;
 			}
 
+			if (againstStatic && !colliders[i]->isTrigger)
+			{
+				// Walls first, so the triggers below are checked where the body really ends the step
+				PushOutOfStatics(i);
+			}
+
 			for (int j = 0; j < colliders.size(); j++)
 			{
 				if (j == i)
@@ -85,40 +91,12 @@ namespace XYZEngine
 							LOG_DEBUG("Trigger enter: '" << colliders[i]->GetGameObject()->GetName() << "' and '" << colliders[j]->GetGameObject()->GetName() << "'");
 						}
 					}
-					else if (!colliders[i]->isTrigger)
+					else if (!colliders[i]->isTrigger && !againstStatic)
 					{
-						// Push along the axis of the smaller overlap, away from the centre of the other body.
-						// Comparing centres keeps the direction right however deep the overlap is;
-						// two bodies with the same centre are split by their order in the list.
-						const sf::FloatRect& aBounds = colliders[i]->bounds;
-						const sf::FloatRect& bBounds = colliders[j]->bounds;
-						Vector2Df offset;
-
-						if (intersection.width > intersection.height)
-						{
-							const float aCentre = aBounds.top + 0.5f * aBounds.height;
-							const float bCentre = bBounds.top + 0.5f * bBounds.height;
-							const bool isBefore = aCentre < bCentre || (aCentre == bCentre && i < j);
-							offset.y = isBefore ? -intersection.height : intersection.height;
-						}
-						else
-						{
-							const float aCentre = aBounds.left + 0.5f * aBounds.width;
-							const float bCentre = bBounds.left + 0.5f * bBounds.width;
-							const bool isBefore = aCentre < bCentre || (aCentre == bCentre && i < j);
-							offset.x = isBefore ? -intersection.width : intersection.width;
-						}
-
-						if (isOtherStatic)
-						{
-							MoveCollider(colliders[i], offset);
-						}
-						else
-						{
-							// Two moving bodies share the push, so the pair is already apart when it is met in the other order
-							MoveCollider(colliders[i], 0.5f * offset);
-							MoveCollider(colliders[j], -0.5f * offset);
-						}
+						// Two moving bodies share the push, so the pair is already apart when it is met in the other order
+						const Vector2Df offset = GetPushOffset(i, j, intersection);
+						MoveCollider(colliders[i], 0.5f * offset);
+						MoveCollider(colliders[j], -0.5f * offset);
 
 						LOG_DEBUG("Collision: '" << colliders[i]->GetGameObject()->GetName() << "' pushed out of '" << colliders[j]->GetGameObject()->GetName() << "'");
 
@@ -129,6 +107,82 @@ namespace XYZEngine
 				}
 			}
 		}
+	}
+
+	void PhysicsSystem::PushOutOfStatics(int i)
+	{
+		// The deepest overlap is resolved first: a body sliding along a wall touches the next tile only by a sliver,
+		// and pushing it out of that sliver first would throw it back along the wall instead of out of it.
+		// One push can leave the body in another static, so the search is repeated a few times.
+		const int maxPushes = 8;
+		for (int push = 0; push < maxPushes; push++)
+		{
+			int deepest = -1;
+			float deepestArea = 0.f;
+			sf::FloatRect deepestIntersection;
+
+			for (int j = 0; j < colliders.size(); j++)
+			{
+				if (j == i || colliders[j]->isTrigger)
+				{
+					continue;
+				}
+
+				auto otherBody = colliders[j]->GetGameObject()->GetComponent<RigidbodyComponent>();
+				if (otherBody != nullptr && !otherBody->GetKinematic())
+				{
+					continue;
+				}
+
+				sf::FloatRect intersection;
+				if (colliders[i]->bounds.intersects(colliders[j]->bounds, intersection) && intersection.width * intersection.height > deepestArea)
+				{
+					deepest = j;
+					deepestArea = intersection.width * intersection.height;
+					deepestIntersection = intersection;
+				}
+			}
+
+			if (deepest < 0)
+			{
+				return;
+			}
+
+			MoveCollider(colliders[i], GetPushOffset(i, deepest, deepestIntersection));
+
+			LOG_DEBUG("Collision: '" << colliders[i]->GetGameObject()->GetName() << "' pushed out of '" << colliders[deepest]->GetGameObject()->GetName() << "'");
+
+			Collision collision(colliders[i], colliders[deepest], deepestIntersection);
+			colliders[i]->OnCollision(collision);
+			colliders[deepest]->OnCollision(collision);
+		}
+	}
+
+	Vector2Df PhysicsSystem::GetPushOffset(int i, int j, const sf::FloatRect& intersection) const
+	{
+		// Push along the axis of the smaller overlap, away from the centre of the other body.
+		// Comparing centres keeps the direction right however deep the overlap is;
+		// two bodies with the same centre are split by their order in the list.
+		const sf::FloatRect& aBounds = colliders[i]->bounds;
+		const sf::FloatRect& bBounds = colliders[j]->bounds;
+		Vector2Df offset;
+
+		if (intersection.width > intersection.height)
+		{
+			const float aCentre = aBounds.top + 0.5f * aBounds.height;
+			const float bCentre = bBounds.top + 0.5f * bBounds.height;
+			const bool isBefore = aCentre < bCentre || (aCentre == bCentre && i < j);
+			offset.y = isBefore ? -intersection.height : intersection.height;
+		}
+		else
+		{
+			const float aCentre = aBounds.left + 0.5f * aBounds.width;
+			const float bCentre = bBounds.left + 0.5f * bBounds.width;
+			const bool isBefore = aCentre < bCentre || (aCentre == bCentre && i < j);
+			offset.x = isBefore ? -intersection.width : intersection.width;
+		}
+
+		return offset;
 	}
 
 	void PhysicsSystem::MoveCollider(ColliderComponent* collider, const Vector2Df& offset)
