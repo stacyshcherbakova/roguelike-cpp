@@ -36,6 +36,7 @@ namespace XYZRoguelike
 	private:
 		void SpawnEnemies();
 		void SpawnBoss();
+		XYZEngine::Vector2Di GetBossTile() const;
 		void SpawnPotions();
 		void OnEnemyDied();
 		void OnBossDied();
