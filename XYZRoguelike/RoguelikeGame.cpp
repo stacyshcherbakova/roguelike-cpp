@@ -10,9 +10,9 @@ namespace XYZRoguelike
 	RoguelikeGame::RoguelikeGame()
 	{
 		levels = {
-			{ "Cellar", 12, 9, 3, 0, 14 },
-			{ "Catacombs", 16, 11, 5, 8, 26 },
-			{ "Throne hall", 20, 13, 7, 40, 38 },
+			{ "Cellar", 12, 9, 3, 0, 14, 0.6f },
+			{ "Catacombs", 16, 11, 5, 8, 26, 1.f },
+			{ "Throne hall", 20, 13, 7, 40, 38, 1.5f },
 		};
 	}
 

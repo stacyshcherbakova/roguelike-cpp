@@ -47,12 +47,39 @@ namespace XYZRoguelike
 		}
 
 		SpawnEnemies();
-		if (aliveEnemies == 0)
+		SpawnBoss();
+		OpenDoorIfClear();
+
+		music = std::make_unique<Music>(Settings::MUSIC_NAME, Settings::MUSIC_VOLUME);
+	}
+
+	void GameLevel::SpawnBoss()
+	{
+		bossAlive = false;
+		if (definition.bossHealthScale <= 0.f)
+		{
+			return;
+		}
+
+		// The boss guards the door from two tiles inside the room
+		const Vector2Di bossTile = { definition.width - 2, definition.height / 2 };
+		boss = std::make_unique<Boss>(arena->TileToWorld(bossTile), player->GetGameObject(), definition.bossHealthScale, [this]() { OnBossDied(); });
+		bossAlive = true;
+	}
+
+	void GameLevel::OnBossDied()
+	{
+		bossAlive = false;
+		LOG_INFO("The boss of '" << definition.name << "' is defeated");
+		OpenDoorIfClear();
+	}
+
+	void GameLevel::OpenDoorIfClear()
+	{
+		if (door && !door->IsOpen() && aliveEnemies <= 0 && !bossAlive)
 		{
 			door->SetOpen(true);
 		}
-
-		music = std::make_unique<Music>(Settings::MUSIC_NAME, Settings::MUSIC_VOLUME);
 	}
 
 	void GameLevel::SpawnEnemies()
@@ -73,10 +100,7 @@ namespace XYZRoguelike
 	{
 		aliveEnemies--;
 		LOG_INFO("Enemies left on '" << definition.name << "': " << aliveEnemies);
-		if (aliveEnemies <= 0 && door)
-		{
-			door->SetOpen(true);
-		}
+		OpenDoorIfClear();
 	}
 
 	void GameLevel::Restart()
@@ -89,6 +113,7 @@ namespace XYZRoguelike
 	void GameLevel::Stop()
 	{
 		music.reset();
+		boss.reset();
 		enemies.clear();
 		door.reset();
 		player.reset();

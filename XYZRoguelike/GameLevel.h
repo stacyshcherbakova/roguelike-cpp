@@ -5,6 +5,7 @@
 #include <vector>
 #include "Scene.h"
 #include "Arena.h"
+#include "Boss.h"
 #include "Door.h"
 #include "Enemy.h"
 #include "LevelDefinition.h"
@@ -25,11 +26,15 @@ namespace XYZRoguelike
 
 		const LevelDefinition& GetDefinition() const { return definition; }
 		int GetAliveEnemies() const { return aliveEnemies; }
+		bool IsBossAlive() const { return bossAlive; }
 		Player* GetPlayer() const { return player.get(); }
 
 	private:
 		void SpawnEnemies();
+		void SpawnBoss();
 		void OnEnemyDied();
+		void OnBossDied();
+		void OpenDoorIfClear();
 
 		LevelDefinition definition;
 		std::function<void()> onCompleted;
@@ -39,7 +44,9 @@ namespace XYZRoguelike
 		std::unique_ptr<Player> player;
 		std::unique_ptr<Door> door;
 		std::vector<std::unique_ptr<Enemy>> enemies;
+		std::unique_ptr<Boss> boss;
 		std::unique_ptr<Music> music;
 		int aliveEnemies = 0;
+		bool bossAlive = false;
 	};
 }

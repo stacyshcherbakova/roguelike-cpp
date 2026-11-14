@@ -47,6 +47,23 @@ namespace XYZRoguelike
 		const float ENEMY_ATTACK_RANGE = 110.f;
 		const float ENEMY_ATTACK_COOLDOWN = 1.f;
 
+		// Boss
+		const std::string BOSS_OBJECT_NAME = "Boss";
+		const std::string BOSS_TEXTURE = "boss";
+		const XYZEngine::Vector2Di BOSS_SIZE = { 150, 150 };
+		const float BOSS_SPEED = 170.f;
+		const float BOSS_DETECTION_RADIUS = 700.f;
+		const float BOSS_STOP_DISTANCE = 90.f;
+		const float BOSS_HEALTH = 200.f;
+		const float BOSS_ARMOR = 6.f;
+		const float BOSS_DAMAGE = 22.f;
+		const float BOSS_ATTACK_RANGE = 140.f;
+		const float BOSS_ATTACK_COOLDOWN = 1.4f;
+		const float BOSS_CHARGE_INTERVAL = 4.f;
+		const float BOSS_CHARGE_DURATION = 0.5f;
+		const float BOSS_CHARGE_SPEED = 900.f;
+		const float BOSS_CHARGE_DISTANCE = 650.f;
+
 		// Level
 		const int TILE_SIZE = 128;
 		const std::string FLOOR_TEXTURE_MAP = "level_floors";
