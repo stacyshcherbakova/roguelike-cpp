@@ -13,8 +13,14 @@ namespace
 	void LoadResources()
 	{
 		const std::string& root = Settings::RESOURCES_PATH;
-		ResourceSystem::Instance()->LoadTextureMap(Settings::PLAYER_TEXTURE_MAP, root + "TextureMaps/Player.png", { 48, 63 }, 9, false);
-		ResourceSystem::Instance()->RegisterMusic(Settings::MUSIC_NAME, root + "Music/theme.wav");
+		auto resources = ResourceSystem::Instance();
+
+		resources->LoadTextureMap(Settings::PLAYER_TEXTURE_MAP, root + "TextureMaps/Player.png", { 48, 63 }, 9, false);
+		resources->LoadTextureMap(Settings::FLOOR_TEXTURE_MAP, root + "TextureMaps/Floor.png", { 16, 16 }, 49, false);
+		resources->LoadTextureMap(Settings::WALL_TEXTURE_MAP, root + "TextureMaps/Wall.png", { 16, 16 }, 48, false);
+		resources->LoadTexture(Settings::ENEMY_TEXTURE, root + "Textures/Enemy.png", false);
+
+		resources->RegisterMusic(Settings::MUSIC_NAME, root + "Music/theme.wav");
 	}
 }
 

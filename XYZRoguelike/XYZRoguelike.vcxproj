@@ -160,13 +160,21 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="DeveloperLevel.cpp" />
+    <ClCompile Include="Arena.cpp" />
+    <ClCompile Include="Enemy.cpp" />
+    <ClCompile Include="Floor.cpp" />
     <ClCompile Include="Music.cpp" />
+    <ClCompile Include="Wall.cpp" />
     <ClCompile Include="Player.cpp" />
     <ClCompile Include="GameMain.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="DeveloperLevel.h" />
+    <ClInclude Include="Arena.h" />
+    <ClInclude Include="Enemy.h" />
     <ClInclude Include="Entity.h" />
+    <ClInclude Include="Floor.h" />
+    <ClInclude Include="Wall.h" />
     <ClInclude Include="GameSettings.h" />
     <ClInclude Include="Music.h" />
     <ClInclude Include="Player.h" />

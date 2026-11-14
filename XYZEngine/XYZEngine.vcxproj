@@ -167,6 +167,7 @@
     <ClInclude Include="ResourceSystem.h" />
     <ClInclude Include="RigidbodyComponent.h" />
     <ClInclude Include="Scene.h" />
+    <ClInclude Include="SeekerComponent.h" />
     <ClInclude Include="Sprite.h" />
     <ClInclude Include="SpriteColliderComponent.h" />
     <ClInclude Include="SpriteRendererComponent.h" />
@@ -198,6 +199,7 @@
     <ClCompile Include="RenderSystem.cpp" />
     <ClCompile Include="ResourceSystem.cpp" />
     <ClCompile Include="RigidbodyComponent.cpp" />
+    <ClCompile Include="SeekerComponent.cpp" />
     <ClCompile Include="Sprite.cpp" />
     <ClCompile Include="SpriteColliderComponent.cpp" />
     <ClCompile Include="SpriteRendererComponent.cpp" />

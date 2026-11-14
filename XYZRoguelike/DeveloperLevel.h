@@ -2,8 +2,10 @@
 
 #include <memory>
 #include "Scene.h"
-#include "Player.h"
+#include "Arena.h"
+#include "Enemy.h"
 #include "Music.h"
+#include "Player.h"
 
 namespace XYZRoguelike
 {
@@ -15,7 +17,9 @@ namespace XYZRoguelike
 		void Stop() override;
 
 	private:
+		std::unique_ptr<Arena> arena;
 		std::unique_ptr<Player> player;
+		std::unique_ptr<Enemy> enemy;
 		std::unique_ptr<Music> music;
 	};
 }
