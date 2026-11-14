@@ -15,7 +15,11 @@ namespace XYZEngine
 			return;
 		}
 
+		renderer = spriteRenderer;
 		sprite = spriteRenderer->GetSprite();
+		// Take the bounds right away so a freshly created object never collides at the origin
+		renderer->SyncWithTransform();
+		bounds = sprite->getGlobalBounds();
 		PhysicsSystem::Instance()->Subscribe(this);
 	}
 	SpriteColliderComponent::~SpriteColliderComponent()
@@ -32,6 +36,7 @@ namespace XYZEngine
 	{
 		if (sprite != nullptr)
 		{
+			renderer->SyncWithTransform();
 			bounds = sprite->getGlobalBounds();
 		}
 	}
