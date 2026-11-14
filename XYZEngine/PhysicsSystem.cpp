@@ -12,13 +12,18 @@ namespace XYZEngine
 		return &physicsSystem;
 	}
 
-	float PhysicsSystem::GetFixedDeltaTime() const
-	{
-		return fixedDeltaTime;
-	}
-
 	void PhysicsSystem::Update()
 	{
+		// A component that moves its object may be updated after the collider of the same object,
+		// so the bounds are taken again here: every body is checked where it stands now, not where it stood a frame ago
+		for (int i = 0; i < colliders.size(); i++)
+		{
+			colliders[i]->SyncBounds();
+		}
+
+		previousContacts.swap(currentContacts);
+		currentContacts.clear();
+
 		// Moving bodies are pushed apart first and out of the static ones last:
 		// whatever the monsters do to each other, nobody finishes a step inside a wall
 		ResolvePairs(false);
@@ -98,7 +103,7 @@ namespace XYZEngine
 						MoveCollider(colliders[i], 0.5f * offset);
 						MoveCollider(colliders[j], -0.5f * offset);
 
-						LOG_DEBUG("Collision: '" << colliders[i]->GetGameObject()->GetName() << "' pushed out of '" << colliders[j]->GetGameObject()->GetName() << "'");
+						ReportContact(colliders[i], colliders[j]);
 
 						Collision collision(colliders[i], colliders[j], intersection);
 						colliders[i]->OnCollision(collision);
@@ -150,7 +155,7 @@ namespace XYZEngine
 
 			MoveCollider(colliders[i], GetPushOffset(i, deepest, deepestIntersection));
 
-			LOG_DEBUG("Collision: '" << colliders[i]->GetGameObject()->GetName() << "' pushed out of '" << colliders[deepest]->GetGameObject()->GetName() << "'");
+			ReportContact(colliders[i], colliders[deepest]);
 
 			Collision collision(colliders[i], colliders[deepest], deepestIntersection);
 			colliders[i]->OnCollision(collision);
@@ -185,6 +190,17 @@ namespace XYZEngine
 		return offset;
 	}
 
+	void PhysicsSystem::ReportContact(ColliderComponent* pushed, ColliderComponent* other)
+	{
+		// Bodies that lean on each other are pushed apart every frame; the log gets one line when the contact starts
+		const std::pair<ColliderComponent*, ColliderComponent*> contact = std::less<ColliderComponent*>()(pushed, other) ? std::make_pair(pushed, other) : std::make_pair(other, pushed);
+		currentContacts.insert(contact);
+		if (previousContacts.find(contact) == previousContacts.end())
+		{
+			LOG_DEBUG("Collision: '" << pushed->GetGameObject()->GetName() << "' pushed out of '" << other->GetGameObject()->GetName() << "'");
+		}
+	}
+
 	void PhysicsSystem::MoveCollider(ColliderComponent* collider, const Vector2Df& offset)
 	{
 		collider->GetGameObject()->GetComponent<TransformComponent>()->MoveBy(offset);
@@ -202,6 +218,21 @@ namespace XYZEngine
 	void PhysicsSystem::Unsubscribe(ColliderComponent* collider)
 	{
 		colliders.erase(std::remove_if(colliders.begin(), colliders.end(), [collider](ColliderComponent* obj) { return obj == collider; }), colliders.end());
+
+		for (auto contacts : { &previousContacts, &currentContacts })
+		{
+			for (auto contact = contacts->begin(); contact != contacts->end();)
+			{
+				if (contact->first == collider || contact->second == collider)
+				{
+					contact = contacts->erase(contact);
+				}
+				else
+				{
+					++contact;
+				}
+			}
+		}
 
 		for (auto pair = triggersEnteredPair.begin(); pair != triggersEnteredPair.end();)
 		{
