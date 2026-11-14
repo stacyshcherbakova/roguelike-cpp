@@ -25,6 +25,10 @@ namespace XYZEngine
 		PhysicsSystem(PhysicsSystem const&) = delete;
 		PhysicsSystem& operator= (PhysicsSystem const&) = delete;
 
+		// One pass over the pairs "moving body - static body" or "moving body - moving body"
+		void ResolvePairs(bool againstStatic);
+		void MoveCollider(ColliderComponent* collider, const Vector2Df& offset);
+
 		std::vector<ColliderComponent*> colliders;
 		std::map<ColliderComponent*, ColliderComponent*> triggersEnteredPair;
 
