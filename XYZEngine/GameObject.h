@@ -1,7 +1,8 @@
 #pragma once
 
 #include "TransformComponent.h"
-#include <iostream>
+#include "Logger.h"
+#include <cassert>
 
 namespace XYZEngine
 {
@@ -24,17 +25,13 @@ namespace XYZEngine
 		template <typename T>
 		T* AddComponent()
 		{
-			if constexpr (!std::is_base_of<Component, T>::value)
-			{
-				std::cout << "T must be derived from Component." << std::endl;
-				return nullptr;
-			}
+			static_assert(std::is_base_of<Component, T>::value, "T must be derived from Component");
 
 			if constexpr (std::is_same<T, TransformComponent>::value)
 			{
 				if (GetComponent<TransformComponent>() != nullptr)
 				{
-					std::cout << "Can't add Transform, because it will break the engine loop." << std::endl;
+					LOG_ERROR("'" << name << "' already has a TransformComponent, a second one would break the engine loop");
 					return nullptr;
 				}
 			}
@@ -47,9 +44,10 @@ namespace XYZEngine
 
 		void RemoveComponent(Component* component)
 		{
+			assert(component != nullptr && "Cannot remove a null component");
 			components.erase(std::remove_if(components.begin(), components.end(), [component](Component* obj) { return obj == component; }), components.end());
 			delete component;
-			std::cout << "Deleted component";
+			LOG_DEBUG("Component removed from '" << name << "'");
 		}
 
 		template <typename T>

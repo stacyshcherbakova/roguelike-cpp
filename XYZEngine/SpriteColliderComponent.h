@@ -15,8 +15,13 @@ namespace XYZEngine
 
 		void Update(float deltaTime) override;
 		void Render() override;
+
+		// Debug outline around every sprite collider
+		static void SetDrawBounds(bool draw);
+
 	private:
-		const sf::Sprite* sprite;
+		const sf::Sprite* sprite = nullptr;
+		static bool drawBounds;
 	};
 }
 

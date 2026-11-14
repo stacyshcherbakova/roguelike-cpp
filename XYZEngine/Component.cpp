@@ -1,13 +1,16 @@
 #include "pch.h"
 #include "Component.h"
-#include <iostream>
+
+#include <cassert>
 
 namespace XYZEngine
 {
-	Component::Component(GameObject* gameObject) : gameObject(gameObject) {}
+	Component::Component(GameObject* gameObject) : gameObject(gameObject)
+	{
+		assert(gameObject != nullptr && "A component must belong to a game object");
+	}
 	Component::~Component()
 	{
-		std::cout << "Deleted component: " << this << std::endl;
 	}
 	GameObject* Component::GetGameObject()
 	{

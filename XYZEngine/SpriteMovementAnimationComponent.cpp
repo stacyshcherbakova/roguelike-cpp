@@ -1,6 +1,7 @@
 #include "pch.h"
 #include "SpriteMovementAnimationComponent.h"
 #include "GameObject.h"
+#include "Logger.h"
 #include "ResourceSystem.h"
 
 namespace XYZEngine
@@ -12,7 +13,7 @@ namespace XYZEngine
 
 		if (movement == nullptr || renderer == nullptr)
 		{
-			std::cout << "SpriteMovementAnimationComponent needs MovementComponent and SpriteRendererComponent." << std::endl;
+			LOG_WARNING("'" << gameObject->GetName() << "' needs MovementComponent and SpriteRendererComponent for the movement animation");
 		}
 	}
 
@@ -20,6 +21,10 @@ namespace XYZEngine
 	{
 		frames.clear();
 		const int count = ResourceSystem::Instance()->GetTextureMapElementsCount(textureMapName);
+		if (count == 0)
+		{
+			LOG_ERROR("Animation of '" << gameObject->GetName() << "' has no frames: texture map '" << textureMapName << "' is empty");
+		}
 		for (int i = 0; i < count; i++)
 		{
 			frames.push_back(ResourceSystem::Instance()->GetTextureMapElementShared(textureMapName, i));

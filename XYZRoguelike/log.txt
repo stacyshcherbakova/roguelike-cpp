@@ -1,0 +1,260 @@
+12:32:43.139 [INFO] === XYZRoguelike started ===
+12:32:43.319 [INFO] Main window set: 1280x720
+12:32:43.322 [INFO] Texture map 'player' loaded from Resources/TextureMaps/Player.png (9 elements)
+12:32:43.344 [INFO] Texture map 'level_floors' loaded from Resources/TextureMaps/Floor.png (49 elements)
+12:32:43.378 [INFO] Texture map 'level_walls' loaded from Resources/TextureMaps/Wall.png (48 elements)
+12:32:43.378 [INFO] Texture 'enemy' loaded from Resources/Textures/Enemy.png
+12:32:43.378 [INFO] Music 'theme' registered at Resources/Music/theme.wav
+12:32:43.379 [ERROR] Failed to load texture 'decor' from Resources/Textures/Decor.png
+12:32:43.379 [INFO] Building an arena of 14x10 tiles
+12:32:43.379 [DEBUG] Game object created: 'Floor' (1 in the world)
+12:32:43.379 [DEBUG] Game object created: 'Floor' (2 in the world)
+12:32:43.379 [DEBUG] Game object created: 'Floor' (3 in the world)
+12:32:43.379 [DEBUG] Game object created: 'Floor' (4 in the world)
+12:32:43.379 [DEBUG] Game object created: 'Floor' (5 in the world)
+12:32:43.379 [DEBUG] Game object created: 'Floor' (6 in the world)
+12:32:43.379 [DEBUG] Game object created: 'Floor' (7 in the world)
+12:32:43.379 [DEBUG] Game object created: 'Floor' (8 in the world)
+12:32:43.379 [DEBUG] Game object created: 'Floor' (9 in the world)
+12:32:43.380 [DEBUG] Game object created: 'Floor' (10 in the world)
+12:32:43.380 [DEBUG] Game object created: 'Floor' (11 in the world)
+12:32:43.380 [DEBUG] Game object created: 'Floor' (12 in the world)
+12:32:43.380 [DEBUG] Game object created: 'Floor' (13 in the world)
+12:32:43.380 [DEBUG] Game object created: 'Floor' (14 in the world)
+12:32:43.380 [DEBUG] Game object created: 'Floor' (15 in the world)
+12:32:43.380 [DEBUG] Game object created: 'Floor' (16 in the world)
+12:32:43.380 [DEBUG] Game object created: 'Floor' (17 in the world)
+12:32:43.380 [DEBUG] Game object created: 'Floor' (18 in the world)
+12:32:43.380 [DEBUG] Game object created: 'Floor' (19 in the world)
+12:32:43.380 [DEBUG] Game object created: 'Floor' (20 in the world)
+12:32:43.380 [DEBUG] Game object created: 'Floor' (21 in the world)
+12:32:43.380 [DEBUG] Game object created: 'Floor' (22 in the world)
+12:32:43.380 [DEBUG] Game object created: 'Floor' (23 in the world)
+12:32:43.380 [DEBUG] Game object created: 'Floor' (24 in the world)
+12:32:43.380 [DEBUG] Game object created: 'Floor' (25 in the world)
+12:32:43.381 [DEBUG] Game object created: 'Floor' (26 in the world)
+12:32:43.381 [DEBUG] Game object created: 'Floor' (27 in the world)
+12:32:43.381 [DEBUG] Game object created: 'Floor' (28 in the world)
+12:32:43.381 [DEBUG] Game object created: 'Floor' (29 in the world)
+12:32:43.381 [DEBUG] Game object created: 'Floor' (30 in the world)
+12:32:43.381 [DEBUG] Game object created: 'Floor' (31 in the world)
+12:32:43.381 [DEBUG] Game object created: 'Floor' (32 in the world)
+12:32:43.381 [DEBUG] Game object created: 'Floor' (33 in the world)
+12:32:43.381 [DEBUG] Game object created: 'Floor' (34 in the world)
+12:32:43.381 [DEBUG] Game object created: 'Floor' (35 in the world)
+12:32:43.381 [DEBUG] Game object created: 'Floor' (36 in the world)
+12:32:43.381 [DEBUG] Game object created: 'Floor' (37 in the world)
+12:32:43.381 [DEBUG] Game object created: 'Floor' (38 in the world)
+12:32:43.381 [DEBUG] Game object created: 'Floor' (39 in the world)
+12:32:43.381 [DEBUG] Game object created: 'Floor' (40 in the world)
+12:32:43.381 [DEBUG] Game object created: 'Floor' (41 in the world)
+12:32:43.382 [DEBUG] Game object created: 'Floor' (42 in the world)
+12:32:43.382 [DEBUG] Game object created: 'Floor' (43 in the world)
+12:32:43.382 [DEBUG] Game object created: 'Floor' (44 in the world)
+12:32:43.382 [DEBUG] Game object created: 'Floor' (45 in the world)
+12:32:43.382 [DEBUG] Game object created: 'Floor' (46 in the world)
+12:32:43.382 [DEBUG] Game object created: 'Floor' (47 in the world)
+12:32:43.382 [DEBUG] Game object created: 'Floor' (48 in the world)
+12:32:43.382 [DEBUG] Game object created: 'Floor' (49 in the world)
+12:32:43.382 [DEBUG] Game object created: 'Floor' (50 in the world)
+12:32:43.382 [DEBUG] Game object created: 'Floor' (51 in the world)
+12:32:43.382 [DEBUG] Game object created: 'Floor' (52 in the world)
+12:32:43.382 [DEBUG] Game object created: 'Floor' (53 in the world)
+12:32:43.382 [DEBUG] Game object created: 'Floor' (54 in the world)
+12:32:43.382 [DEBUG] Game object created: 'Floor' (55 in the world)
+12:32:43.382 [DEBUG] Game object created: 'Floor' (56 in the world)
+12:32:43.382 [DEBUG] Game object created: 'Floor' (57 in the world)
+12:32:43.383 [DEBUG] Game object created: 'Floor' (58 in the world)
+12:32:43.383 [DEBUG] Game object created: 'Floor' (59 in the world)
+12:32:43.383 [DEBUG] Game object created: 'Floor' (60 in the world)
+12:32:43.383 [DEBUG] Game object created: 'Floor' (61 in the world)
+12:32:43.383 [DEBUG] Game object created: 'Floor' (62 in the world)
+12:32:43.383 [DEBUG] Game object created: 'Floor' (63 in the world)
+12:32:43.383 [DEBUG] Game object created: 'Floor' (64 in the world)
+12:32:43.383 [DEBUG] Game object created: 'Floor' (65 in the world)
+12:32:43.383 [DEBUG] Game object created: 'Floor' (66 in the world)
+12:32:43.383 [DEBUG] Game object created: 'Floor' (67 in the world)
+12:32:43.383 [DEBUG] Game object created: 'Floor' (68 in the world)
+12:32:43.383 [DEBUG] Game object created: 'Floor' (69 in the world)
+12:32:43.383 [DEBUG] Game object created: 'Floor' (70 in the world)
+12:32:43.383 [DEBUG] Game object created: 'Floor' (71 in the world)
+12:32:43.383 [DEBUG] Game object created: 'Floor' (72 in the world)
+12:32:43.383 [DEBUG] Game object created: 'Floor' (73 in the world)
+12:32:43.383 [DEBUG] Game object created: 'Floor' (74 in the world)
+12:32:43.383 [DEBUG] Game object created: 'Floor' (75 in the world)
+12:32:43.384 [DEBUG] Game object created: 'Floor' (76 in the world)
+12:32:43.384 [DEBUG] Game object created: 'Floor' (77 in the world)
+12:32:43.384 [DEBUG] Game object created: 'Floor' (78 in the world)
+12:32:43.384 [DEBUG] Game object created: 'Floor' (79 in the world)
+12:32:43.384 [DEBUG] Game object created: 'Floor' (80 in the world)
+12:32:43.384 [DEBUG] Game object created: 'Floor' (81 in the world)
+12:32:43.384 [DEBUG] Game object created: 'Floor' (82 in the world)
+12:32:43.384 [DEBUG] Game object created: 'Floor' (83 in the world)
+12:32:43.384 [DEBUG] Game object created: 'Floor' (84 in the world)
+12:32:43.384 [DEBUG] Game object created: 'Floor' (85 in the world)
+12:32:43.384 [DEBUG] Game object created: 'Floor' (86 in the world)
+12:32:43.384 [DEBUG] Game object created: 'Floor' (87 in the world)
+12:32:43.384 [DEBUG] Game object created: 'Floor' (88 in the world)
+12:32:43.384 [DEBUG] Game object created: 'Floor' (89 in the world)
+12:32:43.384 [DEBUG] Game object created: 'Floor' (90 in the world)
+12:32:43.384 [DEBUG] Game object created: 'Floor' (91 in the world)
+12:32:43.384 [DEBUG] Game object created: 'Floor' (92 in the world)
+12:32:43.384 [DEBUG] Game object created: 'Floor' (93 in the world)
+12:32:43.384 [DEBUG] Game object created: 'Floor' (94 in the world)
+12:32:43.384 [DEBUG] Game object created: 'Floor' (95 in the world)
+12:32:43.385 [DEBUG] Game object created: 'Floor' (96 in the world)
+12:32:43.385 [DEBUG] Game object created: 'Floor' (97 in the world)
+12:32:43.385 [DEBUG] Game object created: 'Floor' (98 in the world)
+12:32:43.385 [DEBUG] Game object created: 'Floor' (99 in the world)
+12:32:43.385 [DEBUG] Game object created: 'Floor' (100 in the world)
+12:32:43.385 [DEBUG] Game object created: 'Floor' (101 in the world)
+12:32:43.385 [DEBUG] Game object created: 'Floor' (102 in the world)
+12:32:43.385 [DEBUG] Game object created: 'Floor' (103 in the world)
+12:32:43.385 [DEBUG] Game object created: 'Floor' (104 in the world)
+12:32:43.385 [DEBUG] Game object created: 'Floor' (105 in the world)
+12:32:43.385 [DEBUG] Game object created: 'Floor' (106 in the world)
+12:32:43.385 [DEBUG] Game object created: 'Floor' (107 in the world)
+12:32:43.385 [DEBUG] Game object created: 'Floor' (108 in the world)
+12:32:43.385 [DEBUG] Game object created: 'Floor' (109 in the world)
+12:32:43.385 [DEBUG] Game object created: 'Floor' (110 in the world)
+12:32:43.385 [DEBUG] Game object created: 'Floor' (111 in the world)
+12:32:43.385 [DEBUG] Game object created: 'Floor' (112 in the world)
+12:32:43.385 [DEBUG] Game object created: 'Floor' (113 in the world)
+12:32:43.385 [DEBUG] Game object created: 'Floor' (114 in the world)
+12:32:43.385 [DEBUG] Game object created: 'Floor' (115 in the world)
+12:32:43.386 [DEBUG] Game object created: 'Floor' (116 in the world)
+12:32:43.386 [DEBUG] Game object created: 'Floor' (117 in the world)
+12:32:43.386 [DEBUG] Game object created: 'Floor' (118 in the world)
+12:32:43.386 [DEBUG] Game object created: 'Floor' (119 in the world)
+12:32:43.386 [DEBUG] Game object created: 'Floor' (120 in the world)
+12:32:43.386 [DEBUG] Game object created: 'Floor' (121 in the world)
+12:32:43.386 [DEBUG] Game object created: 'Floor' (122 in the world)
+12:32:43.386 [DEBUG] Game object created: 'Floor' (123 in the world)
+12:32:43.386 [DEBUG] Game object created: 'Floor' (124 in the world)
+12:32:43.386 [DEBUG] Game object created: 'Floor' (125 in the world)
+12:32:43.386 [DEBUG] Game object created: 'Floor' (126 in the world)
+12:32:43.386 [DEBUG] Game object created: 'Floor' (127 in the world)
+12:32:43.386 [DEBUG] Game object created: 'Floor' (128 in the world)
+12:32:43.386 [DEBUG] Game object created: 'Floor' (129 in the world)
+12:32:43.386 [DEBUG] Game object created: 'Floor' (130 in the world)
+12:32:43.386 [DEBUG] Game object created: 'Floor' (131 in the world)
+12:32:43.386 [DEBUG] Game object created: 'Floor' (132 in the world)
+12:32:43.386 [DEBUG] Game object created: 'Floor' (133 in the world)
+12:32:43.387 [DEBUG] Game object created: 'Floor' (134 in the world)
+12:32:43.387 [DEBUG] Game object created: 'Floor' (135 in the world)
+12:32:43.387 [DEBUG] Game object created: 'Floor' (136 in the world)
+12:32:43.387 [DEBUG] Game object created: 'Floor' (137 in the world)
+12:32:43.387 [DEBUG] Game object created: 'Floor' (138 in the world)
+12:32:43.387 [DEBUG] Game object created: 'Floor' (139 in the world)
+12:32:43.387 [DEBUG] Game object created: 'Floor' (140 in the world)
+12:32:43.387 [DEBUG] Game object created: 'Wall' (141 in the world)
+12:32:43.387 [DEBUG] Collider subscribed: 'Wall'
+12:32:43.387 [DEBUG] Game object created: 'Wall' (142 in the world)
+12:32:43.387 [DEBUG] Collider subscribed: 'Wall'
+12:32:43.387 [DEBUG] Game object created: 'Wall' (143 in the world)
+12:32:43.387 [DEBUG] Collider subscribed: 'Wall'
+12:32:43.387 [DEBUG] Game object created: 'Wall' (144 in the world)
+12:32:43.387 [DEBUG] Collider subscribed: 'Wall'
+12:32:43.388 [DEBUG] Game object created: 'Wall' (145 in the world)
+12:32:43.388 [DEBUG] Collider subscribed: 'Wall'
+12:32:43.388 [DEBUG] Game object created: 'Wall' (146 in the world)
+12:32:43.388 [DEBUG] Collider subscribed: 'Wall'
+12:32:43.388 [DEBUG] Game object created: 'Wall' (147 in the world)
+12:32:43.388 [DEBUG] Collider subscribed: 'Wall'
+12:32:43.388 [DEBUG] Game object created: 'Wall' (148 in the world)
+12:32:43.388 [DEBUG] Collider subscribed: 'Wall'
+12:32:43.388 [DEBUG] Game object created: 'Wall' (149 in the world)
+12:32:43.388 [DEBUG] Collider subscribed: 'Wall'
+12:32:43.388 [DEBUG] Game object created: 'Wall' (150 in the world)
+12:32:43.388 [DEBUG] Collider subscribed: 'Wall'
+12:32:43.388 [DEBUG] Game object created: 'Wall' (151 in the world)
+12:32:43.388 [DEBUG] Collider subscribed: 'Wall'
+12:32:43.388 [DEBUG] Game object created: 'Wall' (152 in the world)
+12:32:43.389 [DEBUG] Collider subscribed: 'Wall'
+12:32:43.389 [DEBUG] Game object created: 'Wall' (153 in the world)
+12:32:43.389 [DEBUG] Collider subscribed: 'Wall'
+12:32:43.389 [DEBUG] Game object created: 'Wall' (154 in the world)
+12:32:43.389 [DEBUG] Collider subscribed: 'Wall'
+12:32:43.389 [DEBUG] Game object created: 'Wall' (155 in the world)
+12:32:43.389 [DEBUG] Collider subscribed: 'Wall'
+12:32:43.389 [DEBUG] Game object created: 'Wall' (156 in the world)
+12:32:43.389 [DEBUG] Collider subscribed: 'Wall'
+12:32:43.389 [DEBUG] Game object created: 'Wall' (157 in the world)
+12:32:43.389 [DEBUG] Collider subscribed: 'Wall'
+12:32:43.389 [DEBUG] Game object created: 'Wall' (158 in the world)
+12:32:43.389 [DEBUG] Collider subscribed: 'Wall'
+12:32:43.389 [DEBUG] Game object created: 'Wall' (159 in the world)
+12:32:43.389 [DEBUG] Collider subscribed: 'Wall'
+12:32:43.389 [DEBUG] Game object created: 'Wall' (160 in the world)
+12:32:43.389 [DEBUG] Collider subscribed: 'Wall'
+12:32:43.389 [DEBUG] Game object created: 'Wall' (161 in the world)
+12:32:43.389 [DEBUG] Collider subscribed: 'Wall'
+12:32:43.390 [DEBUG] Game object created: 'Wall' (162 in the world)
+12:32:43.390 [DEBUG] Collider subscribed: 'Wall'
+12:32:43.390 [DEBUG] Game object created: 'Wall' (163 in the world)
+12:32:43.390 [DEBUG] Collider subscribed: 'Wall'
+12:32:43.390 [DEBUG] Game object created: 'Wall' (164 in the world)
+12:32:43.390 [DEBUG] Collider subscribed: 'Wall'
+12:32:43.390 [DEBUG] Game object created: 'Wall' (165 in the world)
+12:32:43.390 [DEBUG] Collider subscribed: 'Wall'
+12:32:43.390 [DEBUG] Game object created: 'Wall' (166 in the world)
+12:32:43.390 [DEBUG] Collider subscribed: 'Wall'
+12:32:43.390 [DEBUG] Game object created: 'Wall' (167 in the world)
+12:32:43.390 [DEBUG] Collider subscribed: 'Wall'
+12:32:43.390 [DEBUG] Game object created: 'Wall' (168 in the world)
+12:32:43.390 [DEBUG] Collider subscribed: 'Wall'
+12:32:43.390 [DEBUG] Game object created: 'Wall' (169 in the world)
+12:32:43.390 [DEBUG] Collider subscribed: 'Wall'
+12:32:43.390 [DEBUG] Game object created: 'Wall' (170 in the world)
+12:32:43.390 [DEBUG] Collider subscribed: 'Wall'
+12:32:43.391 [DEBUG] Game object created: 'Wall' (171 in the world)
+12:32:43.391 [DEBUG] Collider subscribed: 'Wall'
+12:32:43.391 [DEBUG] Game object created: 'Wall' (172 in the world)
+12:32:43.391 [DEBUG] Collider subscribed: 'Wall'
+12:32:43.391 [DEBUG] Game object created: 'Wall' (173 in the world)
+12:32:43.391 [DEBUG] Collider subscribed: 'Wall'
+12:32:43.391 [DEBUG] Game object created: 'Wall' (174 in the world)
+12:32:43.391 [DEBUG] Collider subscribed: 'Wall'
+12:32:43.391 [DEBUG] Game object created: 'Wall' (175 in the world)
+12:32:43.391 [DEBUG] Collider subscribed: 'Wall'
+12:32:43.391 [DEBUG] Game object created: 'Wall' (176 in the world)
+12:32:43.391 [DEBUG] Collider subscribed: 'Wall'
+12:32:43.391 [DEBUG] Game object created: 'Wall' (177 in the world)
+12:32:43.391 [DEBUG] Collider subscribed: 'Wall'
+12:32:43.391 [DEBUG] Game object created: 'Wall' (178 in the world)
+12:32:43.391 [DEBUG] Collider subscribed: 'Wall'
+12:32:43.391 [DEBUG] Game object created: 'Wall' (179 in the world)
+12:32:43.391 [DEBUG] Collider subscribed: 'Wall'
+12:32:43.391 [DEBUG] Game object created: 'Wall' (180 in the world)
+12:32:43.392 [DEBUG] Collider subscribed: 'Wall'
+12:32:43.392 [DEBUG] Game object created: 'Wall' (181 in the world)
+12:32:43.392 [DEBUG] Collider subscribed: 'Wall'
+12:32:43.392 [DEBUG] Game object created: 'Wall' (182 in the world)
+12:32:43.392 [DEBUG] Collider subscribed: 'Wall'
+12:32:43.392 [DEBUG] Game object created: 'Wall' (183 in the world)
+12:32:43.392 [DEBUG] Collider subscribed: 'Wall'
+12:32:43.392 [DEBUG] Game object created: 'Wall' (184 in the world)
+12:32:43.392 [DEBUG] Collider subscribed: 'Wall'
+12:32:43.392 [DEBUG] Game object created: 'Wall' (185 in the world)
+12:32:43.392 [DEBUG] Collider subscribed: 'Wall'
+12:32:43.392 [DEBUG] Game object created: 'Wall' (186 in the world)
+12:32:43.392 [DEBUG] Collider subscribed: 'Wall'
+12:32:43.392 [DEBUG] Game object created: 'Wall' (187 in the world)
+12:32:43.392 [DEBUG] Collider subscribed: 'Wall'
+12:32:43.393 [DEBUG] Game object created: 'Wall' (188 in the world)
+12:32:43.393 [DEBUG] Collider subscribed: 'Wall'
+12:32:43.393 [DEBUG] Game object created: 'Wall' (189 in the world)
+12:32:43.393 [DEBUG] Collider subscribed: 'Wall'
+12:32:43.393 [DEBUG] Game object created: 'Wall' (190 in the world)
+12:32:43.393 [DEBUG] Collider subscribed: 'Wall'
+12:32:43.393 [DEBUG] Game object created: 'Wall' (191 in the world)
+12:32:43.393 [DEBUG] Collider subscribed: 'Wall'
+12:32:43.393 [DEBUG] Game object created: 'Wall' (192 in the world)
+12:32:43.393 [DEBUG] Collider subscribed: 'Wall'
+12:32:43.393 [DEBUG] Game object created: 'Player' (193 in the world)
+12:32:43.393 [DEBUG] Collider subscribed: 'Player'
+12:32:43.393 [DEBUG] Game object created: 'Enemy' (194 in the world)
+12:32:43.393 [DEBUG] Collider subscribed: 'Enemy'
+12:32:43.393 [DEBUG] Game object created: 'Music: theme' (195 in the world)
+12:32:43.444 [INFO] Engine created, random seed 1794659563
+12:32:43.445 [INFO] Main loop started

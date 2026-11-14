@@ -1,5 +1,8 @@
 #include "pch.h"
 #include "GameWorld.h"
+#include "Logger.h"
+
+#include <cassert>
 
 namespace XYZEngine
 {
@@ -42,22 +45,28 @@ namespace XYZEngine
 
 	GameObject* GameWorld::CreateGameObject()
 	{
-		GameObject* newGameObject = new GameObject();
-		gameObjects.push_back(newGameObject);
-		return newGameObject;
+		return CreateGameObject("GameObject");
 	}
 	GameObject* GameWorld::CreateGameObject(std::string name)
 	{
 		GameObject* newGameObject = new GameObject(name);
 		gameObjects.push_back(newGameObject);
+		LOG_DEBUG("Game object created: '" << name << "' (" << gameObjects.size() << " in the world)");
 		return newGameObject;
 	}
 	void GameWorld::DestroyGameObject(GameObject* gameObject)
 	{
+		assert(gameObject != nullptr && "Cannot destroy a null game object");
+		if (gameObject == nullptr)
+		{
+			LOG_ERROR("DestroyGameObject called with a null object");
+			return;
+		}
 		markedToDestroyGameObjects.push_back(gameObject);
 	}
 	void GameWorld::Clear()
 	{
+		LOG_INFO("Clearing the world: " << gameObjects.size() << " game objects");
 		for (int i = gameObjects.size() - 1; i >= 0; i--)
 		{
 			if (gameObjects[i] == nullptr)
@@ -91,6 +100,7 @@ namespace XYZEngine
 
 	void GameWorld::DestroyGameObjectImmediate(GameObject* gameObject)
 	{
+		LOG_DEBUG("Game object destroyed: '" << gameObject->GetName() << "'");
 		auto parent = gameObject->GetComponent<TransformComponent>()->GetParent();
 		if (parent != nullptr)
 		{

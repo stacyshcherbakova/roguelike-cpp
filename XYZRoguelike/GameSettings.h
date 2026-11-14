@@ -13,6 +13,11 @@ namespace XYZRoguelike
 		const std::string GAME_NAME = "XYZRoguelike";
 
 		const std::string RESOURCES_PATH = "Resources/";
+#ifdef NDEBUG
+		const bool DRAW_COLLIDERS = false;
+#else
+		const bool DRAW_COLLIDERS = true;
+#endif
 
 		// Player
 		const std::string PLAYER_TEXTURE_MAP = "player";

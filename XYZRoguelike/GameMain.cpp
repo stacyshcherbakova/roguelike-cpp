@@ -1,7 +1,10 @@
 ﻿#include <SFML/Graphics.hpp>
+#include <stdexcept>
 #include "Engine.h"
+#include "Logger.h"
 #include "RenderSystem.h"
 #include "ResourceSystem.h"
+#include "SpriteColliderComponent.h"
 #include "DeveloperLevel.h"
 #include "GameSettings.h"
 
@@ -21,20 +24,43 @@ namespace
 		resources->LoadTexture(Settings::ENEMY_TEXTURE, root + "Textures/Enemy.png", false);
 
 		resources->RegisterMusic(Settings::MUSIC_NAME, root + "Music/theme.wav");
+
+		// Optional decoration that is not shipped yet: the error is logged and the game goes on without it
+		resources->LoadTexture("decor", root + "Textures/Decor.png", false);
 	}
 }
 
 int main()
 {
-	RenderSystem::Instance()->SetMainWindow(new sf::RenderWindow(sf::VideoMode(Settings::SCREEN_WIDTH, Settings::SCREEN_HEIGHT), Settings::GAME_NAME));
+	LOG_INFO("=== " << Settings::GAME_NAME << " started ===");
 
-	LoadResources();
+	RenderSystem::Instance()->SetMainWindow(new sf::RenderWindow(sf::VideoMode(Settings::SCREEN_WIDTH, Settings::SCREEN_HEIGHT), Settings::GAME_NAME));
+	SpriteColliderComponent::SetDrawBounds(Settings::DRAW_COLLIDERS);
+
+	try
+	{
+		LoadResources();
+	}
+	catch (const std::invalid_argument& error)
+	{
+		LOG_ERROR("Resource description is wrong: " << error.what());
+	}
 
 	auto developerLevel = std::make_shared<DeveloperLevel>();
-	developerLevel->Start();
+	try
+	{
+		developerLevel->Start();
+	}
+	catch (const std::exception& error)
+	{
+		LOG_ERROR("The level could not be started: " << error.what());
+		return 1;
+	}
 
 	Engine::Instance()->Run();
 
 	developerLevel->Stop();
+	ResourceSystem::Instance()->Clear();
+	LOG_INFO("=== " << Settings::GAME_NAME << " finished ===");
 	return 0;
 }

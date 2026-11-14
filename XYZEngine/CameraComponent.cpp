@@ -1,6 +1,7 @@
 #include "pch.h"
 #include "CameraComponent.h"
 #include "TransformComponent.h"
+#include "Logger.h"
 
 namespace XYZEngine
 {
@@ -16,6 +17,11 @@ namespace XYZEngine
 
 	void CameraComponent::Update(float deltaTime)
 	{
+		if (window == nullptr)
+		{
+			return;
+		}
+
 		auto position = transform->GetWorldPosition();
 		auto rotation = transform->GetWorldRotation();
 
@@ -26,10 +32,6 @@ namespace XYZEngine
 	}
 	void CameraComponent::Render()
 	{
-		if (window == nullptr)
-		{
-			std::cout << "NULL window render." << std::endl;
-		}
 	}
 
 	void CameraComponent::SetBaseResolution(int width, int height)
@@ -38,13 +40,17 @@ namespace XYZEngine
 	}
 	void CameraComponent::SetWindow(sf::RenderWindow* newWindow)
 	{
+		if (newWindow == nullptr)
+		{
+			LOG_ERROR("Camera of '" << gameObject->GetName() << "' received a null window");
+		}
 		window = newWindow;
 	}
 	void CameraComponent::ZoomBy(float newZoom)
 	{
 		if (newZoom <= 0)
 		{
-			std::cout << "Not allowed zoom lesser or equal than zero." << std::endl;
+			LOG_WARNING("Zoom must be positive, got " << newZoom);
 			return;
 		}
 		view->zoom(newZoom);

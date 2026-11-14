@@ -1,7 +1,7 @@
 #include "pch.h"
 #include "Engine.h"
-#include <iostream>
 #include "GameWorld.h"
+#include "Logger.h"
 #include "RenderSystem.h"
 
 namespace XYZEngine
@@ -16,13 +16,16 @@ namespace XYZEngine
 	{
 		unsigned int seed = (unsigned int)time(nullptr);
 		srand(seed);
+		LOG_INFO("Engine created, random seed " << seed);
 	}
 
 	void Engine::Run()
 	{
 		sf::Clock gameClock;
 		sf::Event event;
-		
+
+		LOG_INFO("Main loop started");
+
 		while (RenderSystem::Instance()->GetMainWindow().isOpen())
 		{
 			sf::Time dt = gameClock.restart();
@@ -32,6 +35,7 @@ namespace XYZEngine
 			{
 				if (event.type == sf::Event::Closed)
 				{
+					LOG_INFO("Window close requested");
 					RenderSystem::Instance()->GetMainWindow().close();
 				}
 			}
@@ -50,5 +54,7 @@ namespace XYZEngine
 
 			RenderSystem::Instance()->GetMainWindow().display();
 		}
+
+		LOG_INFO("Main loop finished");
 	}
 }

@@ -1,6 +1,7 @@
 #include "pch.h"
 #include "MovementComponent.h"
 #include "GameObject.h"
+#include "Logger.h"
 
 namespace XYZEngine
 {
@@ -11,7 +12,7 @@ namespace XYZEngine
 
 		if (input == nullptr)
 		{
-			std::cout << "MovementComponent needs an InputComponent on the same object." << std::endl;
+			LOG_WARNING("'" << gameObject->GetName() << "' has a MovementComponent but no InputComponent, it will not move");
 		}
 	}
 

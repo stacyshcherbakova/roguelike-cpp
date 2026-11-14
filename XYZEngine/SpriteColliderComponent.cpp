@@ -1,36 +1,47 @@
 #include "pch.h"
 #include "SpriteColliderComponent.h"
+#include "Logger.h"
 
 namespace XYZEngine
 {
+	bool SpriteColliderComponent::drawBounds = false;
+
 	SpriteColliderComponent::SpriteColliderComponent(GameObject* gameObject) : ColliderComponent(gameObject)
 	{
 		auto spriteRenderer = gameObject->GetComponent<SpriteRendererComponent>();
 		if (spriteRenderer == nullptr)
 		{
-			std::cout << "SpriteRenderer required to SpriteCollider." << std::endl;
-			gameObject->RemoveComponent(this);
+			LOG_ERROR("'" << gameObject->GetName() << "' needs a SpriteRendererComponent before a SpriteColliderComponent; the collider is disabled");
 			return;
 		}
 
-		sprite = gameObject->GetComponent<SpriteRendererComponent>()->GetSprite();
+		sprite = spriteRenderer->GetSprite();
 		PhysicsSystem::Instance()->Subscribe(this);
 	}
 	SpriteColliderComponent::~SpriteColliderComponent()
 	{
-		if (&bounds != nullptr)
-		{
-			std::destroy_at(&bounds);
-		}
 		PhysicsSystem::Instance()->Unsubscribe(this);
+	}
+
+	void SpriteColliderComponent::SetDrawBounds(bool draw)
+	{
+		drawBounds = draw;
 	}
 
 	void SpriteColliderComponent::Update(float deltaTime)
 	{
-		bounds = sprite->getGlobalBounds();
+		if (sprite != nullptr)
+		{
+			bounds = sprite->getGlobalBounds();
+		}
 	}
 	void SpriteColliderComponent::Render()
 	{
+		if (!drawBounds || sprite == nullptr)
+		{
+			return;
+		}
+
 		sf::RectangleShape rectangle(sf::Vector2f(bounds.width, bounds.height));
 		rectangle.setPosition(bounds.left, bounds.top);
 		rectangle.setFillColor(sf::Color::Transparent);

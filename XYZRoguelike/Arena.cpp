@@ -1,5 +1,7 @@
 #include "Arena.h"
 #include "GameSettings.h"
+#include <Logger.h>
+#include <stdexcept>
 
 using namespace XYZEngine;
 
@@ -9,6 +11,12 @@ namespace XYZRoguelike
 		: width(widthInTiles)
 		, height(heightInTiles)
 	{
+		if (width <= 0 || height <= 0)
+		{
+			throw std::invalid_argument("Arena size must be positive");
+		}
+		LOG_INFO("Building an arena of " << width << "x" << height << " tiles");
+
 		for (int y = 0; y < height; y++)
 		{
 			for (int x = 0; x < width; x++)
