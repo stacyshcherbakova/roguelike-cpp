@@ -144,7 +144,9 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="AttackComponent.h" />
     <ClInclude Include="AudioComponent.h" />
+    <ClInclude Include="HealthComponent.h" />
     <ClInclude Include="CameraComponent.h" />
     <ClInclude Include="MovementComponent.h" />
     <ClInclude Include="MusicComponent.h" />
@@ -177,7 +179,9 @@
     <ClInclude Include="Vector.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="AttackComponent.cpp" />
     <ClCompile Include="AudioComponent.cpp" />
+    <ClCompile Include="HealthComponent.cpp" />
     <ClCompile Include="CameraComponent.cpp" />
     <ClCompile Include="MovementComponent.cpp" />
     <ClCompile Include="MusicComponent.cpp" />

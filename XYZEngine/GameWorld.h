@@ -1,5 +1,8 @@
 #pragma once
 
+#include <functional>
+#include <string>
+#include <vector>
 #include "GameObject.h"
 #include "PhysicsSystem.h"
 
@@ -20,6 +23,12 @@ namespace XYZEngine
 		void DestroyGameObject(GameObject* gameObject);
 		void Clear();
 
+		std::vector<GameObject*> FindGameObjectsByName(const std::string& name) const;
+
+		// Runs the action at the end of the frame, after destroyed objects are gone.
+		// Safe way to rebuild the world from inside a component callback.
+		void RunLater(std::function<void()> action);
+
 		void Print() const;
 	private:
 		GameWorld() {}
@@ -32,6 +41,7 @@ namespace XYZEngine
 
 		std::vector<GameObject*> gameObjects = {};
 		std::vector<GameObject*> markedToDestroyGameObjects = {};
+		std::vector<std::function<void()>> deferredActions;
 
 		void DestroyGameObjectImmediate(GameObject* gameObject);
 	};

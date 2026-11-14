@@ -1,7 +1,7 @@
 #pragma once
 
 #include "Component.h"
-#include <SFML/Window.hpp> 
+#include <SFML/Window.hpp>
 
 namespace XYZEngine
 {
@@ -15,8 +15,15 @@ namespace XYZEngine
 
 		float GetHorizontalAxis() const;
 		float GetVerticalAxis() const;
+
+		// True only on the frame the attack key went down
+		bool IsAttackPressed() const;
+
 	private:
 		float horizontalAxis = 0.f;
 		float verticalAxis = 0.f;
+
+		bool attackHeld = false;
+		bool attackPressed = false;
 	};
 }

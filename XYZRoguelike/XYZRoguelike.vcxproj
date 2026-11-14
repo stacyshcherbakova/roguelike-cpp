@@ -166,6 +166,7 @@
     <ClCompile Include="Music.cpp" />
     <ClCompile Include="Wall.cpp" />
     <ClCompile Include="Player.cpp" />
+    <ClCompile Include="PlayerCombatComponent.cpp" />
     <ClCompile Include="GameMain.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -178,6 +179,7 @@
     <ClInclude Include="GameSettings.h" />
     <ClInclude Include="Music.h" />
     <ClInclude Include="Player.h" />
+    <ClInclude Include="PlayerCombatComponent.h" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\XYZEngine\XYZEngine.vcxproj">

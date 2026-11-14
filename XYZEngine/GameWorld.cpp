@@ -41,6 +41,35 @@ namespace XYZEngine
 		{
 			DestroyGameObjectImmediate(markedToDestroyGameObjects[i]);
 		}
+
+		// Take the list first: an action may schedule new ones or rebuild the world
+		std::vector<std::function<void()>> actions;
+		actions.swap(deferredActions);
+		for (auto& action : actions)
+		{
+			action();
+		}
+	}
+
+	std::vector<GameObject*> GameWorld::FindGameObjectsByName(const std::string& name) const
+	{
+		std::vector<GameObject*> result;
+		for (auto gameObject : gameObjects)
+		{
+			if (gameObject != nullptr && gameObject->GetName() == name)
+			{
+				result.push_back(gameObject);
+			}
+		}
+		return result;
+	}
+
+	void GameWorld::RunLater(std::function<void()> action)
+	{
+		if (action)
+		{
+			deferredActions.push_back(std::move(action));
+		}
 	}
 
 	GameObject* GameWorld::CreateGameObject()

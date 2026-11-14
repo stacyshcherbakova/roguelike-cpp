@@ -27,6 +27,10 @@ namespace XYZEngine
 		{
 			horizontalAxis -= 1.0f;
 		}
+
+		const bool attackDown = sf::Keyboard::isKeyPressed(sf::Keyboard::Space);
+		attackPressed = attackDown && !attackHeld;
+		attackHeld = attackDown;
 	}
 	void InputComponent::Render()
 	{
@@ -40,5 +44,10 @@ namespace XYZEngine
 	float InputComponent::GetVerticalAxis() const
 	{
 		return verticalAxis;
+	}
+
+	bool InputComponent::IsAttackPressed() const
+	{
+		return attackPressed;
 	}
 }

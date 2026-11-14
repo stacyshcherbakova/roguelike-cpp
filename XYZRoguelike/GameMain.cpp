@@ -24,6 +24,8 @@ namespace
 		resources->LoadTexture(Settings::ENEMY_TEXTURE, root + "Textures/Enemy.png", false);
 
 		resources->RegisterMusic(Settings::MUSIC_NAME, root + "Music/theme.wav");
+		resources->LoadSound(Settings::HIT_SOUND, root + "Sounds/AppleEat.wav");
+		resources->LoadSound(Settings::DEATH_SOUND, root + "Sounds/Death.wav");
 
 		// Optional decoration that is not shipped yet: the error is logged and the game goes on without it
 		resources->LoadTexture("decor", root + "Textures/Decor.png", false);

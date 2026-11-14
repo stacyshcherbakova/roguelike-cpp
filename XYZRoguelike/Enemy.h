@@ -5,10 +5,10 @@
 
 namespace XYZRoguelike
 {
-	// Monster that waits until the player comes close and then runs after him
+	// Monster that waits until the player comes close, runs after him and bites when it reaches him
 	class Enemy : public Entity
 	{
 	public:
-		Enemy(const XYZEngine::Vector2Df& position, XYZEngine::TransformComponent* target);
+		Enemy(const XYZEngine::Vector2Df& position, XYZEngine::GameObject* player);
 	};
 }

@@ -1,7 +1,11 @@
 #include "Player.h"
 #include "GameSettings.h"
+#include "PlayerCombatComponent.h"
+#include <AttackComponent.h>
+#include <AudioComponent.h>
 #include <CameraComponent.h>
 #include <InputComponent.h>
+#include <Logger.h>
 #include <MovementComponent.h>
 #include <RenderSystem.h>
 #include <ResourceSystem.h>
@@ -16,7 +20,7 @@ namespace XYZRoguelike
 {
 	Player::Player(const Vector2Df& position)
 	{
-		gameObject = GameWorld::Instance()->CreateGameObject("Player");
+		gameObject = GameWorld::Instance()->CreateGameObject(Settings::PLAYER_OBJECT_NAME);
 		gameObject->GetComponent<TransformComponent>()->SetWorldPosition(position);
 
 		auto renderer = gameObject->AddComponent<SpriteRendererComponent>();
@@ -39,5 +43,27 @@ namespace XYZRoguelike
 
 		auto animation = gameObject->AddComponent<SpriteMovementAnimationComponent>();
 		animation->Initialize(Settings::PLAYER_TEXTURE_MAP, Settings::PLAYER_ANIMATION_FPS);
+
+		auto health = gameObject->AddComponent<HealthComponent>();
+		health->SetMaxHealth(Settings::PLAYER_HEALTH);
+		health->SetArmor(Settings::PLAYER_ARMOR);
+
+		auto attack = gameObject->AddComponent<AttackComponent>();
+		attack->SetDamage(Settings::PLAYER_DAMAGE);
+		attack->SetRange(Settings::PLAYER_ATTACK_RANGE);
+		attack->SetCooldown(Settings::PLAYER_ATTACK_COOLDOWN);
+
+		auto hitSound = gameObject->AddComponent<AudioComponent>();
+		hitSound->SetSound(ResourceSystem::Instance()->GetSound(Settings::HIT_SOUND));
+
+		gameObject->AddComponent<PlayerCombatComponent>();
+
+		LOG_INFO("Player created at " << position.x << ", " << position.y
+			<< " with " << Settings::PLAYER_HEALTH << " health and " << Settings::PLAYER_ARMOR << " armour");
+	}
+
+	HealthComponent* Player::GetHealth() const
+	{
+		return gameObject->GetComponent<HealthComponent>();
 	}
 }
