@@ -19,6 +19,8 @@ namespace XYZEngine
 		virtual void Render() = 0;
 
 		void SetTrigger(bool newIsTrigger);
+		bool IsTrigger() const { return isTrigger; }
+		const sf::FloatRect& GetBounds() const { return bounds; }
 
 		void SubscribeCollision(std::function<void(Collision)> onCollisionAction);
 		void UnsubscribeCollision(std::function<void(Collision)> onCollisionAction);

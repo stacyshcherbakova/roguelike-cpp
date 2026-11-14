@@ -159,8 +159,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="DeveloperLevel.cpp" />
     <ClCompile Include="Arena.cpp" />
+    <ClCompile Include="DebugKeysComponent.cpp" />
+    <ClCompile Include="Door.cpp" />
+    <ClCompile Include="GameLevel.cpp" />
+    <ClCompile Include="RoguelikeGame.cpp" />
     <ClCompile Include="Enemy.cpp" />
     <ClCompile Include="Floor.cpp" />
     <ClCompile Include="Music.cpp" />
@@ -170,8 +173,12 @@
     <ClCompile Include="GameMain.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="DeveloperLevel.h" />
     <ClInclude Include="Arena.h" />
+    <ClInclude Include="DebugKeysComponent.h" />
+    <ClInclude Include="Door.h" />
+    <ClInclude Include="GameLevel.h" />
+    <ClInclude Include="LevelDefinition.h" />
+    <ClInclude Include="RoguelikeGame.h" />
     <ClInclude Include="Enemy.h" />
     <ClInclude Include="Entity.h" />
     <ClInclude Include="Floor.h" />

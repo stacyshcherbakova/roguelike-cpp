@@ -1,543 +1,1349 @@
-12:35:57.285 [INFO] === XYZRoguelike started ===
-12:35:57.478 [INFO] Main window set: 1280x720
-12:35:57.482 [INFO] Texture map 'player' loaded from Resources/TextureMaps/Player.png (9 elements)
-12:35:57.504 [INFO] Texture map 'level_floors' loaded from Resources/TextureMaps/Floor.png (49 elements)
-12:35:57.538 [INFO] Texture map 'level_walls' loaded from Resources/TextureMaps/Wall.png (48 elements)
-12:35:57.538 [INFO] Texture 'enemy' loaded from Resources/Textures/Enemy.png
-12:35:57.538 [INFO] Music 'theme' registered at Resources/Music/theme.wav
-12:35:57.567 [INFO] Sound 'hit' loaded from Resources/Sounds/AppleEat.wav
-12:35:57.568 [INFO] Sound 'death' loaded from Resources/Sounds/Death.wav
-12:35:57.568 [ERROR] Failed to load texture 'decor' from Resources/Textures/Decor.png
-12:35:57.568 [INFO] Starting the developer level
-12:35:57.568 [INFO] Building an arena of 14x10 tiles
-12:35:57.569 [DEBUG] Game object created: 'Floor' (1 in the world)
-12:35:57.569 [DEBUG] Game object created: 'Floor' (2 in the world)
-12:35:57.569 [DEBUG] Game object created: 'Floor' (3 in the world)
-12:35:57.569 [DEBUG] Game object created: 'Floor' (4 in the world)
-12:35:57.569 [DEBUG] Game object created: 'Floor' (5 in the world)
-12:35:57.569 [DEBUG] Game object created: 'Floor' (6 in the world)
-12:35:57.569 [DEBUG] Game object created: 'Floor' (7 in the world)
-12:35:57.569 [DEBUG] Game object created: 'Floor' (8 in the world)
-12:35:57.569 [DEBUG] Game object created: 'Floor' (9 in the world)
-12:35:57.569 [DEBUG] Game object created: 'Floor' (10 in the world)
-12:35:57.569 [DEBUG] Game object created: 'Floor' (11 in the world)
-12:35:57.569 [DEBUG] Game object created: 'Floor' (12 in the world)
-12:35:57.569 [DEBUG] Game object created: 'Floor' (13 in the world)
-12:35:57.569 [DEBUG] Game object created: 'Floor' (14 in the world)
-12:35:57.569 [DEBUG] Game object created: 'Floor' (15 in the world)
-12:35:57.569 [DEBUG] Game object created: 'Floor' (16 in the world)
-12:35:57.569 [DEBUG] Game object created: 'Floor' (17 in the world)
-12:35:57.569 [DEBUG] Game object created: 'Floor' (18 in the world)
-12:35:57.570 [DEBUG] Game object created: 'Floor' (19 in the world)
-12:35:57.570 [DEBUG] Game object created: 'Floor' (20 in the world)
-12:35:57.570 [DEBUG] Game object created: 'Floor' (21 in the world)
-12:35:57.570 [DEBUG] Game object created: 'Floor' (22 in the world)
-12:35:57.570 [DEBUG] Game object created: 'Floor' (23 in the world)
-12:35:57.570 [DEBUG] Game object created: 'Floor' (24 in the world)
-12:35:57.570 [DEBUG] Game object created: 'Floor' (25 in the world)
-12:35:57.570 [DEBUG] Game object created: 'Floor' (26 in the world)
-12:35:57.570 [DEBUG] Game object created: 'Floor' (27 in the world)
-12:35:57.570 [DEBUG] Game object created: 'Floor' (28 in the world)
-12:35:57.570 [DEBUG] Game object created: 'Floor' (29 in the world)
-12:35:57.570 [DEBUG] Game object created: 'Floor' (30 in the world)
-12:35:57.570 [DEBUG] Game object created: 'Floor' (31 in the world)
-12:35:57.570 [DEBUG] Game object created: 'Floor' (32 in the world)
-12:35:57.570 [DEBUG] Game object created: 'Floor' (33 in the world)
-12:35:57.570 [DEBUG] Game object created: 'Floor' (34 in the world)
-12:35:57.570 [DEBUG] Game object created: 'Floor' (35 in the world)
-12:35:57.571 [DEBUG] Game object created: 'Floor' (36 in the world)
-12:35:57.571 [DEBUG] Game object created: 'Floor' (37 in the world)
-12:35:57.571 [DEBUG] Game object created: 'Floor' (38 in the world)
-12:35:57.571 [DEBUG] Game object created: 'Floor' (39 in the world)
-12:35:57.571 [DEBUG] Game object created: 'Floor' (40 in the world)
-12:35:57.571 [DEBUG] Game object created: 'Floor' (41 in the world)
-12:35:57.571 [DEBUG] Game object created: 'Floor' (42 in the world)
-12:35:57.571 [DEBUG] Game object created: 'Floor' (43 in the world)
-12:35:57.571 [DEBUG] Game object created: 'Floor' (44 in the world)
-12:35:57.571 [DEBUG] Game object created: 'Floor' (45 in the world)
-12:35:57.571 [DEBUG] Game object created: 'Floor' (46 in the world)
-12:35:57.571 [DEBUG] Game object created: 'Floor' (47 in the world)
-12:35:57.571 [DEBUG] Game object created: 'Floor' (48 in the world)
-12:35:57.571 [DEBUG] Game object created: 'Floor' (49 in the world)
-12:35:57.571 [DEBUG] Game object created: 'Floor' (50 in the world)
-12:35:57.571 [DEBUG] Game object created: 'Floor' (51 in the world)
-12:35:57.571 [DEBUG] Game object created: 'Floor' (52 in the world)
-12:35:57.571 [DEBUG] Game object created: 'Floor' (53 in the world)
-12:35:57.571 [DEBUG] Game object created: 'Floor' (54 in the world)
-12:35:57.571 [DEBUG] Game object created: 'Floor' (55 in the world)
-12:35:57.572 [DEBUG] Game object created: 'Floor' (56 in the world)
-12:35:57.572 [DEBUG] Game object created: 'Floor' (57 in the world)
-12:35:57.572 [DEBUG] Game object created: 'Floor' (58 in the world)
-12:35:57.572 [DEBUG] Game object created: 'Floor' (59 in the world)
-12:35:57.572 [DEBUG] Game object created: 'Floor' (60 in the world)
-12:35:57.572 [DEBUG] Game object created: 'Floor' (61 in the world)
-12:35:57.572 [DEBUG] Game object created: 'Floor' (62 in the world)
-12:35:57.572 [DEBUG] Game object created: 'Floor' (63 in the world)
-12:35:57.572 [DEBUG] Game object created: 'Floor' (64 in the world)
-12:35:57.572 [DEBUG] Game object created: 'Floor' (65 in the world)
-12:35:57.572 [DEBUG] Game object created: 'Floor' (66 in the world)
-12:35:57.572 [DEBUG] Game object created: 'Floor' (67 in the world)
-12:35:57.572 [DEBUG] Game object created: 'Floor' (68 in the world)
-12:35:57.572 [DEBUG] Game object created: 'Floor' (69 in the world)
-12:35:57.572 [DEBUG] Game object created: 'Floor' (70 in the world)
-12:35:57.572 [DEBUG] Game object created: 'Floor' (71 in the world)
-12:35:57.572 [DEBUG] Game object created: 'Floor' (72 in the world)
-12:35:57.572 [DEBUG] Game object created: 'Floor' (73 in the world)
-12:35:57.572 [DEBUG] Game object created: 'Floor' (74 in the world)
-12:35:57.573 [DEBUG] Game object created: 'Floor' (75 in the world)
-12:35:57.573 [DEBUG] Game object created: 'Floor' (76 in the world)
-12:35:57.573 [DEBUG] Game object created: 'Floor' (77 in the world)
-12:35:57.573 [DEBUG] Game object created: 'Floor' (78 in the world)
-12:35:57.573 [DEBUG] Game object created: 'Floor' (79 in the world)
-12:35:57.573 [DEBUG] Game object created: 'Floor' (80 in the world)
-12:35:57.573 [DEBUG] Game object created: 'Floor' (81 in the world)
-12:35:57.573 [DEBUG] Game object created: 'Floor' (82 in the world)
-12:35:57.573 [DEBUG] Game object created: 'Floor' (83 in the world)
-12:35:57.573 [DEBUG] Game object created: 'Floor' (84 in the world)
-12:35:57.573 [DEBUG] Game object created: 'Floor' (85 in the world)
-12:35:57.573 [DEBUG] Game object created: 'Floor' (86 in the world)
-12:35:57.573 [DEBUG] Game object created: 'Floor' (87 in the world)
-12:35:57.573 [DEBUG] Game object created: 'Floor' (88 in the world)
-12:35:57.573 [DEBUG] Game object created: 'Floor' (89 in the world)
-12:35:57.573 [DEBUG] Game object created: 'Floor' (90 in the world)
-12:35:57.574 [DEBUG] Game object created: 'Floor' (91 in the world)
-12:35:57.574 [DEBUG] Game object created: 'Floor' (92 in the world)
-12:35:57.574 [DEBUG] Game object created: 'Floor' (93 in the world)
-12:35:57.574 [DEBUG] Game object created: 'Floor' (94 in the world)
-12:35:57.574 [DEBUG] Game object created: 'Floor' (95 in the world)
-12:35:57.574 [DEBUG] Game object created: 'Floor' (96 in the world)
-12:35:57.574 [DEBUG] Game object created: 'Floor' (97 in the world)
-12:35:57.574 [DEBUG] Game object created: 'Floor' (98 in the world)
-12:35:57.574 [DEBUG] Game object created: 'Floor' (99 in the world)
-12:35:57.574 [DEBUG] Game object created: 'Floor' (100 in the world)
-12:35:57.574 [DEBUG] Game object created: 'Floor' (101 in the world)
-12:35:57.574 [DEBUG] Game object created: 'Floor' (102 in the world)
-12:35:57.574 [DEBUG] Game object created: 'Floor' (103 in the world)
-12:35:57.574 [DEBUG] Game object created: 'Floor' (104 in the world)
-12:35:57.574 [DEBUG] Game object created: 'Floor' (105 in the world)
-12:35:57.574 [DEBUG] Game object created: 'Floor' (106 in the world)
-12:35:57.575 [DEBUG] Game object created: 'Floor' (107 in the world)
-12:35:57.575 [DEBUG] Game object created: 'Floor' (108 in the world)
-12:35:57.575 [DEBUG] Game object created: 'Floor' (109 in the world)
-12:35:57.575 [DEBUG] Game object created: 'Floor' (110 in the world)
-12:35:57.575 [DEBUG] Game object created: 'Floor' (111 in the world)
-12:35:57.575 [DEBUG] Game object created: 'Floor' (112 in the world)
-12:35:57.575 [DEBUG] Game object created: 'Floor' (113 in the world)
-12:35:57.575 [DEBUG] Game object created: 'Floor' (114 in the world)
-12:35:57.575 [DEBUG] Game object created: 'Floor' (115 in the world)
-12:35:57.575 [DEBUG] Game object created: 'Floor' (116 in the world)
-12:35:57.575 [DEBUG] Game object created: 'Floor' (117 in the world)
-12:35:57.575 [DEBUG] Game object created: 'Floor' (118 in the world)
-12:35:57.575 [DEBUG] Game object created: 'Floor' (119 in the world)
-12:35:57.575 [DEBUG] Game object created: 'Floor' (120 in the world)
-12:35:57.575 [DEBUG] Game object created: 'Floor' (121 in the world)
-12:35:57.575 [DEBUG] Game object created: 'Floor' (122 in the world)
-12:35:57.575 [DEBUG] Game object created: 'Floor' (123 in the world)
-12:35:57.575 [DEBUG] Game object created: 'Floor' (124 in the world)
-12:35:57.575 [DEBUG] Game object created: 'Floor' (125 in the world)
-12:35:57.576 [DEBUG] Game object created: 'Floor' (126 in the world)
-12:35:57.576 [DEBUG] Game object created: 'Floor' (127 in the world)
-12:35:57.576 [DEBUG] Game object created: 'Floor' (128 in the world)
-12:35:57.576 [DEBUG] Game object created: 'Floor' (129 in the world)
-12:35:57.576 [DEBUG] Game object created: 'Floor' (130 in the world)
-12:35:57.576 [DEBUG] Game object created: 'Floor' (131 in the world)
-12:35:57.576 [DEBUG] Game object created: 'Floor' (132 in the world)
-12:35:57.576 [DEBUG] Game object created: 'Floor' (133 in the world)
-12:35:57.576 [DEBUG] Game object created: 'Floor' (134 in the world)
-12:35:57.576 [DEBUG] Game object created: 'Floor' (135 in the world)
-12:35:57.576 [DEBUG] Game object created: 'Floor' (136 in the world)
-12:35:57.576 [DEBUG] Game object created: 'Floor' (137 in the world)
-12:35:57.576 [DEBUG] Game object created: 'Floor' (138 in the world)
-12:35:57.576 [DEBUG] Game object created: 'Floor' (139 in the world)
-12:35:57.576 [DEBUG] Game object created: 'Floor' (140 in the world)
-12:35:57.576 [DEBUG] Game object created: 'Wall' (141 in the world)
-12:35:57.576 [DEBUG] Collider subscribed: 'Wall'
-12:35:57.576 [DEBUG] Game object created: 'Wall' (142 in the world)
-12:35:57.576 [DEBUG] Collider subscribed: 'Wall'
-12:35:57.577 [DEBUG] Game object created: 'Wall' (143 in the world)
-12:35:57.577 [DEBUG] Collider subscribed: 'Wall'
-12:35:57.577 [DEBUG] Game object created: 'Wall' (144 in the world)
-12:35:57.577 [DEBUG] Collider subscribed: 'Wall'
-12:35:57.577 [DEBUG] Game object created: 'Wall' (145 in the world)
-12:35:57.577 [DEBUG] Collider subscribed: 'Wall'
-12:35:57.577 [DEBUG] Game object created: 'Wall' (146 in the world)
-12:35:57.577 [DEBUG] Collider subscribed: 'Wall'
-12:35:57.577 [DEBUG] Game object created: 'Wall' (147 in the world)
-12:35:57.577 [DEBUG] Collider subscribed: 'Wall'
-12:35:57.577 [DEBUG] Game object created: 'Wall' (148 in the world)
-12:35:57.577 [DEBUG] Collider subscribed: 'Wall'
-12:35:57.577 [DEBUG] Game object created: 'Wall' (149 in the world)
-12:35:57.577 [DEBUG] Collider subscribed: 'Wall'
-12:35:57.577 [DEBUG] Game object created: 'Wall' (150 in the world)
-12:35:57.577 [DEBUG] Collider subscribed: 'Wall'
-12:35:57.577 [DEBUG] Game object created: 'Wall' (151 in the world)
-12:35:57.577 [DEBUG] Collider subscribed: 'Wall'
-12:35:57.577 [DEBUG] Game object created: 'Wall' (152 in the world)
-12:35:57.577 [DEBUG] Collider subscribed: 'Wall'
-12:35:57.577 [DEBUG] Game object created: 'Wall' (153 in the world)
-12:35:57.578 [DEBUG] Collider subscribed: 'Wall'
-12:35:57.578 [DEBUG] Game object created: 'Wall' (154 in the world)
-12:35:57.578 [DEBUG] Collider subscribed: 'Wall'
-12:35:57.578 [DEBUG] Game object created: 'Wall' (155 in the world)
-12:35:57.578 [DEBUG] Collider subscribed: 'Wall'
-12:35:57.578 [DEBUG] Game object created: 'Wall' (156 in the world)
-12:35:57.578 [DEBUG] Collider subscribed: 'Wall'
-12:35:57.578 [DEBUG] Game object created: 'Wall' (157 in the world)
-12:35:57.578 [DEBUG] Collider subscribed: 'Wall'
-12:35:57.578 [DEBUG] Game object created: 'Wall' (158 in the world)
-12:35:57.578 [DEBUG] Collider subscribed: 'Wall'
-12:35:57.578 [DEBUG] Game object created: 'Wall' (159 in the world)
-12:35:57.578 [DEBUG] Collider subscribed: 'Wall'
-12:35:57.578 [DEBUG] Game object created: 'Wall' (160 in the world)
-12:35:57.578 [DEBUG] Collider subscribed: 'Wall'
-12:35:57.578 [DEBUG] Game object created: 'Wall' (161 in the world)
-12:35:57.578 [DEBUG] Collider subscribed: 'Wall'
-12:35:57.578 [DEBUG] Game object created: 'Wall' (162 in the world)
-12:35:57.578 [DEBUG] Collider subscribed: 'Wall'
-12:35:57.578 [DEBUG] Game object created: 'Wall' (163 in the world)
-12:35:57.578 [DEBUG] Collider subscribed: 'Wall'
-12:35:57.579 [DEBUG] Game object created: 'Wall' (164 in the world)
-12:35:57.579 [DEBUG] Collider subscribed: 'Wall'
-12:35:57.579 [DEBUG] Game object created: 'Wall' (165 in the world)
-12:35:57.579 [DEBUG] Collider subscribed: 'Wall'
-12:35:57.579 [DEBUG] Game object created: 'Wall' (166 in the world)
-12:35:57.579 [DEBUG] Collider subscribed: 'Wall'
-12:35:57.579 [DEBUG] Game object created: 'Wall' (167 in the world)
-12:35:57.579 [DEBUG] Collider subscribed: 'Wall'
-12:35:57.579 [DEBUG] Game object created: 'Wall' (168 in the world)
-12:35:57.579 [DEBUG] Collider subscribed: 'Wall'
-12:35:57.579 [DEBUG] Game object created: 'Wall' (169 in the world)
-12:35:57.579 [DEBUG] Collider subscribed: 'Wall'
-12:35:57.579 [DEBUG] Game object created: 'Wall' (170 in the world)
-12:35:57.580 [DEBUG] Collider subscribed: 'Wall'
-12:35:57.580 [DEBUG] Game object created: 'Wall' (171 in the world)
-12:35:57.580 [DEBUG] Collider subscribed: 'Wall'
-12:35:57.580 [DEBUG] Game object created: 'Wall' (172 in the world)
-12:35:57.580 [DEBUG] Collider subscribed: 'Wall'
-12:35:57.580 [DEBUG] Game object created: 'Wall' (173 in the world)
-12:35:57.580 [DEBUG] Collider subscribed: 'Wall'
-12:35:57.580 [DEBUG] Game object created: 'Wall' (174 in the world)
-12:35:57.580 [DEBUG] Collider subscribed: 'Wall'
-12:35:57.580 [DEBUG] Game object created: 'Wall' (175 in the world)
-12:35:57.580 [DEBUG] Collider subscribed: 'Wall'
-12:35:57.580 [DEBUG] Game object created: 'Wall' (176 in the world)
-12:35:57.580 [DEBUG] Collider subscribed: 'Wall'
-12:35:57.580 [DEBUG] Game object created: 'Wall' (177 in the world)
-12:35:57.580 [DEBUG] Collider subscribed: 'Wall'
-12:35:57.580 [DEBUG] Game object created: 'Wall' (178 in the world)
-12:35:57.580 [DEBUG] Collider subscribed: 'Wall'
-12:35:57.580 [DEBUG] Game object created: 'Wall' (179 in the world)
-12:35:57.580 [DEBUG] Collider subscribed: 'Wall'
-12:35:57.581 [DEBUG] Game object created: 'Wall' (180 in the world)
-12:35:57.581 [DEBUG] Collider subscribed: 'Wall'
-12:35:57.581 [DEBUG] Game object created: 'Wall' (181 in the world)
-12:35:57.581 [DEBUG] Collider subscribed: 'Wall'
-12:35:57.581 [DEBUG] Game object created: 'Wall' (182 in the world)
-12:35:57.581 [DEBUG] Collider subscribed: 'Wall'
-12:35:57.581 [DEBUG] Game object created: 'Wall' (183 in the world)
-12:35:57.581 [DEBUG] Collider subscribed: 'Wall'
-12:35:57.581 [DEBUG] Game object created: 'Wall' (184 in the world)
-12:35:57.581 [DEBUG] Collider subscribed: 'Wall'
-12:35:57.581 [DEBUG] Game object created: 'Wall' (185 in the world)
-12:35:57.581 [DEBUG] Collider subscribed: 'Wall'
-12:35:57.581 [DEBUG] Game object created: 'Wall' (186 in the world)
-12:35:57.581 [DEBUG] Collider subscribed: 'Wall'
-12:35:57.581 [DEBUG] Game object created: 'Wall' (187 in the world)
-12:35:57.581 [DEBUG] Collider subscribed: 'Wall'
-12:35:57.581 [DEBUG] Game object created: 'Wall' (188 in the world)
-12:35:57.582 [DEBUG] Collider subscribed: 'Wall'
-12:35:57.582 [DEBUG] Game object created: 'Wall' (189 in the world)
-12:35:57.582 [DEBUG] Collider subscribed: 'Wall'
-12:35:57.582 [DEBUG] Game object created: 'Wall' (190 in the world)
-12:35:57.582 [DEBUG] Collider subscribed: 'Wall'
-12:35:57.582 [DEBUG] Game object created: 'Wall' (191 in the world)
-12:35:57.582 [DEBUG] Collider subscribed: 'Wall'
-12:35:57.582 [DEBUG] Game object created: 'Wall' (192 in the world)
-12:35:57.582 [DEBUG] Collider subscribed: 'Wall'
-12:35:57.582 [DEBUG] Game object created: 'Player' (193 in the world)
-12:35:57.582 [DEBUG] Collider subscribed: 'Player'
-12:35:57.582 [INFO] Player created at 896, 640 with 100 health and 5 armour
-12:35:57.582 [DEBUG] Game object created: 'Enemy' (194 in the world)
-12:35:57.582 [DEBUG] Collider subscribed: 'Enemy'
-12:35:57.582 [INFO] Enemy created at 1536, 640
-12:35:57.582 [DEBUG] Game object created: 'Enemy' (195 in the world)
-12:35:57.582 [DEBUG] Collider subscribed: 'Enemy'
-12:35:57.582 [INFO] Enemy created at 256, 896
-12:35:57.583 [DEBUG] Game object created: 'Enemy' (196 in the world)
-12:35:57.583 [DEBUG] Collider subscribed: 'Enemy'
-12:35:57.583 [INFO] Enemy created at 1152, 128
-12:35:57.583 [DEBUG] Game object created: 'Music: theme' (197 in the world)
-12:35:57.583 [INFO] Engine created, random seed 1794659757
-12:35:57.583 [INFO] Main loop started
-12:35:59.918 [INFO] 'Enemy' attacks 'Player' for 12
-12:35:59.918 [INFO] 'Player' takes 7 damage from Enemy (12 minus 5 armour), health 93/100
-12:35:59.985 [DEBUG] Collision: 'Player' pushed out of 'Enemy'
-12:35:59.985 [DEBUG] Collision: 'Enemy' pushed out of 'Player'
-12:36:00.004 [DEBUG] Collision: 'Player' pushed out of 'Enemy'
-12:36:00.004 [DEBUG] Collision: 'Enemy' pushed out of 'Player'
-12:36:00.025 [DEBUG] Collision: 'Player' pushed out of 'Enemy'
-12:36:00.025 [DEBUG] Collision: 'Enemy' pushed out of 'Player'
-12:36:00.045 [DEBUG] Collision: 'Player' pushed out of 'Enemy'
-12:36:00.045 [DEBUG] Collision: 'Enemy' pushed out of 'Player'
-12:36:00.065 [DEBUG] Collision: 'Player' pushed out of 'Enemy'
-12:36:00.065 [DEBUG] Collision: 'Enemy' pushed out of 'Player'
-12:36:00.084 [DEBUG] Collision: 'Player' pushed out of 'Enemy'
-12:36:00.085 [DEBUG] Collision: 'Enemy' pushed out of 'Player'
-12:36:00.105 [DEBUG] Collision: 'Player' pushed out of 'Enemy'
-12:36:00.105 [DEBUG] Collision: 'Enemy' pushed out of 'Player'
-12:36:00.143 [DEBUG] Collision: 'Player' pushed out of 'Enemy'
-12:36:00.144 [DEBUG] Collision: 'Enemy' pushed out of 'Player'
-12:36:00.164 [DEBUG] Collision: 'Player' pushed out of 'Enemy'
-12:36:00.164 [DEBUG] Collision: 'Enemy' pushed out of 'Player'
-12:36:00.184 [DEBUG] Collision: 'Player' pushed out of 'Enemy'
-12:36:00.184 [DEBUG] Collision: 'Enemy' pushed out of 'Player'
-12:36:00.204 [DEBUG] Collision: 'Player' pushed out of 'Enemy'
-12:36:00.204 [DEBUG] Collision: 'Enemy' pushed out of 'Player'
-12:36:00.225 [DEBUG] Collision: 'Player' pushed out of 'Enemy'
-12:36:00.225 [DEBUG] Collision: 'Enemy' pushed out of 'Player'
-12:36:00.244 [DEBUG] Collision: 'Player' pushed out of 'Enemy'
-12:36:00.246 [DEBUG] Collision: 'Enemy' pushed out of 'Player'
-12:36:00.265 [DEBUG] Collision: 'Player' pushed out of 'Enemy'
-12:36:00.266 [DEBUG] Collision: 'Enemy' pushed out of 'Player'
-12:36:00.284 [DEBUG] Collision: 'Player' pushed out of 'Enemy'
-12:36:00.284 [DEBUG] Collision: 'Enemy' pushed out of 'Player'
-12:36:00.304 [DEBUG] Collision: 'Player' pushed out of 'Enemy'
-12:36:00.307 [DEBUG] Collision: 'Enemy' pushed out of 'Player'
-12:36:00.324 [DEBUG] Collision: 'Player' pushed out of 'Enemy'
-12:36:00.327 [DEBUG] Collision: 'Enemy' pushed out of 'Player'
-12:36:00.344 [DEBUG] Collision: 'Player' pushed out of 'Enemy'
-12:36:00.346 [DEBUG] Collision: 'Enemy' pushed out of 'Player'
-12:36:00.364 [DEBUG] Collision: 'Player' pushed out of 'Enemy'
-12:36:00.367 [DEBUG] Collision: 'Enemy' pushed out of 'Player'
-12:36:00.385 [DEBUG] Collision: 'Player' pushed out of 'Enemy'
-12:36:00.385 [DEBUG] Collision: 'Enemy' pushed out of 'Player'
-12:36:00.404 [DEBUG] Collision: 'Player' pushed out of 'Enemy'
-12:36:00.404 [DEBUG] Collision: 'Enemy' pushed out of 'Player'
-12:36:00.424 [DEBUG] Collision: 'Player' pushed out of 'Enemy'
-12:36:00.425 [DEBUG] Collision: 'Enemy' pushed out of 'Player'
-12:36:00.444 [DEBUG] Collision: 'Player' pushed out of 'Enemy'
-12:36:00.448 [DEBUG] Collision: 'Enemy' pushed out of 'Player'
-12:36:00.464 [DEBUG] Collision: 'Player' pushed out of 'Enemy'
-12:36:00.467 [DEBUG] Collision: 'Enemy' pushed out of 'Player'
-12:36:00.484 [DEBUG] Collision: 'Player' pushed out of 'Enemy'
-12:36:00.485 [DEBUG] Collision: 'Enemy' pushed out of 'Player'
-12:36:00.505 [DEBUG] Collision: 'Player' pushed out of 'Enemy'
-12:36:00.507 [DEBUG] Collision: 'Enemy' pushed out of 'Player'
-12:36:00.525 [DEBUG] Collision: 'Player' pushed out of 'Enemy'
-12:36:00.530 [DEBUG] Collision: 'Enemy' pushed out of 'Player'
-12:36:00.545 [DEBUG] Collision: 'Player' pushed out of 'Enemy'
-12:36:00.545 [DEBUG] Collision: 'Enemy' pushed out of 'Player'
-12:36:00.564 [DEBUG] Collision: 'Player' pushed out of 'Enemy'
-12:36:00.568 [DEBUG] Collision: 'Enemy' pushed out of 'Player'
-12:36:00.585 [DEBUG] Collision: 'Player' pushed out of 'Enemy'
-12:36:00.589 [DEBUG] Collision: 'Enemy' pushed out of 'Player'
-12:36:00.605 [DEBUG] Collision: 'Player' pushed out of 'Enemy'
-12:36:00.608 [DEBUG] Collision: 'Enemy' pushed out of 'Player'
-12:36:00.624 [DEBUG] Collision: 'Player' pushed out of 'Enemy'
-12:36:00.625 [DEBUG] Collision: 'Enemy' pushed out of 'Player'
-12:36:00.644 [DEBUG] Collision: 'Player' pushed out of 'Enemy'
-12:36:00.646 [DEBUG] Collision: 'Enemy' pushed out of 'Player'
-12:36:00.664 [DEBUG] Collision: 'Player' pushed out of 'Enemy'
-12:36:00.666 [DEBUG] Collision: 'Enemy' pushed out of 'Player'
-12:36:00.684 [DEBUG] Collision: 'Player' pushed out of 'Enemy'
-12:36:00.688 [DEBUG] Collision: 'Enemy' pushed out of 'Player'
-12:36:00.704 [DEBUG] Collision: 'Player' pushed out of 'Enemy'
-12:36:00.705 [DEBUG] Collision: 'Enemy' pushed out of 'Player'
-12:36:00.723 [DEBUG] Collision: 'Player' pushed out of 'Enemy'
-12:36:00.727 [DEBUG] Collision: 'Enemy' pushed out of 'Player'
-12:36:00.744 [DEBUG] Collision: 'Player' pushed out of 'Enemy'
-12:36:00.746 [DEBUG] Collision: 'Enemy' pushed out of 'Player'
-12:36:00.764 [DEBUG] Collision: 'Player' pushed out of 'Enemy'
-12:36:00.766 [DEBUG] Collision: 'Enemy' pushed out of 'Player'
-12:36:00.785 [DEBUG] Collision: 'Player' pushed out of 'Enemy'
-12:36:00.785 [DEBUG] Collision: 'Enemy' pushed out of 'Player'
-12:36:00.804 [DEBUG] Collision: 'Player' pushed out of 'Enemy'
-12:36:00.809 [DEBUG] Collision: 'Enemy' pushed out of 'Player'
-12:36:00.824 [DEBUG] Collision: 'Player' pushed out of 'Enemy'
-12:36:00.826 [DEBUG] Collision: 'Enemy' pushed out of 'Player'
-12:36:00.845 [DEBUG] Collision: 'Player' pushed out of 'Enemy'
-12:36:00.846 [DEBUG] Collision: 'Enemy' pushed out of 'Player'
-12:36:00.864 [DEBUG] Collision: 'Player' pushed out of 'Enemy'
-12:36:00.868 [DEBUG] Collision: 'Enemy' pushed out of 'Player'
-12:36:00.885 [DEBUG] Collision: 'Player' pushed out of 'Enemy'
-12:36:00.885 [DEBUG] Collision: 'Enemy' pushed out of 'Player'
-12:36:00.905 [DEBUG] Collision: 'Player' pushed out of 'Enemy'
-12:36:00.907 [DEBUG] Collision: 'Enemy' pushed out of 'Player'
-12:36:00.920 [INFO] 'Enemy' attacks 'Player' for 12
-12:36:00.920 [INFO] 'Player' takes 7 damage from Enemy (12 minus 5 armour), health 86/100
-12:36:00.924 [DEBUG] Collision: 'Player' pushed out of 'Enemy'
-12:36:00.928 [DEBUG] Collision: 'Enemy' pushed out of 'Player'
-12:36:00.944 [DEBUG] Collision: 'Player' pushed out of 'Enemy'
-12:36:00.946 [DEBUG] Collision: 'Enemy' pushed out of 'Player'
-12:36:00.964 [DEBUG] Collision: 'Player' pushed out of 'Enemy'
-12:36:00.965 [DEBUG] Collision: 'Enemy' pushed out of 'Player'
-12:36:00.984 [DEBUG] Collision: 'Player' pushed out of 'Enemy'
-12:36:00.985 [DEBUG] Collision: 'Enemy' pushed out of 'Player'
-12:36:01.004 [DEBUG] Collision: 'Player' pushed out of 'Enemy'
-12:36:01.007 [DEBUG] Collision: 'Enemy' pushed out of 'Player'
-12:36:01.023 [DEBUG] Collision: 'Player' pushed out of 'Enemy'
-12:36:01.026 [DEBUG] Collision: 'Enemy' pushed out of 'Player'
-12:36:01.044 [DEBUG] Collision: 'Player' pushed out of 'Enemy'
-12:36:01.046 [DEBUG] Collision: 'Enemy' pushed out of 'Player'
-12:36:01.064 [DEBUG] Collision: 'Player' pushed out of 'Enemy'
-12:36:01.067 [DEBUG] Collision: 'Enemy' pushed out of 'Player'
-12:36:01.081 [INFO] 'Player' attacks 'Enemy' for 20
-12:36:01.085 [INFO] 'Enemy' takes 18 damage from Player (20 minus 2 armour), health 32/50
-12:36:01.091 [DEBUG] Collision: 'Player' pushed out of 'Enemy'
-12:36:01.093 [DEBUG] Collision: 'Enemy' pushed out of 'Player'
-12:36:01.104 [DEBUG] Collision: 'Player' pushed out of 'Enemy'
-12:36:01.109 [DEBUG] Collision: 'Enemy' pushed out of 'Player'
-12:36:01.124 [DEBUG] Collision: 'Player' pushed out of 'Enemy'
-12:36:01.125 [DEBUG] Collision: 'Enemy' pushed out of 'Player'
-12:36:01.144 [DEBUG] Collision: 'Player' pushed out of 'Enemy'
-12:36:01.146 [DEBUG] Collision: 'Enemy' pushed out of 'Player'
-12:36:01.165 [DEBUG] Collision: 'Player' pushed out of 'Enemy'
-12:36:01.165 [DEBUG] Collision: 'Enemy' pushed out of 'Player'
-12:36:01.183 [DEBUG] Collision: 'Player' pushed out of 'Enemy'
-12:36:01.185 [DEBUG] Collision: 'Enemy' pushed out of 'Player'
-12:36:01.204 [DEBUG] Collision: 'Player' pushed out of 'Enemy'
-12:36:01.205 [DEBUG] Collision: 'Enemy' pushed out of 'Player'
-12:36:01.223 [DEBUG] Collision: 'Player' pushed out of 'Enemy'
-12:36:01.224 [DEBUG] Collision: 'Enemy' pushed out of 'Player'
-12:36:01.244 [DEBUG] Collision: 'Player' pushed out of 'Enemy'
-12:36:01.246 [DEBUG] Collision: 'Enemy' pushed out of 'Player'
-12:36:01.264 [DEBUG] Collision: 'Player' pushed out of 'Enemy'
-12:36:01.265 [DEBUG] Collision: 'Enemy' pushed out of 'Player'
-12:36:01.285 [DEBUG] Collision: 'Player' pushed out of 'Enemy'
-12:36:01.285 [DEBUG] Collision: 'Enemy' pushed out of 'Player'
-12:36:01.305 [DEBUG] Collision: 'Player' pushed out of 'Enemy'
-12:36:01.307 [DEBUG] Collision: 'Enemy' pushed out of 'Player'
-12:36:01.323 [DEBUG] Collision: 'Player' pushed out of 'Enemy'
-12:36:01.327 [DEBUG] Collision: 'Enemy' pushed out of 'Player'
-12:36:01.345 [DEBUG] Collision: 'Player' pushed out of 'Enemy'
-12:36:01.346 [DEBUG] Collision: 'Enemy' pushed out of 'Player'
-12:36:01.364 [DEBUG] Collision: 'Player' pushed out of 'Enemy'
-12:36:01.368 [DEBUG] Collision: 'Enemy' pushed out of 'Player'
-12:36:01.384 [DEBUG] Collision: 'Player' pushed out of 'Enemy'
-12:36:01.389 [DEBUG] Collision: 'Enemy' pushed out of 'Player'
-12:36:01.405 [DEBUG] Collision: 'Player' pushed out of 'Enemy'
-12:36:01.406 [DEBUG] Collision: 'Enemy' pushed out of 'Player'
-12:36:01.424 [DEBUG] Collision: 'Player' pushed out of 'Enemy'
-12:36:01.429 [DEBUG] Collision: 'Enemy' pushed out of 'Player'
-12:36:01.444 [DEBUG] Collision: 'Player' pushed out of 'Enemy'
-12:36:01.446 [DEBUG] Collision: 'Enemy' pushed out of 'Player'
-12:36:01.464 [DEBUG] Collision: 'Player' pushed out of 'Enemy'
-12:36:01.468 [DEBUG] Collision: 'Enemy' pushed out of 'Player'
-12:36:01.484 [DEBUG] Collision: 'Player' pushed out of 'Enemy'
-12:36:01.484 [DEBUG] Collision: 'Enemy' pushed out of 'Player'
-12:36:01.504 [DEBUG] Collision: 'Player' pushed out of 'Enemy'
-12:36:01.507 [DEBUG] Collision: 'Enemy' pushed out of 'Player'
-12:36:01.523 [DEBUG] Collision: 'Player' pushed out of 'Enemy'
-12:36:01.526 [DEBUG] Collision: 'Enemy' pushed out of 'Player'
-12:36:01.544 [DEBUG] Collision: 'Player' pushed out of 'Enemy'
-12:36:01.546 [DEBUG] Collision: 'Enemy' pushed out of 'Player'
-12:36:01.564 [DEBUG] Collision: 'Player' pushed out of 'Enemy'
-12:36:01.565 [DEBUG] Collision: 'Enemy' pushed out of 'Player'
-12:36:01.585 [DEBUG] Collision: 'Player' pushed out of 'Enemy'
-12:36:01.587 [DEBUG] Collision: 'Enemy' pushed out of 'Player'
-12:36:01.605 [DEBUG] Collision: 'Player' pushed out of 'Enemy'
-12:36:01.607 [DEBUG] Collision: 'Enemy' pushed out of 'Player'
-12:36:01.623 [DEBUG] Collision: 'Player' pushed out of 'Enemy'
-12:36:01.626 [DEBUG] Collision: 'Enemy' pushed out of 'Player'
-12:36:01.645 [DEBUG] Collision: 'Player' pushed out of 'Enemy'
-12:36:01.646 [DEBUG] Collision: 'Enemy' pushed out of 'Player'
-12:36:01.664 [DEBUG] Collision: 'Player' pushed out of 'Enemy'
-12:36:01.667 [DEBUG] Collision: 'Enemy' pushed out of 'Player'
-12:36:01.684 [DEBUG] Collision: 'Player' pushed out of 'Enemy'
-12:36:01.684 [DEBUG] Collision: 'Enemy' pushed out of 'Player'
-12:36:01.703 [DEBUG] Collision: 'Player' pushed out of 'Enemy'
-12:36:01.706 [DEBUG] Collision: 'Enemy' pushed out of 'Player'
-12:36:01.723 [DEBUG] Collision: 'Player' pushed out of 'Enemy'
-12:36:01.727 [DEBUG] Collision: 'Enemy' pushed out of 'Player'
-12:36:01.744 [DEBUG] Collision: 'Player' pushed out of 'Enemy'
-12:36:01.746 [DEBUG] Collision: 'Enemy' pushed out of 'Player'
-12:36:01.764 [DEBUG] Collision: 'Player' pushed out of 'Enemy'
-12:36:01.768 [DEBUG] Collision: 'Enemy' pushed out of 'Player'
-12:36:01.785 [DEBUG] Collision: 'Player' pushed out of 'Enemy'
-12:36:01.790 [DEBUG] Collision: 'Enemy' pushed out of 'Player'
-12:36:01.804 [DEBUG] Collision: 'Player' pushed out of 'Enemy'
-12:36:01.808 [DEBUG] Collision: 'Enemy' pushed out of 'Player'
-12:36:01.824 [DEBUG] Collision: 'Player' pushed out of 'Enemy'
-12:36:01.828 [DEBUG] Collision: 'Enemy' pushed out of 'Player'
-12:36:01.831 [INFO] 'Player' attacks 'Enemy' for 20
-12:36:01.835 [INFO] 'Enemy' takes 18 damage from Player (20 minus 2 armour), health 14/50
-12:36:01.844 [DEBUG] Collision: 'Player' pushed out of 'Enemy'
-12:36:01.846 [DEBUG] Collision: 'Enemy' pushed out of 'Player'
-12:36:01.864 [DEBUG] Collision: 'Player' pushed out of 'Enemy'
-12:36:01.866 [DEBUG] Collision: 'Enemy' pushed out of 'Player'
-12:36:01.885 [DEBUG] Collision: 'Player' pushed out of 'Enemy'
-12:36:01.885 [DEBUG] Collision: 'Enemy' pushed out of 'Player'
-12:36:01.904 [DEBUG] Collision: 'Player' pushed out of 'Enemy'
-12:36:01.904 [DEBUG] Collision: 'Enemy' pushed out of 'Player'
-12:36:01.920 [INFO] 'Enemy' attacks 'Player' for 12
-12:36:01.922 [INFO] 'Player' takes 7 damage from Enemy (12 minus 5 armour), health 79/100
-12:36:01.927 [DEBUG] Collision: 'Player' pushed out of 'Enemy'
-12:36:01.927 [DEBUG] Collision: 'Enemy' pushed out of 'Player'
-12:36:01.943 [DEBUG] Collision: 'Player' pushed out of 'Enemy'
-12:36:01.944 [DEBUG] Collision: 'Enemy' pushed out of 'Player'
-12:36:01.963 [DEBUG] Collision: 'Player' pushed out of 'Enemy'
-12:36:01.965 [DEBUG] Collision: 'Enemy' pushed out of 'Player'
-12:36:01.984 [DEBUG] Collision: 'Player' pushed out of 'Enemy'
-12:36:01.985 [DEBUG] Collision: 'Enemy' pushed out of 'Player'
-12:36:02.005 [DEBUG] Collision: 'Player' pushed out of 'Enemy'
-12:36:02.008 [DEBUG] Collision: 'Enemy' pushed out of 'Player'
-12:36:02.025 [DEBUG] Collision: 'Player' pushed out of 'Enemy'
-12:36:02.025 [DEBUG] Collision: 'Enemy' pushed out of 'Player'
-12:36:02.045 [DEBUG] Collision: 'Player' pushed out of 'Enemy'
-12:36:02.045 [DEBUG] Collision: 'Enemy' pushed out of 'Player'
-12:36:02.065 [DEBUG] Collision: 'Player' pushed out of 'Enemy'
-12:36:02.065 [DEBUG] Collision: 'Enemy' pushed out of 'Player'
-12:36:02.083 [DEBUG] Collision: 'Player' pushed out of 'Enemy'
-12:36:02.083 [DEBUG] Collision: 'Enemy' pushed out of 'Player'
-12:36:02.104 [DEBUG] Collision: 'Player' pushed out of 'Enemy'
-12:36:02.104 [DEBUG] Collision: 'Enemy' pushed out of 'Player'
-12:36:02.124 [DEBUG] Collision: 'Player' pushed out of 'Enemy'
-12:36:02.127 [DEBUG] Collision: 'Enemy' pushed out of 'Player'
-12:36:02.144 [DEBUG] Collision: 'Player' pushed out of 'Enemy'
-12:36:02.146 [DEBUG] Collision: 'Enemy' pushed out of 'Player'
-12:36:02.163 [DEBUG] Collision: 'Player' pushed out of 'Enemy'
-12:36:02.166 [DEBUG] Collision: 'Enemy' pushed out of 'Player'
-12:36:02.184 [DEBUG] Collision: 'Player' pushed out of 'Enemy'
-12:36:02.185 [DEBUG] Collision: 'Enemy' pushed out of 'Player'
-12:36:02.204 [DEBUG] Collision: 'Player' pushed out of 'Enemy'
-12:36:02.206 [DEBUG] Collision: 'Enemy' pushed out of 'Player'
-12:36:02.225 [DEBUG] Collision: 'Player' pushed out of 'Enemy'
-12:36:02.227 [DEBUG] Collision: 'Enemy' pushed out of 'Player'
-12:36:02.263 [DEBUG] Collision: 'Player' pushed out of 'Enemy'
-12:36:02.264 [DEBUG] Collision: 'Enemy' pushed out of 'Player'
-12:36:02.283 [DEBUG] Collision: 'Player' pushed out of 'Enemy'
-12:36:02.284 [DEBUG] Collision: 'Enemy' pushed out of 'Player'
-12:36:02.304 [DEBUG] Collision: 'Player' pushed out of 'Enemy'
-12:36:02.304 [DEBUG] Collision: 'Enemy' pushed out of 'Player'
-12:36:02.324 [DEBUG] Collision: 'Player' pushed out of 'Enemy'
-12:36:02.324 [DEBUG] Collision: 'Enemy' pushed out of 'Player'
-12:36:02.344 [DEBUG] Collision: 'Player' pushed out of 'Enemy'
-12:36:02.345 [DEBUG] Collision: 'Enemy' pushed out of 'Player'
-12:36:02.365 [DEBUG] Collision: 'Player' pushed out of 'Enemy'
-12:36:02.365 [DEBUG] Collision: 'Enemy' pushed out of 'Player'
-12:36:02.385 [DEBUG] Collision: 'Player' pushed out of 'Enemy'
-12:36:02.385 [DEBUG] Collision: 'Enemy' pushed out of 'Player'
-12:36:02.423 [DEBUG] Collision: 'Player' pushed out of 'Enemy'
-12:36:02.424 [DEBUG] Collision: 'Enemy' pushed out of 'Player'
-12:36:02.445 [DEBUG] Collision: 'Player' pushed out of 'Enemy'
-12:36:02.445 [DEBUG] Collision: 'Enemy' pushed out of 'Player'
-12:36:02.464 [DEBUG] Collision: 'Player' pushed out of 'Enemy'
-12:36:02.465 [DEBUG] Collision: 'Enemy' pushed out of 'Player'
-12:36:02.484 [DEBUG] Collision: 'Player' pushed out of 'Enemy'
-12:36:02.484 [DEBUG] Collision: 'Enemy' pushed out of 'Player'
-12:36:02.504 [DEBUG] Collision: 'Player' pushed out of 'Enemy'
-12:36:02.505 [DEBUG] Collision: 'Enemy' pushed out of 'Player'
-12:36:02.525 [DEBUG] Collision: 'Player' pushed out of 'Enemy'
-12:36:02.529 [DEBUG] Collision: 'Enemy' pushed out of 'Player'
-12:36:02.544 [DEBUG] Collision: 'Player' pushed out of 'Enemy'
-12:36:02.544 [DEBUG] Collision: 'Enemy' pushed out of 'Player'
-12:36:02.564 [DEBUG] Collision: 'Player' pushed out of 'Enemy'
-12:36:02.564 [DEBUG] Collision: 'Enemy' pushed out of 'Player'
-12:36:02.583 [DEBUG] Collision: 'Player' pushed out of 'Enemy'
-12:36:02.584 [DEBUG] Collision: 'Enemy' pushed out of 'Player'
-12:36:02.596 [INFO] 'Player' attacks 'Enemy' for 20
-12:36:02.597 [INFO] 'Enemy' takes 18 damage from Player (20 minus 2 armour), health 0/50
-12:36:02.597 [INFO] 'Enemy' died
-12:36:02.597 [INFO] Enemy defeated, removing it from the world
-12:36:02.599 [DEBUG] Game object destroyed: 'Enemy'
-12:36:03.363 [DEBUG] Player swings but no enemy is within 140 px
+12:41:17.068 [INFO] === XYZRoguelike started ===
+12:41:17.249 [INFO] Main window set: 1280x720
+12:41:17.252 [INFO] Texture map 'player' loaded from Resources/TextureMaps/Player.png (9 elements)
+12:41:17.275 [INFO] Texture map 'level_floors' loaded from Resources/TextureMaps/Floor.png (49 elements)
+12:41:17.309 [INFO] Texture map 'level_walls' loaded from Resources/TextureMaps/Wall.png (48 elements)
+12:41:17.310 [INFO] Texture 'enemy' loaded from Resources/Textures/Enemy.png
+12:41:17.310 [INFO] Texture 'door_closed' loaded from Resources/Textures/DoorClosed.png
+12:41:17.310 [INFO] Texture 'door_open' loaded from Resources/Textures/DoorOpen.png
+12:41:17.310 [INFO] Music 'theme' registered at Resources/Music/theme.wav
+12:41:17.339 [INFO] Sound 'hit' loaded from Resources/Sounds/AppleEat.wav
+12:41:17.340 [INFO] Sound 'death' loaded from Resources/Sounds/Death.wav
+12:41:17.340 [ERROR] Failed to load texture 'decor' from Resources/Textures/Decor.png
+12:41:17.340 [INFO] Starting level 'Cellar' (12x9, 3 enemies)
+12:41:17.340 [INFO] Building an arena of 12x9 tiles with 1 openings
+12:41:17.340 [DEBUG] Game object created: 'Floor' (1 in the world)
+12:41:17.341 [DEBUG] Game object created: 'Floor' (2 in the world)
+12:41:17.341 [DEBUG] Game object created: 'Floor' (3 in the world)
+12:41:17.341 [DEBUG] Game object created: 'Floor' (4 in the world)
+12:41:17.341 [DEBUG] Game object created: 'Floor' (5 in the world)
+12:41:17.341 [DEBUG] Game object created: 'Floor' (6 in the world)
+12:41:17.341 [DEBUG] Game object created: 'Floor' (7 in the world)
+12:41:17.341 [DEBUG] Game object created: 'Floor' (8 in the world)
+12:41:17.341 [DEBUG] Game object created: 'Floor' (9 in the world)
+12:41:17.341 [DEBUG] Game object created: 'Floor' (10 in the world)
+12:41:17.341 [DEBUG] Game object created: 'Floor' (11 in the world)
+12:41:17.341 [DEBUG] Game object created: 'Floor' (12 in the world)
+12:41:17.341 [DEBUG] Game object created: 'Floor' (13 in the world)
+12:41:17.341 [DEBUG] Game object created: 'Floor' (14 in the world)
+12:41:17.341 [DEBUG] Game object created: 'Floor' (15 in the world)
+12:41:17.341 [DEBUG] Game object created: 'Floor' (16 in the world)
+12:41:17.341 [DEBUG] Game object created: 'Floor' (17 in the world)
+12:41:17.341 [DEBUG] Game object created: 'Floor' (18 in the world)
+12:41:17.341 [DEBUG] Game object created: 'Floor' (19 in the world)
+12:41:17.341 [DEBUG] Game object created: 'Floor' (20 in the world)
+12:41:17.342 [DEBUG] Game object created: 'Floor' (21 in the world)
+12:41:17.342 [DEBUG] Game object created: 'Floor' (22 in the world)
+12:41:17.342 [DEBUG] Game object created: 'Floor' (23 in the world)
+12:41:17.342 [DEBUG] Game object created: 'Floor' (24 in the world)
+12:41:17.342 [DEBUG] Game object created: 'Floor' (25 in the world)
+12:41:17.342 [DEBUG] Game object created: 'Floor' (26 in the world)
+12:41:17.342 [DEBUG] Game object created: 'Floor' (27 in the world)
+12:41:17.342 [DEBUG] Game object created: 'Floor' (28 in the world)
+12:41:17.342 [DEBUG] Game object created: 'Floor' (29 in the world)
+12:41:17.342 [DEBUG] Game object created: 'Floor' (30 in the world)
+12:41:17.343 [DEBUG] Game object created: 'Floor' (31 in the world)
+12:41:17.343 [DEBUG] Game object created: 'Floor' (32 in the world)
+12:41:17.343 [DEBUG] Game object created: 'Floor' (33 in the world)
+12:41:17.343 [DEBUG] Game object created: 'Floor' (34 in the world)
+12:41:17.343 [DEBUG] Game object created: 'Floor' (35 in the world)
+12:41:17.343 [DEBUG] Game object created: 'Floor' (36 in the world)
+12:41:17.343 [DEBUG] Game object created: 'Floor' (37 in the world)
+12:41:17.343 [DEBUG] Game object created: 'Floor' (38 in the world)
+12:41:17.343 [DEBUG] Game object created: 'Floor' (39 in the world)
+12:41:17.343 [DEBUG] Game object created: 'Floor' (40 in the world)
+12:41:17.343 [DEBUG] Game object created: 'Floor' (41 in the world)
+12:41:17.343 [DEBUG] Game object created: 'Floor' (42 in the world)
+12:41:17.343 [DEBUG] Game object created: 'Floor' (43 in the world)
+12:41:17.343 [DEBUG] Game object created: 'Floor' (44 in the world)
+12:41:17.343 [DEBUG] Game object created: 'Floor' (45 in the world)
+12:41:17.343 [DEBUG] Game object created: 'Floor' (46 in the world)
+12:41:17.343 [DEBUG] Game object created: 'Floor' (47 in the world)
+12:41:17.344 [DEBUG] Game object created: 'Floor' (48 in the world)
+12:41:17.344 [DEBUG] Game object created: 'Floor' (49 in the world)
+12:41:17.344 [DEBUG] Game object created: 'Floor' (50 in the world)
+12:41:17.344 [DEBUG] Game object created: 'Floor' (51 in the world)
+12:41:17.344 [DEBUG] Game object created: 'Floor' (52 in the world)
+12:41:17.344 [DEBUG] Game object created: 'Floor' (53 in the world)
+12:41:17.344 [DEBUG] Game object created: 'Floor' (54 in the world)
+12:41:17.344 [DEBUG] Game object created: 'Floor' (55 in the world)
+12:41:17.344 [DEBUG] Game object created: 'Floor' (56 in the world)
+12:41:17.344 [DEBUG] Game object created: 'Floor' (57 in the world)
+12:41:17.344 [DEBUG] Game object created: 'Floor' (58 in the world)
+12:41:17.344 [DEBUG] Game object created: 'Floor' (59 in the world)
+12:41:17.344 [DEBUG] Game object created: 'Floor' (60 in the world)
+12:41:17.344 [DEBUG] Game object created: 'Floor' (61 in the world)
+12:41:17.344 [DEBUG] Game object created: 'Floor' (62 in the world)
+12:41:17.344 [DEBUG] Game object created: 'Floor' (63 in the world)
+12:41:17.344 [DEBUG] Game object created: 'Floor' (64 in the world)
+12:41:17.344 [DEBUG] Game object created: 'Floor' (65 in the world)
+12:41:17.344 [DEBUG] Game object created: 'Floor' (66 in the world)
+12:41:17.344 [DEBUG] Game object created: 'Floor' (67 in the world)
+12:41:17.345 [DEBUG] Game object created: 'Floor' (68 in the world)
+12:41:17.345 [DEBUG] Game object created: 'Floor' (69 in the world)
+12:41:17.345 [DEBUG] Game object created: 'Floor' (70 in the world)
+12:41:17.345 [DEBUG] Game object created: 'Floor' (71 in the world)
+12:41:17.345 [DEBUG] Game object created: 'Floor' (72 in the world)
+12:41:17.345 [DEBUG] Game object created: 'Floor' (73 in the world)
+12:41:17.345 [DEBUG] Game object created: 'Floor' (74 in the world)
+12:41:17.345 [DEBUG] Game object created: 'Floor' (75 in the world)
+12:41:17.345 [DEBUG] Game object created: 'Floor' (76 in the world)
+12:41:17.345 [DEBUG] Game object created: 'Floor' (77 in the world)
+12:41:17.345 [DEBUG] Game object created: 'Floor' (78 in the world)
+12:41:17.345 [DEBUG] Game object created: 'Floor' (79 in the world)
+12:41:17.345 [DEBUG] Game object created: 'Floor' (80 in the world)
+12:41:17.345 [DEBUG] Game object created: 'Floor' (81 in the world)
+12:41:17.345 [DEBUG] Game object created: 'Floor' (82 in the world)
+12:41:17.345 [DEBUG] Game object created: 'Floor' (83 in the world)
+12:41:17.345 [DEBUG] Game object created: 'Floor' (84 in the world)
+12:41:17.345 [DEBUG] Game object created: 'Floor' (85 in the world)
+12:41:17.345 [DEBUG] Game object created: 'Floor' (86 in the world)
+12:41:17.346 [DEBUG] Game object created: 'Floor' (87 in the world)
+12:41:17.346 [DEBUG] Game object created: 'Floor' (88 in the world)
+12:41:17.346 [DEBUG] Game object created: 'Floor' (89 in the world)
+12:41:17.346 [DEBUG] Game object created: 'Floor' (90 in the world)
+12:41:17.346 [DEBUG] Game object created: 'Floor' (91 in the world)
+12:41:17.346 [DEBUG] Game object created: 'Floor' (92 in the world)
+12:41:17.346 [DEBUG] Game object created: 'Floor' (93 in the world)
+12:41:17.346 [DEBUG] Game object created: 'Floor' (94 in the world)
+12:41:17.346 [DEBUG] Game object created: 'Floor' (95 in the world)
+12:41:17.346 [DEBUG] Game object created: 'Floor' (96 in the world)
+12:41:17.346 [DEBUG] Game object created: 'Floor' (97 in the world)
+12:41:17.346 [DEBUG] Game object created: 'Floor' (98 in the world)
+12:41:17.346 [DEBUG] Game object created: 'Floor' (99 in the world)
+12:41:17.346 [DEBUG] Game object created: 'Floor' (100 in the world)
+12:41:17.346 [DEBUG] Game object created: 'Floor' (101 in the world)
+12:41:17.346 [DEBUG] Game object created: 'Floor' (102 in the world)
+12:41:17.346 [DEBUG] Game object created: 'Floor' (103 in the world)
+12:41:17.346 [DEBUG] Game object created: 'Floor' (104 in the world)
+12:41:17.347 [DEBUG] Game object created: 'Floor' (105 in the world)
+12:41:17.347 [DEBUG] Game object created: 'Floor' (106 in the world)
+12:41:17.347 [DEBUG] Game object created: 'Floor' (107 in the world)
+12:41:17.347 [DEBUG] Game object created: 'Floor' (108 in the world)
+12:41:17.347 [DEBUG] Game object created: 'Wall' (109 in the world)
+12:41:17.347 [DEBUG] Collider subscribed: 'Wall'
+12:41:17.347 [DEBUG] Game object created: 'Wall' (110 in the world)
+12:41:17.347 [DEBUG] Collider subscribed: 'Wall'
+12:41:17.347 [DEBUG] Game object created: 'Wall' (111 in the world)
+12:41:17.347 [DEBUG] Collider subscribed: 'Wall'
+12:41:17.347 [DEBUG] Game object created: 'Wall' (112 in the world)
+12:41:17.347 [DEBUG] Collider subscribed: 'Wall'
+12:41:17.347 [DEBUG] Game object created: 'Wall' (113 in the world)
+12:41:17.347 [DEBUG] Collider subscribed: 'Wall'
+12:41:17.347 [DEBUG] Game object created: 'Wall' (114 in the world)
+12:41:17.348 [DEBUG] Collider subscribed: 'Wall'
+12:41:17.348 [DEBUG] Game object created: 'Wall' (115 in the world)
+12:41:17.348 [DEBUG] Collider subscribed: 'Wall'
+12:41:17.348 [DEBUG] Game object created: 'Wall' (116 in the world)
+12:41:17.348 [DEBUG] Collider subscribed: 'Wall'
+12:41:17.348 [DEBUG] Game object created: 'Wall' (117 in the world)
+12:41:17.348 [DEBUG] Collider subscribed: 'Wall'
+12:41:17.348 [DEBUG] Game object created: 'Wall' (118 in the world)
+12:41:17.348 [DEBUG] Collider subscribed: 'Wall'
+12:41:17.348 [DEBUG] Game object created: 'Wall' (119 in the world)
+12:41:17.348 [DEBUG] Collider subscribed: 'Wall'
+12:41:17.348 [DEBUG] Game object created: 'Wall' (120 in the world)
+12:41:17.348 [DEBUG] Collider subscribed: 'Wall'
+12:41:17.348 [DEBUG] Game object created: 'Wall' (121 in the world)
+12:41:17.348 [DEBUG] Collider subscribed: 'Wall'
+12:41:17.348 [DEBUG] Game object created: 'Wall' (122 in the world)
+12:41:17.348 [DEBUG] Collider subscribed: 'Wall'
+12:41:17.349 [DEBUG] Game object created: 'Wall' (123 in the world)
+12:41:17.349 [DEBUG] Collider subscribed: 'Wall'
+12:41:17.349 [DEBUG] Game object created: 'Wall' (124 in the world)
+12:41:17.349 [DEBUG] Collider subscribed: 'Wall'
+12:41:17.349 [DEBUG] Game object created: 'Wall' (125 in the world)
+12:41:17.349 [DEBUG] Collider subscribed: 'Wall'
+12:41:17.349 [DEBUG] Game object created: 'Wall' (126 in the world)
+12:41:17.349 [DEBUG] Collider subscribed: 'Wall'
+12:41:17.349 [DEBUG] Game object created: 'Wall' (127 in the world)
+12:41:17.349 [DEBUG] Collider subscribed: 'Wall'
+12:41:17.349 [DEBUG] Game object created: 'Wall' (128 in the world)
+12:41:17.349 [DEBUG] Collider subscribed: 'Wall'
+12:41:17.349 [DEBUG] Game object created: 'Wall' (129 in the world)
+12:41:17.349 [DEBUG] Collider subscribed: 'Wall'
+12:41:17.349 [DEBUG] Game object created: 'Wall' (130 in the world)
+12:41:17.349 [DEBUG] Collider subscribed: 'Wall'
+12:41:17.349 [DEBUG] Game object created: 'Wall' (131 in the world)
+12:41:17.349 [DEBUG] Collider subscribed: 'Wall'
+12:41:17.349 [DEBUG] Game object created: 'Wall' (132 in the world)
+12:41:17.349 [DEBUG] Collider subscribed: 'Wall'
+12:41:17.350 [DEBUG] Game object created: 'Wall' (133 in the world)
+12:41:17.350 [DEBUG] Collider subscribed: 'Wall'
+12:41:17.350 [DEBUG] Game object created: 'Wall' (134 in the world)
+12:41:17.350 [DEBUG] Collider subscribed: 'Wall'
+12:41:17.350 [DEBUG] Game object created: 'Wall' (135 in the world)
+12:41:17.350 [DEBUG] Collider subscribed: 'Wall'
+12:41:17.350 [DEBUG] Game object created: 'Wall' (136 in the world)
+12:41:17.350 [DEBUG] Collider subscribed: 'Wall'
+12:41:17.350 [DEBUG] Game object created: 'Wall' (137 in the world)
+12:41:17.350 [DEBUG] Collider subscribed: 'Wall'
+12:41:17.350 [DEBUG] Game object created: 'Wall' (138 in the world)
+12:41:17.350 [DEBUG] Collider subscribed: 'Wall'
+12:41:17.350 [DEBUG] Game object created: 'Wall' (139 in the world)
+12:41:17.350 [DEBUG] Collider subscribed: 'Wall'
+12:41:17.350 [DEBUG] Game object created: 'Wall' (140 in the world)
+12:41:17.350 [DEBUG] Collider subscribed: 'Wall'
+12:41:17.350 [DEBUG] Game object created: 'Wall' (141 in the world)
+12:41:17.350 [DEBUG] Collider subscribed: 'Wall'
+12:41:17.350 [DEBUG] Game object created: 'Wall' (142 in the world)
+12:41:17.350 [DEBUG] Collider subscribed: 'Wall'
+12:41:17.351 [DEBUG] Game object created: 'Wall' (143 in the world)
+12:41:17.351 [DEBUG] Collider subscribed: 'Wall'
+12:41:17.351 [DEBUG] Game object created: 'Wall' (144 in the world)
+12:41:17.351 [DEBUG] Collider subscribed: 'Wall'
+12:41:17.351 [DEBUG] Game object created: 'Wall' (145 in the world)
+12:41:17.351 [DEBUG] Collider subscribed: 'Wall'
+12:41:17.351 [DEBUG] Game object created: 'Wall' (146 in the world)
+12:41:17.351 [DEBUG] Collider subscribed: 'Wall'
+12:41:17.351 [DEBUG] Game object created: 'Wall' (147 in the world)
+12:41:17.351 [DEBUG] Collider subscribed: 'Wall'
+12:41:17.351 [DEBUG] Game object created: 'Wall' (148 in the world)
+12:41:17.351 [DEBUG] Collider subscribed: 'Wall'
+12:41:17.351 [DEBUG] Game object created: 'Wall' (149 in the world)
+12:41:17.351 [DEBUG] Collider subscribed: 'Wall'
+12:41:17.351 [DEBUG] Game object created: 'Wall' (150 in the world)
+12:41:17.351 [DEBUG] Collider subscribed: 'Wall'
+12:41:17.351 [DEBUG] Game object created: 'Wall' (151 in the world)
+12:41:17.351 [DEBUG] Collider subscribed: 'Wall'
+12:41:17.351 [DEBUG] Game object created: 'Wall' (152 in the world)
+12:41:17.351 [DEBUG] Collider subscribed: 'Wall'
+12:41:17.351 [DEBUG] Game object created: 'Wall' (153 in the world)
+12:41:17.352 [DEBUG] Collider subscribed: 'Wall'
+12:41:17.352 [DEBUG] Game object created: 'Door' (154 in the world)
+12:41:17.352 [DEBUG] Collider subscribed: 'Door'
+12:41:17.352 [DEBUG] Game object created: 'Player' (155 in the world)
+12:41:17.352 [DEBUG] Collider subscribed: 'Player'
+12:41:17.352 [INFO] Player created at 128, 512 with 100 health and 5 armour
+12:41:17.352 [DEBUG] Game object created: 'Enemy' (156 in the world)
+12:41:17.352 [DEBUG] Collider subscribed: 'Enemy'
+12:41:17.352 [INFO] Enemy created at 1280, 128
+12:41:17.352 [DEBUG] Game object created: 'Enemy' (157 in the world)
+12:41:17.352 [DEBUG] Collider subscribed: 'Enemy'
+12:41:17.352 [INFO] Enemy created at 1408, 896
+12:41:17.352 [DEBUG] Game object created: 'Enemy' (158 in the world)
+12:41:17.352 [DEBUG] Collider subscribed: 'Enemy'
+12:41:17.352 [INFO] Enemy created at 640, 1024
+12:41:17.352 [DEBUG] Game object created: 'Music: theme' (159 in the world)
+12:41:17.353 [INFO] Level 1 of 3 is running
+12:41:17.353 [INFO] Engine created, random seed 1794660077
+12:41:17.353 [INFO] Main loop started
+12:41:19.131 [WARNING] Debug key: the door is forced open
+12:41:19.132 [INFO] 1
+12:41:22.973 [INFO] The player walked through the door
+12:41:22.973 [INFO] Level 'Cellar' completed, loading the next one
+12:41:22.973 [DEBUG] Trigger enter: 'Player' and 'Door'
+12:41:22.975 [INFO] Clearing the world: 159 game objects
+12:41:22.975 [DEBUG] Game object destroyed: 'Music: theme'
+12:41:22.983 [DEBUG] Game object destroyed: 'Enemy'
+12:41:22.983 [DEBUG] Game object destroyed: 'Enemy'
+12:41:22.983 [DEBUG] Game object destroyed: 'Enemy'
+12:41:22.983 [DEBUG] Game object destroyed: 'Player'
+12:41:22.983 [DEBUG] Game object destroyed: 'Door'
+12:41:22.983 [DEBUG] Game object destroyed: 'Wall'
+12:41:22.983 [DEBUG] Game object destroyed: 'Wall'
+12:41:22.983 [DEBUG] Game object destroyed: 'Wall'
+12:41:22.983 [DEBUG] Game object destroyed: 'Wall'
+12:41:22.983 [DEBUG] Game object destroyed: 'Wall'
+12:41:22.984 [DEBUG] Game object destroyed: 'Wall'
+12:41:22.984 [DEBUG] Game object destroyed: 'Wall'
+12:41:22.984 [DEBUG] Game object destroyed: 'Wall'
+12:41:22.984 [DEBUG] Game object destroyed: 'Wall'
+12:41:22.984 [DEBUG] Game object destroyed: 'Wall'
+12:41:22.984 [DEBUG] Game object destroyed: 'Wall'
+12:41:22.984 [DEBUG] Game object destroyed: 'Wall'
+12:41:22.984 [DEBUG] Game object destroyed: 'Wall'
+12:41:22.984 [DEBUG] Game object destroyed: 'Wall'
+12:41:22.984 [DEBUG] Game object destroyed: 'Wall'
+12:41:22.984 [DEBUG] Game object destroyed: 'Wall'
+12:41:22.984 [DEBUG] Game object destroyed: 'Wall'
+12:41:22.984 [DEBUG] Game object destroyed: 'Wall'
+12:41:22.984 [DEBUG] Game object destroyed: 'Wall'
+12:41:22.984 [DEBUG] Game object destroyed: 'Wall'
+12:41:22.985 [DEBUG] Game object destroyed: 'Wall'
+12:41:22.985 [DEBUG] Game object destroyed: 'Wall'
+12:41:22.985 [DEBUG] Game object destroyed: 'Wall'
+12:41:22.985 [DEBUG] Game object destroyed: 'Wall'
+12:41:22.985 [DEBUG] Game object destroyed: 'Wall'
+12:41:22.985 [DEBUG] Game object destroyed: 'Wall'
+12:41:22.985 [DEBUG] Game object destroyed: 'Wall'
+12:41:22.985 [DEBUG] Game object destroyed: 'Wall'
+12:41:22.985 [DEBUG] Game object destroyed: 'Wall'
+12:41:22.985 [DEBUG] Game object destroyed: 'Wall'
+12:41:22.985 [DEBUG] Game object destroyed: 'Wall'
+12:41:22.985 [DEBUG] Game object destroyed: 'Wall'
+12:41:22.985 [DEBUG] Game object destroyed: 'Wall'
+12:41:22.985 [DEBUG] Game object destroyed: 'Wall'
+12:41:22.985 [DEBUG] Game object destroyed: 'Wall'
+12:41:22.986 [DEBUG] Game object destroyed: 'Wall'
+12:41:22.986 [DEBUG] Game object destroyed: 'Wall'
+12:41:22.986 [DEBUG] Game object destroyed: 'Wall'
+12:41:22.986 [DEBUG] Game object destroyed: 'Wall'
+12:41:22.986 [DEBUG] Game object destroyed: 'Wall'
+12:41:22.986 [DEBUG] Game object destroyed: 'Wall'
+12:41:22.986 [DEBUG] Game object destroyed: 'Wall'
+12:41:22.986 [DEBUG] Game object destroyed: 'Wall'
+12:41:22.986 [DEBUG] Game object destroyed: 'Wall'
+12:41:22.986 [DEBUG] Game object destroyed: 'Wall'
+12:41:22.987 [DEBUG] Game object destroyed: 'Floor'
+12:41:22.987 [DEBUG] Game object destroyed: 'Floor'
+12:41:22.987 [DEBUG] Game object destroyed: 'Floor'
+12:41:22.987 [DEBUG] Game object destroyed: 'Floor'
+12:41:22.987 [DEBUG] Game object destroyed: 'Floor'
+12:41:22.987 [DEBUG] Game object destroyed: 'Floor'
+12:41:22.987 [DEBUG] Game object destroyed: 'Floor'
+12:41:22.987 [DEBUG] Game object destroyed: 'Floor'
+12:41:22.987 [DEBUG] Game object destroyed: 'Floor'
+12:41:22.987 [DEBUG] Game object destroyed: 'Floor'
+12:41:22.987 [DEBUG] Game object destroyed: 'Floor'
+12:41:22.987 [DEBUG] Game object destroyed: 'Floor'
+12:41:22.987 [DEBUG] Game object destroyed: 'Floor'
+12:41:22.988 [DEBUG] Game object destroyed: 'Floor'
+12:41:22.988 [DEBUG] Game object destroyed: 'Floor'
+12:41:22.988 [DEBUG] Game object destroyed: 'Floor'
+12:41:22.988 [DEBUG] Game object destroyed: 'Floor'
+12:41:22.988 [DEBUG] Game object destroyed: 'Floor'
+12:41:22.988 [DEBUG] Game object destroyed: 'Floor'
+12:41:22.988 [DEBUG] Game object destroyed: 'Floor'
+12:41:22.988 [DEBUG] Game object destroyed: 'Floor'
+12:41:22.988 [DEBUG] Game object destroyed: 'Floor'
+12:41:22.988 [DEBUG] Game object destroyed: 'Floor'
+12:41:22.988 [DEBUG] Game object destroyed: 'Floor'
+12:41:22.988 [DEBUG] Game object destroyed: 'Floor'
+12:41:22.988 [DEBUG] Game object destroyed: 'Floor'
+12:41:22.988 [DEBUG] Game object destroyed: 'Floor'
+12:41:22.988 [DEBUG] Game object destroyed: 'Floor'
+12:41:22.988 [DEBUG] Game object destroyed: 'Floor'
+12:41:22.989 [DEBUG] Game object destroyed: 'Floor'
+12:41:22.989 [DEBUG] Game object destroyed: 'Floor'
+12:41:22.989 [DEBUG] Game object destroyed: 'Floor'
+12:41:22.989 [DEBUG] Game object destroyed: 'Floor'
+12:41:22.989 [DEBUG] Game object destroyed: 'Floor'
+12:41:22.989 [DEBUG] Game object destroyed: 'Floor'
+12:41:22.989 [DEBUG] Game object destroyed: 'Floor'
+12:41:22.989 [DEBUG] Game object destroyed: 'Floor'
+12:41:22.989 [DEBUG] Game object destroyed: 'Floor'
+12:41:22.989 [DEBUG] Game object destroyed: 'Floor'
+12:41:22.989 [DEBUG] Game object destroyed: 'Floor'
+12:41:22.989 [DEBUG] Game object destroyed: 'Floor'
+12:41:22.989 [DEBUG] Game object destroyed: 'Floor'
+12:41:22.989 [DEBUG] Game object destroyed: 'Floor'
+12:41:22.989 [DEBUG] Game object destroyed: 'Floor'
+12:41:22.989 [DEBUG] Game object destroyed: 'Floor'
+12:41:22.990 [DEBUG] Game object destroyed: 'Floor'
+12:41:22.990 [DEBUG] Game object destroyed: 'Floor'
+12:41:22.990 [DEBUG] Game object destroyed: 'Floor'
+12:41:22.990 [DEBUG] Game object destroyed: 'Floor'
+12:41:22.990 [DEBUG] Game object destroyed: 'Floor'
+12:41:22.990 [DEBUG] Game object destroyed: 'Floor'
+12:41:22.991 [DEBUG] Game object destroyed: 'Floor'
+12:41:22.991 [DEBUG] Game object destroyed: 'Floor'
+12:41:22.991 [DEBUG] Game object destroyed: 'Floor'
+12:41:22.991 [DEBUG] Game object destroyed: 'Floor'
+12:41:22.991 [DEBUG] Game object destroyed: 'Floor'
+12:41:22.991 [DEBUG] Game object destroyed: 'Floor'
+12:41:22.991 [DEBUG] Game object destroyed: 'Floor'
+12:41:22.991 [DEBUG] Game object destroyed: 'Floor'
+12:41:22.991 [DEBUG] Game object destroyed: 'Floor'
+12:41:22.991 [DEBUG] Game object destroyed: 'Floor'
+12:41:22.992 [DEBUG] Game object destroyed: 'Floor'
+12:41:22.992 [DEBUG] Game object destroyed: 'Floor'
+12:41:22.992 [DEBUG] Game object destroyed: 'Floor'
+12:41:22.992 [DEBUG] Game object destroyed: 'Floor'
+12:41:22.992 [DEBUG] Game object destroyed: 'Floor'
+12:41:22.992 [DEBUG] Game object destroyed: 'Floor'
+12:41:22.992 [DEBUG] Game object destroyed: 'Floor'
+12:41:22.992 [DEBUG] Game object destroyed: 'Floor'
+12:41:22.992 [DEBUG] Game object destroyed: 'Floor'
+12:41:22.992 [DEBUG] Game object destroyed: 'Floor'
+12:41:22.993 [DEBUG] Game object destroyed: 'Floor'
+12:41:22.993 [DEBUG] Game object destroyed: 'Floor'
+12:41:22.993 [DEBUG] Game object destroyed: 'Floor'
+12:41:22.993 [DEBUG] Game object destroyed: 'Floor'
+12:41:22.993 [DEBUG] Game object destroyed: 'Floor'
+12:41:22.993 [DEBUG] Game object destroyed: 'Floor'
+12:41:22.993 [DEBUG] Game object destroyed: 'Floor'
+12:41:22.993 [DEBUG] Game object destroyed: 'Floor'
+12:41:22.993 [DEBUG] Game object destroyed: 'Floor'
+12:41:22.993 [DEBUG] Game object destroyed: 'Floor'
+12:41:22.993 [DEBUG] Game object destroyed: 'Floor'
+12:41:22.993 [DEBUG] Game object destroyed: 'Floor'
+12:41:22.993 [DEBUG] Game object destroyed: 'Floor'
+12:41:22.993 [DEBUG] Game object destroyed: 'Floor'
+12:41:22.993 [DEBUG] Game object destroyed: 'Floor'
+12:41:22.993 [DEBUG] Game object destroyed: 'Floor'
+12:41:22.994 [DEBUG] Game object destroyed: 'Floor'
+12:41:22.994 [DEBUG] Game object destroyed: 'Floor'
+12:41:22.994 [DEBUG] Game object destroyed: 'Floor'
+12:41:22.994 [DEBUG] Game object destroyed: 'Floor'
+12:41:22.994 [DEBUG] Game object destroyed: 'Floor'
+12:41:22.994 [DEBUG] Game object destroyed: 'Floor'
+12:41:22.994 [DEBUG] Game object destroyed: 'Floor'
+12:41:22.994 [DEBUG] Game object destroyed: 'Floor'
+12:41:22.994 [DEBUG] Game object destroyed: 'Floor'
+12:41:22.994 [DEBUG] Game object destroyed: 'Floor'
+12:41:22.994 [DEBUG] Game object destroyed: 'Floor'
+12:41:22.994 [DEBUG] Game object destroyed: 'Floor'
+12:41:22.994 [DEBUG] Game object destroyed: 'Floor'
+12:41:22.994 [DEBUG] Game object destroyed: 'Floor'
+12:41:22.994 [DEBUG] Game object destroyed: 'Floor'
+12:41:22.994 [DEBUG] Game object destroyed: 'Floor'
+12:41:22.995 [DEBUG] Game object destroyed: 'Floor'
+12:41:22.995 [DEBUG] Game object destroyed: 'Floor'
+12:41:22.995 [DEBUG] Game object destroyed: 'Floor'
+12:41:22.995 [DEBUG] Game object destroyed: 'Floor'
+12:41:22.995 [DEBUG] Game object destroyed: 'Floor'
+12:41:22.995 [INFO] Starting level 'Catacombs' (16x11, 5 enemies)
+12:41:22.995 [INFO] Building an arena of 16x11 tiles with 1 openings
+12:41:22.995 [DEBUG] Game object created: 'Floor' (1 in the world)
+12:41:22.995 [DEBUG] Game object created: 'Floor' (2 in the world)
+12:41:22.995 [DEBUG] Game object created: 'Floor' (3 in the world)
+12:41:22.995 [DEBUG] Game object created: 'Floor' (4 in the world)
+12:41:22.995 [DEBUG] Game object created: 'Floor' (5 in the world)
+12:41:22.995 [DEBUG] Game object created: 'Floor' (6 in the world)
+12:41:22.995 [DEBUG] Game object created: 'Floor' (7 in the world)
+12:41:22.995 [DEBUG] Game object created: 'Floor' (8 in the world)
+12:41:22.995 [DEBUG] Game object created: 'Floor' (9 in the world)
+12:41:22.996 [DEBUG] Game object created: 'Floor' (10 in the world)
+12:41:22.996 [DEBUG] Game object created: 'Floor' (11 in the world)
+12:41:22.996 [DEBUG] Game object created: 'Floor' (12 in the world)
+12:41:22.996 [DEBUG] Game object created: 'Floor' (13 in the world)
+12:41:22.996 [DEBUG] Game object created: 'Floor' (14 in the world)
+12:41:22.996 [DEBUG] Game object created: 'Floor' (15 in the world)
+12:41:22.996 [DEBUG] Game object created: 'Floor' (16 in the world)
+12:41:22.996 [DEBUG] Game object created: 'Floor' (17 in the world)
+12:41:22.996 [DEBUG] Game object created: 'Floor' (18 in the world)
+12:41:22.996 [DEBUG] Game object created: 'Floor' (19 in the world)
+12:41:22.996 [DEBUG] Game object created: 'Floor' (20 in the world)
+12:41:22.996 [DEBUG] Game object created: 'Floor' (21 in the world)
+12:41:22.996 [DEBUG] Game object created: 'Floor' (22 in the world)
+12:41:22.996 [DEBUG] Game object created: 'Floor' (23 in the world)
+12:41:22.996 [DEBUG] Game object created: 'Floor' (24 in the world)
+12:41:22.997 [DEBUG] Game object created: 'Floor' (25 in the world)
+12:41:22.997 [DEBUG] Game object created: 'Floor' (26 in the world)
+12:41:22.997 [DEBUG] Game object created: 'Floor' (27 in the world)
+12:41:22.997 [DEBUG] Game object created: 'Floor' (28 in the world)
+12:41:22.997 [DEBUG] Game object created: 'Floor' (29 in the world)
+12:41:22.997 [DEBUG] Game object created: 'Floor' (30 in the world)
+12:41:22.997 [DEBUG] Game object created: 'Floor' (31 in the world)
+12:41:22.997 [DEBUG] Game object created: 'Floor' (32 in the world)
+12:41:22.997 [DEBUG] Game object created: 'Floor' (33 in the world)
+12:41:22.997 [DEBUG] Game object created: 'Floor' (34 in the world)
+12:41:22.997 [DEBUG] Game object created: 'Floor' (35 in the world)
+12:41:22.997 [DEBUG] Game object created: 'Floor' (36 in the world)
+12:41:22.997 [DEBUG] Game object created: 'Floor' (37 in the world)
+12:41:22.997 [DEBUG] Game object created: 'Floor' (38 in the world)
+12:41:22.997 [DEBUG] Game object created: 'Floor' (39 in the world)
+12:41:22.998 [DEBUG] Game object created: 'Floor' (40 in the world)
+12:41:22.998 [DEBUG] Game object created: 'Floor' (41 in the world)
+12:41:22.998 [DEBUG] Game object created: 'Floor' (42 in the world)
+12:41:22.998 [DEBUG] Game object created: 'Floor' (43 in the world)
+12:41:22.998 [DEBUG] Game object created: 'Floor' (44 in the world)
+12:41:22.998 [DEBUG] Game object created: 'Floor' (45 in the world)
+12:41:22.998 [DEBUG] Game object created: 'Floor' (46 in the world)
+12:41:22.998 [DEBUG] Game object created: 'Floor' (47 in the world)
+12:41:22.998 [DEBUG] Game object created: 'Floor' (48 in the world)
+12:41:22.998 [DEBUG] Game object created: 'Floor' (49 in the world)
+12:41:22.998 [DEBUG] Game object created: 'Floor' (50 in the world)
+12:41:22.998 [DEBUG] Game object created: 'Floor' (51 in the world)
+12:41:22.998 [DEBUG] Game object created: 'Floor' (52 in the world)
+12:41:22.999 [DEBUG] Game object created: 'Floor' (53 in the world)
+12:41:22.999 [DEBUG] Game object created: 'Floor' (54 in the world)
+12:41:22.999 [DEBUG] Game object created: 'Floor' (55 in the world)
+12:41:22.999 [DEBUG] Game object created: 'Floor' (56 in the world)
+12:41:22.999 [DEBUG] Game object created: 'Floor' (57 in the world)
+12:41:22.999 [DEBUG] Game object created: 'Floor' (58 in the world)
+12:41:22.999 [DEBUG] Game object created: 'Floor' (59 in the world)
+12:41:22.999 [DEBUG] Game object created: 'Floor' (60 in the world)
+12:41:22.999 [DEBUG] Game object created: 'Floor' (61 in the world)
+12:41:22.999 [DEBUG] Game object created: 'Floor' (62 in the world)
+12:41:22.999 [DEBUG] Game object created: 'Floor' (63 in the world)
+12:41:22.999 [DEBUG] Game object created: 'Floor' (64 in the world)
+12:41:22.999 [DEBUG] Game object created: 'Floor' (65 in the world)
+12:41:22.999 [DEBUG] Game object created: 'Floor' (66 in the world)
+12:41:22.999 [DEBUG] Game object created: 'Floor' (67 in the world)
+12:41:23.000 [DEBUG] Game object created: 'Floor' (68 in the world)
+12:41:23.000 [DEBUG] Game object created: 'Floor' (69 in the world)
+12:41:23.000 [DEBUG] Game object created: 'Floor' (70 in the world)
+12:41:23.000 [DEBUG] Game object created: 'Floor' (71 in the world)
+12:41:23.000 [DEBUG] Game object created: 'Floor' (72 in the world)
+12:41:23.000 [DEBUG] Game object created: 'Floor' (73 in the world)
+12:41:23.000 [DEBUG] Game object created: 'Floor' (74 in the world)
+12:41:23.000 [DEBUG] Game object created: 'Floor' (75 in the world)
+12:41:23.000 [DEBUG] Game object created: 'Floor' (76 in the world)
+12:41:23.000 [DEBUG] Game object created: 'Floor' (77 in the world)
+12:41:23.000 [DEBUG] Game object created: 'Floor' (78 in the world)
+12:41:23.000 [DEBUG] Game object created: 'Floor' (79 in the world)
+12:41:23.000 [DEBUG] Game object created: 'Floor' (80 in the world)
+12:41:23.000 [DEBUG] Game object created: 'Floor' (81 in the world)
+12:41:23.000 [DEBUG] Game object created: 'Floor' (82 in the world)
+12:41:23.000 [DEBUG] Game object created: 'Floor' (83 in the world)
+12:41:23.001 [DEBUG] Game object created: 'Floor' (84 in the world)
+12:41:23.001 [DEBUG] Game object created: 'Floor' (85 in the world)
+12:41:23.001 [DEBUG] Game object created: 'Floor' (86 in the world)
+12:41:23.001 [DEBUG] Game object created: 'Floor' (87 in the world)
+12:41:23.001 [DEBUG] Game object created: 'Floor' (88 in the world)
+12:41:23.001 [DEBUG] Game object created: 'Floor' (89 in the world)
+12:41:23.001 [DEBUG] Game object created: 'Floor' (90 in the world)
+12:41:23.001 [DEBUG] Game object created: 'Floor' (91 in the world)
+12:41:23.001 [DEBUG] Game object created: 'Floor' (92 in the world)
+12:41:23.001 [DEBUG] Game object created: 'Floor' (93 in the world)
+12:41:23.001 [DEBUG] Game object created: 'Floor' (94 in the world)
+12:41:23.001 [DEBUG] Game object created: 'Floor' (95 in the world)
+12:41:23.001 [DEBUG] Game object created: 'Floor' (96 in the world)
+12:41:23.001 [DEBUG] Game object created: 'Floor' (97 in the world)
+12:41:23.001 [DEBUG] Game object created: 'Floor' (98 in the world)
+12:41:23.001 [DEBUG] Game object created: 'Floor' (99 in the world)
+12:41:23.002 [DEBUG] Game object created: 'Floor' (100 in the world)
+12:41:23.002 [DEBUG] Game object created: 'Floor' (101 in the world)
+12:41:23.002 [DEBUG] Game object created: 'Floor' (102 in the world)
+12:41:23.002 [DEBUG] Game object created: 'Floor' (103 in the world)
+12:41:23.002 [DEBUG] Game object created: 'Floor' (104 in the world)
+12:41:23.002 [DEBUG] Game object created: 'Floor' (105 in the world)
+12:41:23.002 [DEBUG] Game object created: 'Floor' (106 in the world)
+12:41:23.002 [DEBUG] Game object created: 'Floor' (107 in the world)
+12:41:23.002 [DEBUG] Game object created: 'Floor' (108 in the world)
+12:41:23.002 [DEBUG] Game object created: 'Floor' (109 in the world)
+12:41:23.002 [DEBUG] Game object created: 'Floor' (110 in the world)
+12:41:23.002 [DEBUG] Game object created: 'Floor' (111 in the world)
+12:41:23.002 [DEBUG] Game object created: 'Floor' (112 in the world)
+12:41:23.002 [DEBUG] Game object created: 'Floor' (113 in the world)
+12:41:23.002 [DEBUG] Game object created: 'Floor' (114 in the world)
+12:41:23.002 [DEBUG] Game object created: 'Floor' (115 in the world)
+12:41:23.003 [DEBUG] Game object created: 'Floor' (116 in the world)
+12:41:23.003 [DEBUG] Game object created: 'Floor' (117 in the world)
+12:41:23.003 [DEBUG] Game object created: 'Floor' (118 in the world)
+12:41:23.003 [DEBUG] Game object created: 'Floor' (119 in the world)
+12:41:23.003 [DEBUG] Game object created: 'Floor' (120 in the world)
+12:41:23.003 [DEBUG] Game object created: 'Floor' (121 in the world)
+12:41:23.003 [DEBUG] Game object created: 'Floor' (122 in the world)
+12:41:23.003 [DEBUG] Game object created: 'Floor' (123 in the world)
+12:41:23.003 [DEBUG] Game object created: 'Floor' (124 in the world)
+12:41:23.003 [DEBUG] Game object created: 'Floor' (125 in the world)
+12:41:23.003 [DEBUG] Game object created: 'Floor' (126 in the world)
+12:41:23.003 [DEBUG] Game object created: 'Floor' (127 in the world)
+12:41:23.003 [DEBUG] Game object created: 'Floor' (128 in the world)
+12:41:23.003 [DEBUG] Game object created: 'Floor' (129 in the world)
+12:41:23.004 [DEBUG] Game object created: 'Floor' (130 in the world)
+12:41:23.004 [DEBUG] Game object created: 'Floor' (131 in the world)
+12:41:23.004 [DEBUG] Game object created: 'Floor' (132 in the world)
+12:41:23.004 [DEBUG] Game object created: 'Floor' (133 in the world)
+12:41:23.004 [DEBUG] Game object created: 'Floor' (134 in the world)
+12:41:23.004 [DEBUG] Game object created: 'Floor' (135 in the world)
+12:41:23.004 [DEBUG] Game object created: 'Floor' (136 in the world)
+12:41:23.004 [DEBUG] Game object created: 'Floor' (137 in the world)
+12:41:23.004 [DEBUG] Game object created: 'Floor' (138 in the world)
+12:41:23.004 [DEBUG] Game object created: 'Floor' (139 in the world)
+12:41:23.004 [DEBUG] Game object created: 'Floor' (140 in the world)
+12:41:23.004 [DEBUG] Game object created: 'Floor' (141 in the world)
+12:41:23.004 [DEBUG] Game object created: 'Floor' (142 in the world)
+12:41:23.004 [DEBUG] Game object created: 'Floor' (143 in the world)
+12:41:23.005 [DEBUG] Game object created: 'Floor' (144 in the world)
+12:41:23.005 [DEBUG] Game object created: 'Floor' (145 in the world)
+12:41:23.005 [DEBUG] Game object created: 'Floor' (146 in the world)
+12:41:23.005 [DEBUG] Game object created: 'Floor' (147 in the world)
+12:41:23.005 [DEBUG] Game object created: 'Floor' (148 in the world)
+12:41:23.005 [DEBUG] Game object created: 'Floor' (149 in the world)
+12:41:23.005 [DEBUG] Game object created: 'Floor' (150 in the world)
+12:41:23.005 [DEBUG] Game object created: 'Floor' (151 in the world)
+12:41:23.005 [DEBUG] Game object created: 'Floor' (152 in the world)
+12:41:23.005 [DEBUG] Game object created: 'Floor' (153 in the world)
+12:41:23.005 [DEBUG] Game object created: 'Floor' (154 in the world)
+12:41:23.005 [DEBUG] Game object created: 'Floor' (155 in the world)
+12:41:23.005 [DEBUG] Game object created: 'Floor' (156 in the world)
+12:41:23.005 [DEBUG] Game object created: 'Floor' (157 in the world)
+12:41:23.005 [DEBUG] Game object created: 'Floor' (158 in the world)
+12:41:23.005 [DEBUG] Game object created: 'Floor' (159 in the world)
+12:41:23.006 [DEBUG] Game object created: 'Floor' (160 in the world)
+12:41:23.006 [DEBUG] Game object created: 'Floor' (161 in the world)
+12:41:23.006 [DEBUG] Game object created: 'Floor' (162 in the world)
+12:41:23.006 [DEBUG] Game object created: 'Floor' (163 in the world)
+12:41:23.006 [DEBUG] Game object created: 'Floor' (164 in the world)
+12:41:23.006 [DEBUG] Game object created: 'Floor' (165 in the world)
+12:41:23.006 [DEBUG] Game object created: 'Floor' (166 in the world)
+12:41:23.006 [DEBUG] Game object created: 'Floor' (167 in the world)
+12:41:23.006 [DEBUG] Game object created: 'Floor' (168 in the world)
+12:41:23.006 [DEBUG] Game object created: 'Floor' (169 in the world)
+12:41:23.006 [DEBUG] Game object created: 'Floor' (170 in the world)
+12:41:23.007 [DEBUG] Game object created: 'Floor' (171 in the world)
+12:41:23.007 [DEBUG] Game object created: 'Floor' (172 in the world)
+12:41:23.007 [DEBUG] Game object created: 'Floor' (173 in the world)
+12:41:23.007 [DEBUG] Game object created: 'Floor' (174 in the world)
+12:41:23.007 [DEBUG] Game object created: 'Floor' (175 in the world)
+12:41:23.007 [DEBUG] Game object created: 'Floor' (176 in the world)
+12:41:23.007 [DEBUG] Game object created: 'Wall' (177 in the world)
+12:41:23.007 [DEBUG] Collider subscribed: 'Wall'
+12:41:23.007 [DEBUG] Game object created: 'Wall' (178 in the world)
+12:41:23.007 [DEBUG] Collider subscribed: 'Wall'
+12:41:23.007 [DEBUG] Game object created: 'Wall' (179 in the world)
+12:41:23.007 [DEBUG] Collider subscribed: 'Wall'
+12:41:23.007 [DEBUG] Game object created: 'Wall' (180 in the world)
+12:41:23.008 [DEBUG] Collider subscribed: 'Wall'
+12:41:23.008 [DEBUG] Game object created: 'Wall' (181 in the world)
+12:41:23.008 [DEBUG] Collider subscribed: 'Wall'
+12:41:23.008 [DEBUG] Game object created: 'Wall' (182 in the world)
+12:41:23.008 [DEBUG] Collider subscribed: 'Wall'
+12:41:23.008 [DEBUG] Game object created: 'Wall' (183 in the world)
+12:41:23.008 [DEBUG] Collider subscribed: 'Wall'
+12:41:23.008 [DEBUG] Game object created: 'Wall' (184 in the world)
+12:41:23.008 [DEBUG] Collider subscribed: 'Wall'
+12:41:23.008 [DEBUG] Game object created: 'Wall' (185 in the world)
+12:41:23.008 [DEBUG] Collider subscribed: 'Wall'
+12:41:23.008 [DEBUG] Game object created: 'Wall' (186 in the world)
+12:41:23.008 [DEBUG] Collider subscribed: 'Wall'
+12:41:23.009 [DEBUG] Game object created: 'Wall' (187 in the world)
+12:41:23.009 [DEBUG] Collider subscribed: 'Wall'
+12:41:23.009 [DEBUG] Game object created: 'Wall' (188 in the world)
+12:41:23.009 [DEBUG] Collider subscribed: 'Wall'
+12:41:23.009 [DEBUG] Game object created: 'Wall' (189 in the world)
+12:41:23.009 [DEBUG] Collider subscribed: 'Wall'
+12:41:23.009 [DEBUG] Game object created: 'Wall' (190 in the world)
+12:41:23.009 [DEBUG] Collider subscribed: 'Wall'
+12:41:23.009 [DEBUG] Game object created: 'Wall' (191 in the world)
+12:41:23.009 [DEBUG] Collider subscribed: 'Wall'
+12:41:23.009 [DEBUG] Game object created: 'Wall' (192 in the world)
+12:41:23.009 [DEBUG] Collider subscribed: 'Wall'
+12:41:23.010 [DEBUG] Game object created: 'Wall' (193 in the world)
+12:41:23.010 [DEBUG] Collider subscribed: 'Wall'
+12:41:23.010 [DEBUG] Game object created: 'Wall' (194 in the world)
+12:41:23.010 [DEBUG] Collider subscribed: 'Wall'
+12:41:23.010 [DEBUG] Game object created: 'Wall' (195 in the world)
+12:41:23.010 [DEBUG] Collider subscribed: 'Wall'
+12:41:23.010 [DEBUG] Game object created: 'Wall' (196 in the world)
+12:41:23.010 [DEBUG] Collider subscribed: 'Wall'
+12:41:23.010 [DEBUG] Game object created: 'Wall' (197 in the world)
+12:41:23.010 [DEBUG] Collider subscribed: 'Wall'
+12:41:23.010 [DEBUG] Game object created: 'Wall' (198 in the world)
+12:41:23.010 [DEBUG] Collider subscribed: 'Wall'
+12:41:23.010 [DEBUG] Game object created: 'Wall' (199 in the world)
+12:41:23.010 [DEBUG] Collider subscribed: 'Wall'
+12:41:23.010 [DEBUG] Game object created: 'Wall' (200 in the world)
+12:41:23.011 [DEBUG] Collider subscribed: 'Wall'
+12:41:23.011 [DEBUG] Game object created: 'Wall' (201 in the world)
+12:41:23.011 [DEBUG] Collider subscribed: 'Wall'
+12:41:23.011 [DEBUG] Game object created: 'Wall' (202 in the world)
+12:41:23.011 [DEBUG] Collider subscribed: 'Wall'
+12:41:23.011 [DEBUG] Game object created: 'Wall' (203 in the world)
+12:41:23.011 [DEBUG] Collider subscribed: 'Wall'
+12:41:23.011 [DEBUG] Game object created: 'Wall' (204 in the world)
+12:41:23.011 [DEBUG] Collider subscribed: 'Wall'
+12:41:23.011 [DEBUG] Game object created: 'Wall' (205 in the world)
+12:41:23.011 [DEBUG] Collider subscribed: 'Wall'
+12:41:23.011 [DEBUG] Game object created: 'Wall' (206 in the world)
+12:41:23.011 [DEBUG] Collider subscribed: 'Wall'
+12:41:23.011 [DEBUG] Game object created: 'Wall' (207 in the world)
+12:41:23.011 [DEBUG] Collider subscribed: 'Wall'
+12:41:23.011 [DEBUG] Game object created: 'Wall' (208 in the world)
+12:41:23.012 [DEBUG] Collider subscribed: 'Wall'
+12:41:23.012 [DEBUG] Game object created: 'Wall' (209 in the world)
+12:41:23.012 [DEBUG] Collider subscribed: 'Wall'
+12:41:23.012 [DEBUG] Game object created: 'Wall' (210 in the world)
+12:41:23.012 [DEBUG] Collider subscribed: 'Wall'
+12:41:23.012 [DEBUG] Game object created: 'Wall' (211 in the world)
+12:41:23.012 [DEBUG] Collider subscribed: 'Wall'
+12:41:23.012 [DEBUG] Game object created: 'Wall' (212 in the world)
+12:41:23.012 [DEBUG] Collider subscribed: 'Wall'
+12:41:23.012 [DEBUG] Game object created: 'Wall' (213 in the world)
+12:41:23.012 [DEBUG] Collider subscribed: 'Wall'
+12:41:23.012 [DEBUG] Game object created: 'Wall' (214 in the world)
+12:41:23.012 [DEBUG] Collider subscribed: 'Wall'
+12:41:23.012 [DEBUG] Game object created: 'Wall' (215 in the world)
+12:41:23.012 [DEBUG] Collider subscribed: 'Wall'
+12:41:23.012 [DEBUG] Game object created: 'Wall' (216 in the world)
+12:41:23.013 [DEBUG] Collider subscribed: 'Wall'
+12:41:23.013 [DEBUG] Game object created: 'Wall' (217 in the world)
+12:41:23.013 [DEBUG] Collider subscribed: 'Wall'
+12:41:23.013 [DEBUG] Game object created: 'Wall' (218 in the world)
+12:41:23.013 [DEBUG] Collider subscribed: 'Wall'
+12:41:23.013 [DEBUG] Game object created: 'Wall' (219 in the world)
+12:41:23.013 [DEBUG] Collider subscribed: 'Wall'
+12:41:23.013 [DEBUG] Game object created: 'Wall' (220 in the world)
+12:41:23.013 [DEBUG] Collider subscribed: 'Wall'
+12:41:23.013 [DEBUG] Game object created: 'Wall' (221 in the world)
+12:41:23.013 [DEBUG] Collider subscribed: 'Wall'
+12:41:23.013 [DEBUG] Game object created: 'Wall' (222 in the world)
+12:41:23.013 [DEBUG] Collider subscribed: 'Wall'
+12:41:23.013 [DEBUG] Game object created: 'Wall' (223 in the world)
+12:41:23.013 [DEBUG] Collider subscribed: 'Wall'
+12:41:23.013 [DEBUG] Game object created: 'Wall' (224 in the world)
+12:41:23.014 [DEBUG] Collider subscribed: 'Wall'
+12:41:23.014 [DEBUG] Game object created: 'Wall' (225 in the world)
+12:41:23.014 [DEBUG] Collider subscribed: 'Wall'
+12:41:23.014 [DEBUG] Game object created: 'Wall' (226 in the world)
+12:41:23.014 [DEBUG] Collider subscribed: 'Wall'
+12:41:23.014 [DEBUG] Game object created: 'Wall' (227 in the world)
+12:41:23.014 [DEBUG] Collider subscribed: 'Wall'
+12:41:23.014 [DEBUG] Game object created: 'Wall' (228 in the world)
+12:41:23.014 [DEBUG] Collider subscribed: 'Wall'
+12:41:23.014 [DEBUG] Game object created: 'Wall' (229 in the world)
+12:41:23.014 [DEBUG] Collider subscribed: 'Wall'
+12:41:23.014 [DEBUG] Game object created: 'Wall' (230 in the world)
+12:41:23.015 [DEBUG] Collider subscribed: 'Wall'
+12:41:23.015 [DEBUG] Game object created: 'Wall' (231 in the world)
+12:41:23.015 [DEBUG] Collider subscribed: 'Wall'
+12:41:23.015 [DEBUG] Game object created: 'Wall' (232 in the world)
+12:41:23.015 [DEBUG] Collider subscribed: 'Wall'
+12:41:23.015 [DEBUG] Game object created: 'Wall' (233 in the world)
+12:41:23.015 [DEBUG] Collider subscribed: 'Wall'
+12:41:23.015 [DEBUG] Game object created: 'Door' (234 in the world)
+12:41:23.015 [DEBUG] Collider subscribed: 'Door'
+12:41:23.015 [DEBUG] Game object created: 'Player' (235 in the world)
+12:41:23.015 [DEBUG] Collider subscribed: 'Player'
+12:41:23.015 [INFO] Player created at 128, 640 with 100 health and 5 armour
+12:41:23.015 [DEBUG] Game object created: 'Enemy' (236 in the world)
+12:41:23.015 [DEBUG] Collider subscribed: 'Enemy'
+12:41:23.015 [INFO] Enemy created at 1920, 256
+12:41:23.016 [DEBUG] Game object created: 'Enemy' (237 in the world)
+12:41:23.016 [DEBUG] Collider subscribed: 'Enemy'
+12:41:23.016 [INFO] Enemy created at 1408, 384
+12:41:23.016 [DEBUG] Game object created: 'Enemy' (238 in the world)
+12:41:23.016 [DEBUG] Collider subscribed: 'Enemy'
+12:41:23.016 [INFO] Enemy created at 768, 768
+12:41:23.016 [DEBUG] Game object created: 'Enemy' (239 in the world)
+12:41:23.016 [DEBUG] Collider subscribed: 'Enemy'
+12:41:23.016 [INFO] Enemy created at 1024, 256
+12:41:23.016 [DEBUG] Game object created: 'Enemy' (240 in the world)
+12:41:23.016 [DEBUG] Collider subscribed: 'Enemy'
+12:41:23.016 [INFO] Enemy created at 1408, 1280
+12:41:23.016 [DEBUG] Game object created: 'Music: theme' (241 in the world)
+12:41:23.017 [INFO] Level 2 of 3 is running
+12:41:23.017 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:23.017 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:23.017 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:23.018 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:23.018 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:23.018 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:23.018 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:23.018 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:23.018 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:23.018 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:23.018 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:23.018 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:23.018 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:23.018 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:23.018 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:23.018 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:23.018 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:23.018 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:23.019 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:23.019 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:23.019 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:23.019 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:23.019 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:23.019 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:23.019 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:23.019 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:23.019 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:23.019 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:23.019 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:23.019 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:23.019 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:23.020 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:23.020 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:23.020 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:23.020 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:23.020 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:23.020 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:23.020 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:23.020 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:23.020 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:23.020 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:23.020 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:23.020 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:23.021 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:23.021 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:23.021 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:23.021 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:23.021 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:23.021 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:23.021 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:23.021 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:23.021 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:23.021 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:23.021 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:23.021 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:23.021 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:23.022 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:23.022 [DEBUG] Collision: 'Player' pushed out of 'Door'
+12:41:23.022 [DEBUG] Collision: 'Player' pushed out of 'Enemy'
+12:41:23.022 [DEBUG] Collision: 'Player' pushed out of 'Enemy'
+12:41:23.022 [DEBUG] Collision: 'Player' pushed out of 'Enemy'
+12:41:23.022 [DEBUG] Collision: 'Player' pushed out of 'Enemy'
+12:41:23.022 [DEBUG] Collision: 'Player' pushed out of 'Enemy'
+12:41:23.022 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.022 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.022 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.022 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.022 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.022 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.022 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.023 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.023 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.023 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.023 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.023 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.023 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.023 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.023 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.023 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.023 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.023 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.023 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.023 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.023 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.023 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.024 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.024 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.024 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.024 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.024 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.024 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.024 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.024 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.024 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.024 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.024 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.024 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.024 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.024 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.024 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.024 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.024 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.025 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.025 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.025 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.025 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.025 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.025 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.025 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.025 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.025 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.025 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.025 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.026 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.026 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.026 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.026 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.026 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.026 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.026 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.026 [DEBUG] Collision: 'Enemy' pushed out of 'Door'
+12:41:23.026 [DEBUG] Collision: 'Enemy' pushed out of 'Player'
+12:41:23.026 [DEBUG] Collision: 'Enemy' pushed out of 'Enemy'
+12:41:23.026 [DEBUG] Collision: 'Enemy' pushed out of 'Enemy'
+12:41:23.026 [DEBUG] Collision: 'Enemy' pushed out of 'Enemy'
+12:41:23.026 [DEBUG] Collision: 'Enemy' pushed out of 'Enemy'
+12:41:23.026 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.026 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.027 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.027 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.027 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.027 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.027 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.027 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.027 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.027 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.027 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.027 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.027 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.027 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.027 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.027 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.027 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.027 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.027 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.028 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.028 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.028 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.028 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.028 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.028 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.028 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.028 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.028 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.028 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.028 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.028 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.028 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.028 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.028 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.028 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.028 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.029 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.029 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.029 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.029 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.029 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.029 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.029 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.029 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.029 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.029 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.029 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.029 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.029 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.029 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.029 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.029 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.029 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.030 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.030 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.030 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.030 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.030 [DEBUG] Collision: 'Enemy' pushed out of 'Door'
+12:41:23.030 [DEBUG] Collision: 'Enemy' pushed out of 'Player'
+12:41:23.030 [DEBUG] Collision: 'Enemy' pushed out of 'Enemy'
+12:41:23.030 [DEBUG] Collision: 'Enemy' pushed out of 'Enemy'
+12:41:23.030 [DEBUG] Collision: 'Enemy' pushed out of 'Enemy'
+12:41:23.030 [DEBUG] Collision: 'Enemy' pushed out of 'Enemy'
+12:41:23.030 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.030 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.030 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.030 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.030 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.030 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.030 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.031 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.031 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.031 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.031 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.031 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.031 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.031 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.031 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.031 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.031 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.031 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.031 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.031 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.031 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.032 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.032 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.032 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.032 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.032 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.032 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.032 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.032 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.032 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.032 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.032 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.032 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.032 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.032 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.033 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.033 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.033 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.033 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.033 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.033 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.033 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.033 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.033 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.033 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.033 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.033 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.033 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.033 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.033 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.033 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.033 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.034 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.034 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.034 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.034 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.034 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.034 [DEBUG] Collision: 'Enemy' pushed out of 'Door'
+12:41:23.034 [DEBUG] Collision: 'Enemy' pushed out of 'Player'
+12:41:23.034 [DEBUG] Collision: 'Enemy' pushed out of 'Enemy'
+12:41:23.034 [DEBUG] Collision: 'Enemy' pushed out of 'Enemy'
+12:41:23.034 [DEBUG] Collision: 'Enemy' pushed out of 'Enemy'
+12:41:23.034 [DEBUG] Collision: 'Enemy' pushed out of 'Enemy'
+12:41:23.034 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.034 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.034 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.034 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.034 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.034 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.035 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.035 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.035 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.035 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.035 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.035 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.035 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.035 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.035 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.035 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.035 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.035 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.035 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.035 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.035 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.035 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.036 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.036 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.036 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.036 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.036 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.036 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.036 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.036 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.036 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.036 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.036 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.036 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.036 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.036 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.037 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.037 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.037 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.037 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.037 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.037 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.037 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.037 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.037 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.037 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.037 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.037 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.038 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.038 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.038 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.038 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.038 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.038 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.038 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.038 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.038 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.038 [DEBUG] Collision: 'Enemy' pushed out of 'Door'
+12:41:23.038 [DEBUG] Collision: 'Enemy' pushed out of 'Player'
+12:41:23.038 [DEBUG] Collision: 'Enemy' pushed out of 'Enemy'
+12:41:23.038 [DEBUG] Collision: 'Enemy' pushed out of 'Enemy'
+12:41:23.038 [DEBUG] Collision: 'Enemy' pushed out of 'Enemy'
+12:41:23.038 [DEBUG] Collision: 'Enemy' pushed out of 'Enemy'
+12:41:23.038 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.038 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.039 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.039 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.039 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.039 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.039 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.039 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.039 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.039 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.039 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.039 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.039 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.039 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.039 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.039 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.039 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.039 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.039 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.040 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.040 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.040 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.040 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.040 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.040 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.040 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.040 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.040 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.040 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.040 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.040 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.040 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.040 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.040 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.040 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.040 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.041 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.041 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.041 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.041 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.041 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.041 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.041 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.041 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.041 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.041 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.041 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.041 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.041 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.041 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.041 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.041 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.041 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.042 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.042 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.042 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.042 [DEBUG] Collision: 'Enemy' pushed out of 'Wall'
+12:41:23.042 [DEBUG] Collision: 'Enemy' pushed out of 'Door'
+12:41:23.042 [DEBUG] Collision: 'Enemy' pushed out of 'Player'
+12:41:23.042 [DEBUG] Collision: 'Enemy' pushed out of 'Enemy'
+12:41:23.042 [DEBUG] Collision: 'Enemy' pushed out of 'Enemy'
+12:41:23.042 [DEBUG] Collision: 'Enemy' pushed out of 'Enemy'
+12:41:23.042 [DEBUG] Collision: 'Enemy' pushed out of 'Enemy'
+12:41:25.204 [WARNING] Debug key: the door is forced open
+12:41:25.206 [INFO] 1
+12:41:25.513 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:25.535 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:25.555 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:25.575 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:25.593 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:25.613 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:25.635 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:25.655 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:25.674 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:25.694 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:25.714 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:25.733 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:25.754 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:25.774 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:25.795 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:25.815 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:25.835 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:25.854 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:25.875 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:25.894 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:25.915 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:25.934 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:25.955 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:25.974 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:25.994 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:26.015 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:26.035 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:26.055 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:26.075 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:26.094 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:26.115 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:26.133 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:26.155 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:26.175 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:26.195 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:26.214 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:26.235 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:26.254 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:26.275 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:26.295 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:26.314 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:26.334 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:26.354 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:26.375 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:26.394 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:26.414 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:26.434 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:26.453 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:26.473 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:26.495 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:26.514 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:26.534 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:26.555 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:26.575 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:26.595 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:26.614 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:26.634 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:26.654 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:26.674 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:26.695 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:26.713 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:26.735 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:26.754 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:26.775 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:26.794 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:26.813 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:26.835 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:26.854 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:26.873 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:26.894 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:26.914 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:26.934 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:26.953 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:26.975 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:26.994 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:27.015 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:27.034 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:27.055 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:27.074 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:27.094 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:27.115 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:27.134 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:27.155 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:27.175 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:27.195 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:27.214 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:27.233 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:27.254 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:27.273 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:27.294 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:27.313 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:27.335 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:27.354 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:27.373 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:27.395 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:27.415 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:27.434 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:27.455 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:27.475 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:27.494 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:27.514 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:27.535 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:27.554 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:27.574 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:27.594 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:27.615 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:27.634 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:27.655 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:27.674 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:27.695 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:27.714 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:27.734 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:27.755 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:27.775 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:27.794 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:27.814 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:27.833 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:27.855 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:27.874 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:27.893 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:27.915 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:27.934 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:27.955 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:27.975 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:27.993 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:28.015 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:28.034 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:28.053 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:28.075 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:28.094 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:28.114 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:28.135 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:28.154 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:28.174 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:28.194 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:28.213 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:28.235 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:28.254 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:28.275 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:28.294 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:28.315 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:28.335 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:28.355 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:28.374 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:28.394 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:28.414 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:28.435 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:28.455 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:28.474 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:28.495 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:28.515 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:28.535 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:28.555 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:28.574 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:28.595 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:28.615 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:28.633 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:28.654 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:28.675 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:28.694 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:28.715 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:28.734 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:28.755 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:28.775 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:28.795 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:28.813 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:28.833 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:28.854 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:28.875 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:28.894 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:28.913 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:28.934 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:28.954 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:28.974 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:28.994 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:29.015 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:29.034 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:29.055 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:29.075 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:29.095 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:29.114 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:29.133 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:29.155 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:29.174 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:29.194 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:29.215 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:29.234 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:29.255 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:29.274 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:29.294 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:29.314 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:29.334 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:29.355 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:29.375 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:29.394 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:29.415 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:29.433 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:29.455 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:29.475 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:29.494 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:29.514 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:29.534 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:29.555 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:29.575 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:29.595 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:29.614 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:29.634 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:29.654 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:29.674 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:29.695 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:29.715 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:29.735 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:29.755 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:29.775 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:29.794 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:29.814 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:29.834 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:29.855 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:29.874 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:29.894 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:29.914 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:29.933 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:29.954 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:29.975 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:29.995 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:30.015 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:30.034 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:30.055 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:30.074 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:30.094 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:30.114 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:30.134 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:30.154 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:30.174 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:30.195 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:30.214 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:30.234 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:30.255 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:30.274 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:30.294 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:30.313 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:30.333 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:30.354 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:30.373 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:30.394 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:30.415 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:30.434 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:30.454 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:30.474 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:30.494 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:30.514 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:30.533 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:30.554 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:30.575 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:30.594 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:30.615 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:30.634 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:30.655 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:30.674 [DEBUG] Collision: 'Player' pushed out of 'Wall'
+12:41:30.694 [DEBUG] Collision: 'Player' pushed out of 'Wall'

@@ -14,7 +14,7 @@ using namespace XYZEngine;
 
 namespace XYZRoguelike
 {
-	Enemy::Enemy(const Vector2Df& position, GameObject* player)
+	Enemy::Enemy(const Vector2Df& position, GameObject* player, std::function<void()> onDeath)
 	{
 		gameObject = GameWorld::Instance()->CreateGameObject(Settings::ENEMY_OBJECT_NAME);
 		gameObject->GetComponent<TransformComponent>()->SetWorldPosition(position);
@@ -49,10 +49,14 @@ namespace XYZRoguelike
 
 		// The object is removed at the end of the frame, so the attacker that killed it finishes its update safely
 		GameObject* self = gameObject;
-		health->SetOnDeath([self, deathSound]() {
+		health->SetOnDeath([self, deathSound, onDeath]() {
 			deathSound->Play();
 			LOG_INFO("Enemy defeated, removing it from the world");
 			GameWorld::Instance()->DestroyGameObject(self);
+			if (onDeath)
+			{
+				onDeath();
+			}
 		});
 
 		LOG_INFO("Enemy created at " << position.x << ", " << position.y);
