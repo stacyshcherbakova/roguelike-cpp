@@ -36,11 +36,16 @@ namespace XYZRoguelike
 
 	void RoguelikeGame::StartLevel(int index)
 	{
-		victoryScreen.reset();
 		if (level)
 		{
 			level->Stop();
 		}
+		else if (victoryScreen)
+		{
+			// The victory screen stands in the world without a level, so nobody else would remove its text and its R key
+			GameWorld::Instance()->Clear();
+		}
+		victoryScreen.reset();
 		currentLevel = index;
 		level = std::make_unique<GameLevel>(levels[index],
 			[this]() { OnLevelCompleted(); },

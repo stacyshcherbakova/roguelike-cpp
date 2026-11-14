@@ -30,6 +30,12 @@ namespace XYZEngine
 		{
 			sf::Time dt = gameClock.restart();
 			float deltaTime = dt.asSeconds();
+			// A long frame (window dragged, level loading) must not turn into one huge move through a wall
+			const float maxDeltaTime = 0.05f;
+			if (deltaTime > maxDeltaTime)
+			{
+				deltaTime = maxDeltaTime;
+			}
 
 			while (RenderSystem::Instance()->GetMainWindow().pollEvent(event))
 			{

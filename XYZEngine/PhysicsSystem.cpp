@@ -19,12 +19,36 @@ namespace XYZEngine
 
 	void PhysicsSystem::Update()
 	{
+		// Moving bodies are pushed apart first and out of the static ones last:
+		// whatever the monsters do to each other, nobody finishes a step inside a wall
+		ResolvePairs(false);
+		ResolvePairs(true);
+
+		for (auto triggeredPair = triggersEnteredPair.cbegin(), nextTriggeredPair = triggeredPair; triggeredPair != triggersEnteredPair.cend(); triggeredPair = nextTriggeredPair)
+		{
+			++nextTriggeredPair;
+			if (!triggeredPair->first->bounds.intersects(triggeredPair->second->bounds))
+			{
+				Trigger trigger(triggeredPair->first, triggeredPair->second);
+				triggeredPair->first->OnTriggerExit(trigger);
+				triggeredPair->second->OnTriggerExit(trigger);
+
+				triggersEnteredPair.erase(triggeredPair);
+			}
+		}
+	}
+
+	void PhysicsSystem::ResolvePairs(bool againstStatic)
+	{
 		for (int i = 0; i < colliders.size(); i++)
 		{
 			auto body = colliders[i]->GetGameObject()->GetComponent<RigidbodyComponent>();
 			if (body == nullptr)
 			{
-				LOG_WARNING("Collider of '" << colliders[i]->GetGameObject()->GetName() << "' has no RigidbodyComponent and is skipped");
+				if (!againstStatic)
+				{
+					LOG_WARNING("Collider of '" << colliders[i]->GetGameObject()->GetName() << "' has no RigidbodyComponent and is skipped");
+				}
 				continue;
 			}
 			if (body->GetKinematic())
@@ -35,6 +59,13 @@ namespace XYZEngine
 			for (int j = 0; j < colliders.size(); j++)
 			{
 				if (j == i)
+				{
+					continue;
+				}
+
+				auto otherBody = colliders[j]->GetGameObject()->GetComponent<RigidbodyComponent>();
+				const bool isOtherStatic = otherBody == nullptr || otherBody->GetKinematic();
+				if (isOtherStatic != againstStatic)
 				{
 					continue;
 				}
@@ -56,34 +87,37 @@ namespace XYZEngine
 					}
 					else if (!colliders[i]->isTrigger)
 					{
-						float intersectionWidth = intersection.width;
-						float intersectionHeight = intersection.height;
-						Vector2Df intersectionPosition = { intersection.left - 0.5f * intersectionWidth, intersection.top - 0.5f * intersectionHeight };
+						// Push along the axis of the smaller overlap, away from the centre of the other body.
+						// Comparing centres keeps the direction right however deep the overlap is;
+						// two bodies with the same centre are split by their order in the list.
+						const sf::FloatRect& aBounds = colliders[i]->bounds;
+						const sf::FloatRect& bBounds = colliders[j]->bounds;
+						Vector2Df offset;
 
-						Vector2Df aPosition = { colliders[i]->bounds.left,  colliders[i]->bounds.top };
-						auto aTransform = colliders[i]->GetGameObject()->GetComponent<TransformComponent>();
-
-						if (intersectionWidth > intersectionHeight)
+						if (intersection.width > intersection.height)
 						{
-							if (intersectionPosition.y > aPosition.y)
-							{
-								aTransform->MoveBy({ 0, -intersectionHeight });
-							}
-							else
-							{
-								aTransform->MoveBy({ 0, intersectionHeight });
-							}
+							const float aCentre = aBounds.top + 0.5f * aBounds.height;
+							const float bCentre = bBounds.top + 0.5f * bBounds.height;
+							const bool isBefore = aCentre < bCentre || (aCentre == bCentre && i < j);
+							offset.y = isBefore ? -intersection.height : intersection.height;
 						}
 						else
 						{
-							if (intersectionPosition.x > aPosition.x)
-							{
-								aTransform->MoveBy({ -intersectionWidth, 0.f });
-							}
-							else
-							{
-								aTransform->MoveBy({ intersectionWidth, 0.f });
-							}
+							const float aCentre = aBounds.left + 0.5f * aBounds.width;
+							const float bCentre = bBounds.left + 0.5f * bBounds.width;
+							const bool isBefore = aCentre < bCentre || (aCentre == bCentre && i < j);
+							offset.x = isBefore ? -intersection.width : intersection.width;
+						}
+
+						if (isOtherStatic)
+						{
+							MoveCollider(colliders[i], offset);
+						}
+						else
+						{
+							// Two moving bodies share the push, so the pair is already apart when it is met in the other order
+							MoveCollider(colliders[i], 0.5f * offset);
+							MoveCollider(colliders[j], -0.5f * offset);
 						}
 
 						LOG_DEBUG("Collision: '" << colliders[i]->GetGameObject()->GetName() << "' pushed out of '" << colliders[j]->GetGameObject()->GetName() << "'");
@@ -95,19 +129,14 @@ namespace XYZEngine
 				}
 			}
 		}
+	}
 
-		for (auto triggeredPair = triggersEnteredPair.cbegin(), nextTriggeredPair = triggeredPair; triggeredPair != triggersEnteredPair.cend(); triggeredPair = nextTriggeredPair)
-		{
-			++nextTriggeredPair;
-			if (!triggeredPair->first->bounds.intersects(triggeredPair->second->bounds))
-			{
-				Trigger trigger(triggeredPair->first, triggeredPair->second);
-				triggeredPair->first->OnTriggerExit(trigger);
-				triggeredPair->second->OnTriggerExit(trigger);
-
-				triggersEnteredPair.erase(triggeredPair);
-			}
-		}
+	void PhysicsSystem::MoveCollider(ColliderComponent* collider, const Vector2Df& offset)
+	{
+		collider->GetGameObject()->GetComponent<TransformComponent>()->MoveBy(offset);
+		// The cached bounds follow the transform at once, so the next pair of this step sees the new position
+		collider->bounds.left += offset.x;
+		collider->bounds.top += offset.y;
 	}
 
 	void PhysicsSystem::Subscribe(ColliderComponent* collider)

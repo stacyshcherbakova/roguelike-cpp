@@ -3,6 +3,7 @@
 #include <KeyActionComponent.h>
 #include <Logger.h>
 #include <randomizer.h>
+#include <algorithm>
 
 using namespace XYZEngine;
 
@@ -78,13 +79,29 @@ namespace XYZRoguelike
 		aliveEnemies = 0;
 		// Enemies appear in the right two thirds of the room, away from the player's start
 		const int minX = std::max(2, definition.width / 3);
+		// Every monster gets a tile of its own: two bodies created in the same place would be stuck in each other
+		std::vector<Vector2Di> takenTiles = { GetBossTile() };
+		const int maxAttempts = 100;
 		for (int i = 0; i < definition.enemyCount; i++)
 		{
-			const int x = random<int>(minX, definition.width - 1);
-			const int y = random<int>(0, definition.height - 1);
-			enemies.push_back(std::make_unique<Enemy>(arena->TileToWorld(x, y), player->GetGameObject(), [this]() { OnEnemyDied(); }));
+			Vector2Di tile;
+			int attempts = 0;
+			do
+			{
+				tile = { random<int>(minX, definition.width - 1), random<int>(0, definition.height - 1) };
+				attempts++;
+			} while (attempts < maxAttempts && std::find(takenTiles.begin(), takenTiles.end(), tile) != takenTiles.end());
+			takenTiles.push_back(tile);
+
+			enemies.push_back(std::make_unique<Enemy>(arena->TileToWorld(tile), player->GetGameObject(), [this]() { OnEnemyDied(); }));
 			aliveEnemies++;
 		}
+	}
+
+	Vector2Di GameLevel::GetBossTile() const
+	{
+		// The boss guards the door from two tiles inside the room
+		return { definition.width - 2, definition.height / 2 };
 	}
 
 	void GameLevel::SpawnBoss()
@@ -95,9 +112,7 @@ namespace XYZRoguelike
 			return;
 		}
 
-		// The boss guards the door from two tiles inside the room
-		const Vector2Di bossTile = { definition.width - 2, definition.height / 2 };
-		boss = std::make_unique<Boss>(arena->TileToWorld(bossTile), player->GetGameObject(), definition.bossHealthScale, [this]() { OnBossDied(); });
+		boss = std::make_unique<Boss>(arena->TileToWorld(GetBossTile()), player->GetGameObject(), definition.bossHealthScale, [this]() { OnBossDied(); });
 		bossAlive = true;
 	}
 
