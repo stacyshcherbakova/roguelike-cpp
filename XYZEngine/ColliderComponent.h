@@ -17,6 +17,8 @@ namespace XYZEngine
 
 		virtual void Update(float deltaTime) = 0;
 		virtual void Render() = 0;
+		// Takes the bounds from the current position of the object
+		virtual void SyncBounds() = 0;
 
 		void SetTrigger(bool newIsTrigger);
 		bool IsTrigger() const { return isTrigger; }

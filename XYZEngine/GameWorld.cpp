@@ -19,14 +19,11 @@ namespace XYZEngine
 			gameObjects[i]->Update(deltaTime);
 		}
 	}
-	void GameWorld::FixedUpdate(float deltaTime)
+	void GameWorld::UpdatePhysics()
 	{
-		fixedCounter += deltaTime;
-		if (fixedCounter > PhysicsSystem::Instance()->GetFixedDeltaTime())
-		{
-			fixedCounter -= PhysicsSystem::Instance()->GetFixedDeltaTime();
-			PhysicsSystem::Instance()->Update();
-		}
+		// Bodies move every frame, so collisions are resolved every frame as well, before anything is drawn.
+		// On a separate 50 Hz step a body sank into another one for up to 20 ms and was then thrown back, which looked like shaking.
+		PhysicsSystem::Instance()->Update();
 	}
 	void GameWorld::Render()
 	{
@@ -108,8 +105,6 @@ namespace XYZEngine
 				DestroyGameObjectImmediate(gameObjects[i]);
 			}
 		}
-
-		fixedCounter = 0.f;
 	}
 
 	void GameWorld::Print() const

@@ -34,6 +34,10 @@ namespace XYZEngine
 
 	void SpriteColliderComponent::Update(float deltaTime)
 	{
+		SyncBounds();
+	}
+	void SpriteColliderComponent::SyncBounds()
+	{
 		if (sprite != nullptr)
 		{
 			renderer->SyncWithTransform();

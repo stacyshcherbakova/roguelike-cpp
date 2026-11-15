@@ -54,7 +54,7 @@ namespace XYZEngine
 			RenderSystem::Instance()->GetMainWindow().clear();
 
 			GameWorld::Instance()->Update(deltaTime);
-			GameWorld::Instance()->FixedUpdate(deltaTime);
+			GameWorld::Instance()->UpdatePhysics();
 			GameWorld::Instance()->Render();
 			GameWorld::Instance()->LateUpdate();
 

@@ -1,6 +1,8 @@
 #pragma once
 
 #include <map>
+#include <set>
+#include <utility>
 #include <iostream>
 #include "ColliderComponent.h"
 #include "RigidbodyComponent.h"
@@ -15,7 +17,6 @@ namespace XYZEngine
 
 		void Update();
 
-		float GetFixedDeltaTime() const;
 		void Subscribe(ColliderComponent* collider);
 		void Unsubscribe(ColliderComponent* collider);
 	private:
@@ -31,10 +32,12 @@ namespace XYZEngine
 		void PushOutOfStatics(int i);
 		Vector2Df GetPushOffset(int i, int j, const sf::FloatRect& intersection) const;
 		void MoveCollider(ColliderComponent* collider, const Vector2Df& offset);
+		void ReportContact(ColliderComponent* pushed, ColliderComponent* other);
 
 		std::vector<ColliderComponent*> colliders;
 		std::map<ColliderComponent*, ColliderComponent*> triggersEnteredPair;
-
-		float fixedDeltaTime = 0.02f;
+		// Pairs of bodies pushed apart on the previous update and on this one
+		std::set<std::pair<ColliderComponent*, ColliderComponent*>> previousContacts;
+		std::set<std::pair<ColliderComponent*, ColliderComponent*>> currentContacts;
 	};
 }

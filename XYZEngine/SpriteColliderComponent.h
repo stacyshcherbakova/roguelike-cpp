@@ -15,6 +15,7 @@ namespace XYZEngine
 
 		void Update(float deltaTime) override;
 		void Render() override;
+		void SyncBounds() override;
 
 		// Debug outline around every sprite collider
 		static void SetDrawBounds(bool draw);
